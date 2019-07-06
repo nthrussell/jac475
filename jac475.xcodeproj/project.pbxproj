@@ -8,22 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		FD26D69122D07CAB000B7FDC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD26D69022D07CAB000B7FDC /* AppDelegate.swift */; };
-		FD26D69322D07CAB000B7FDC /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD26D69222D07CAB000B7FDC /* FirstViewController.swift */; };
-		FD26D69522D07CAB000B7FDC /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD26D69422D07CAB000B7FDC /* SecondViewController.swift */; };
 		FD26D69822D07CAB000B7FDC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD26D69622D07CAB000B7FDC /* Main.storyboard */; };
 		FD26D69A22D07CAC000B7FDC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD26D69922D07CAC000B7FDC /* Assets.xcassets */; };
 		FD26D69D22D07CAC000B7FDC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD26D69B22D07CAC000B7FDC /* LaunchScreen.storyboard */; };
+		FD26D6A522D07D12000B7FDC /* StateVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD26D6A422D07D12000B7FDC /* StateVC.swift */; };
+		FD26D6A722D07D24000B7FDC /* EventVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD26D6A622D07D24000B7FDC /* EventVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		FD26D68D22D07CAB000B7FDC /* jac475.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = jac475.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD26D69022D07CAB000B7FDC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FD26D69222D07CAB000B7FDC /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		FD26D69422D07CAB000B7FDC /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		FD26D69722D07CAB000B7FDC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FD26D69922D07CAC000B7FDC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FD26D69C22D07CAC000B7FDC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FD26D69E22D07CAC000B7FDC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD26D6A422D07D12000B7FDC /* StateVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateVC.swift; sourceTree = "<group>"; };
+		FD26D6A622D07D24000B7FDC /* EventVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,8 +57,8 @@
 			isa = PBXGroup;
 			children = (
 				FD26D69022D07CAB000B7FDC /* AppDelegate.swift */,
-				FD26D69222D07CAB000B7FDC /* FirstViewController.swift */,
-				FD26D69422D07CAB000B7FDC /* SecondViewController.swift */,
+				FD26D6A422D07D12000B7FDC /* StateVC.swift */,
+				FD26D6A622D07D24000B7FDC /* EventVC.swift */,
 				FD26D69622D07CAB000B7FDC /* Main.storyboard */,
 				FD26D69922D07CAC000B7FDC /* Assets.xcassets */,
 				FD26D69B22D07CAC000B7FDC /* LaunchScreen.storyboard */,
@@ -137,9 +137,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FD26D69522D07CAB000B7FDC /* SecondViewController.swift in Sources */,
+				FD26D6A722D07D24000B7FDC /* EventVC.swift in Sources */,
+				FD26D6A522D07D12000B7FDC /* StateVC.swift in Sources */,
 				FD26D69122D07CAB000B7FDC /* AppDelegate.swift in Sources */,
-				FD26D69322D07CAB000B7FDC /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
