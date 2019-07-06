@@ -19,7 +19,7 @@ class StateVC: UIViewController {
             print("radarStatus: \(status)")
             print("radarLocation: \(location)")
             print("radarEvents: \(events)")
-            print("radarUser: \(user?.place)")
+            print("radarUser: \(user?.stopped)")
         })
     }
     

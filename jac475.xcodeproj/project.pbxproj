@@ -17,6 +17,7 @@
 		FD26D6AC22D082C3000B7FDC /* Pilgrim.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD26D6AB22D082C3000B7FDC /* Pilgrim.framework */; };
 		FD26D6AF22D090E3000B7FDC /* FacebookCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD26D6AE22D090E3000B7FDC /* FacebookCore.framework */; };
 		FD26D6B122D0911C000B7FDC /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD26D6B022D0911C000B7FDC /* FBSDKCoreKit.framework */; };
+		FDD2EBBA22D121280076AC94 /* extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD2EBB922D121280076AC94 /* extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		FD26D6AB22D082C3000B7FDC /* Pilgrim.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pilgrim.framework; path = Carthage/Build/iOS/Pilgrim.framework; sourceTree = "<group>"; };
 		FD26D6AE22D090E3000B7FDC /* FacebookCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookCore.framework; path = Carthage/Build/iOS/FacebookCore.framework; sourceTree = "<group>"; };
 		FD26D6B022D0911C000B7FDC /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = Carthage/Build/iOS/FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		FDD2EBB922D121280076AC94 /* extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 		FD26D68F22D07CAB000B7FDC /* jac475 */ = {
 			isa = PBXGroup;
 			children = (
+				FDD2EBB922D121280076AC94 /* extensions.swift */,
 				FD26D69022D07CAB000B7FDC /* AppDelegate.swift */,
 				FD26D6A422D07D12000B7FDC /* StateVC.swift */,
 				FD26D6A622D07D24000B7FDC /* EventVC.swift */,
@@ -194,6 +197,7 @@
 				FD26D6A722D07D24000B7FDC /* EventVC.swift in Sources */,
 				FD26D6A522D07D12000B7FDC /* StateVC.swift in Sources */,
 				FD26D69122D07CAB000B7FDC /* AppDelegate.swift in Sources */,
+				FDD2EBBA22D121280076AC94 /* extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

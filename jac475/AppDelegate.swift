@@ -9,6 +9,9 @@ import UIKit
 import CoreLocation
 import RadarSDK
 import Pilgrim
+import FacebookCore
+import FBSDKPlacesKit
+import FBSDKCoreKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate, CLLocationManagerDelegate, RadarDelegate {
@@ -22,10 +25,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate, CLLocationManagerDelegate
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        //FBSDK
+        SDKApplicationDelegate.shared.application(application, didFinishLaunchingWithOptions: launchOptions)
+
         //Mr Jamal Cole //prj_test_pk_81c06ab3fa9fa0d2656ad26a179eff38b2eb5a6c
         initLocationManager()
         Radar.initialize(publishableKey: "prj_test_pk_81c06ab3fa9fa0d2656ad26a179eff38b2eb5a6c")
         Radar.setDelegate(self)
+        Radar.setPlacesProvider(.facebook)
+        Radar.startTracking()
         return true
     }
     
@@ -80,7 +89,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, CLLocationManagerDelegate
             locationStatus = "Allowed to location Access"
             shouldIAllow = true
         }
-        NotificationCenter.default.post(name: NSNotification.Name(rawValue: "LabelHasbeenUpdated"), object: nil)
+        
         if (shouldIAllow == true) {
             // Start location services
             print("Location to Allowed")
@@ -92,7 +101,26 @@ class AppDelegate: UIResponder, UIApplicationDelegate, CLLocationManagerDelegate
 
     func didReceiveEvents(_ events: [RadarEvent], user: RadarUser) {
         print("myBackgroundEvents:\(events)")
-        print("myUserData: \(user)")
+        print("myUserData: \(user.place)")
+        
+        let RDBackgroundEvents = ["events": events]
+        NotificationCenter.default.post(name: .RDBackgroundEvents, object: self, userInfo: RDBackgroundEvents)
+        
+        let RDBackgroundPlace = ["place": user.place as Any]
+        NotificationCenter.default.post(name: .RDBackgroundUserPlace, object: self, userInfo: RDBackgroundPlace)
+
+    }
+    
+    func didUpdateLocation(_ location: CLLocation, user: RadarUser) {
+        // do something with location, user
+        print("radarLocationUpdate: \(location.coordinate)")
+        let backGroundLocation = ["lat": location.coordinate.latitude, "lon": location.coordinate.longitude]
+        NotificationCenter.default.post(name: .RDbackgroundLocationUpdate, object: self, userInfo: backGroundLocation)
+    }
+    
+    func didFail(status: RadarStatus) {
+        // do something with status
+        print("radar fail status: \(status)")
     }
 
     func applicationWillResignActive(_ application: UIApplication) {

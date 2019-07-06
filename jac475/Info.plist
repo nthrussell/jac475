@@ -23,18 +23,18 @@
 		<dict>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>fb1011922205672981</string>
+				<string>fb684680925289539</string>
 			</array>
 		</dict>
 	</array>
 	<key>CFBundleVersion</key>
 	<string>1</string>
 	<key>FacebookAppID</key>
-	<string>1011922205672981</string>
+	<string>684680925289539</string>
 	<key>FacebookClientToken</key>
-	<string>prj_test_pk_81c06ab3fa9fa0d2656ad26a179eff38b2eb5a6c</string>
+	<string>4d2bb5fd3feb1dc3fcbd640110ba6091</string>
 	<key>FacebookDisplayName</key>
-	<string>jac475</string>
+	<string>jamalLocation</string>
 	<key>LSApplicationCategoryType</key>
 	<string></string>
 	<key>LSApplicationQueriesSchemes</key>
