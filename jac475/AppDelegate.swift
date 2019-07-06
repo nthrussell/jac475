@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import RadarSDK
+import Pilgrim
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -15,6 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        Radar.initialize(publishableKey: "prj_test_pk_81c06ab3fa9fa0d2656ad26a179eff38b2eb5a6c")
         return true
     }
 

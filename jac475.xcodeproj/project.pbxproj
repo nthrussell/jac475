@@ -13,6 +13,8 @@
 		FD26D69D22D07CAC000B7FDC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD26D69B22D07CAC000B7FDC /* LaunchScreen.storyboard */; };
 		FD26D6A522D07D12000B7FDC /* StateVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD26D6A422D07D12000B7FDC /* StateVC.swift */; };
 		FD26D6A722D07D24000B7FDC /* EventVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD26D6A622D07D24000B7FDC /* EventVC.swift */; };
+		FD26D6AA22D08206000B7FDC /* RadarSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD26D6A922D08206000B7FDC /* RadarSDK.framework */; };
+		FD26D6AC22D082C3000B7FDC /* Pilgrim.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD26D6AB22D082C3000B7FDC /* Pilgrim.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		FD26D69E22D07CAC000B7FDC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FD26D6A422D07D12000B7FDC /* StateVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateVC.swift; sourceTree = "<group>"; };
 		FD26D6A622D07D24000B7FDC /* EventVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventVC.swift; sourceTree = "<group>"; };
+		FD26D6A922D08206000B7FDC /* RadarSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RadarSDK.framework; path = Carthage/Build/iOS/RadarSDK.framework; sourceTree = "<group>"; };
+		FD26D6AB22D082C3000B7FDC /* Pilgrim.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pilgrim.framework; path = Carthage/Build/iOS/Pilgrim.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD26D6AA22D08206000B7FDC /* RadarSDK.framework in Frameworks */,
+				FD26D6AC22D082C3000B7FDC /* Pilgrim.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +48,7 @@
 			children = (
 				FD26D68F22D07CAB000B7FDC /* jac475 */,
 				FD26D68E22D07CAB000B7FDC /* Products */,
+				FD26D6A822D08206000B7FDC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +74,15 @@
 			path = jac475;
 			sourceTree = "<group>";
 		};
+		FD26D6A822D08206000B7FDC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FD26D6AB22D082C3000B7FDC /* Pilgrim.framework */,
+				FD26D6A922D08206000B7FDC /* RadarSDK.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,6 +93,7 @@
 				FD26D68922D07CAB000B7FDC /* Sources */,
 				FD26D68A22D07CAB000B7FDC /* Frameworks */,
 				FD26D68B22D07CAB000B7FDC /* Resources */,
+				FD26D6AD22D082E4000B7FDC /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -98,6 +115,11 @@
 				TargetAttributes = {
 					FD26D68C22D07CAB000B7FDC = {
 						CreatedOnToolsVersion = 10.2.1;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -131,6 +153,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		FD26D6AD22D082E4000B7FDC /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Pilgrim.framework",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FD26D68922D07CAB000B7FDC /* Sources */ = {
@@ -286,6 +329,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = jac475/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -303,6 +350,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = jac475/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

@@ -1,0 +1,2 @@
+binary "https://foursquare.jfrog.io/foursquare/pilgrimsdk-ios/Pilgrim.json" "2.2.0"
+binary "https://raw.githubusercontent.com/radarlabs/radar-sdk-ios/master/RadarSDK.json" "2.1.4"

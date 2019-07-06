@@ -1,0 +1,2988 @@
+BCSymbolMap Version: 2.0
+-[FSQPDebugDetailViewController initWithLog:]
+-[FSQPDebugDetailViewController viewDidLayoutSubviews]
+-[FSQPDebugDetailViewController titleLabel]
+-[FSQPDebugDetailViewController .cxx_destruct]
+_OBJC_IVAR_$_FSQPDebugDetailViewController._titleLabel
+Apple LLVM version 10.0.1 (clang-1001.0.46.3)
+/tmp/sandbox/workspace/PilgrimSDK/PilgrimSDK/FSQPDebugDetailViewController.m
+/private/tmp/sandbox/workspace/PilgrimSDK
+-[FSQPSingleLocationRequestConfig locationMeetsContinuousRequirements:]
+-[FSQPSingleLocationRequestConfig locationMeetsAcceptableAccuracyRequirment:]
+-[FSQPSingleLocationRequestConfig locationMeetsStartDateRequirment:]
+-[FSQPSingleLocationRequestConfig locationMeetsRecencyRequirements:now:]
+-[FSQPSingleLocationRequestConfig init]
+-[FSQPSingleLocationRequestConfig copyWithZone:]
+-[FSQPSingleLocationRequestConfig desiredAccuracy]
+-[FSQPSingleLocationRequestConfig setDesiredAccuracy:]
+-[FSQPSingleLocationRequestConfig maximumAcceptableAccuracy]
+-[FSQPSingleLocationRequestConfig setMaximumAcceptableAccuracy:]
+-[FSQPSingleLocationRequestConfig cutoffTimeInterval]
+-[FSQPSingleLocationRequestConfig setCutoffTimeInterval:]
+-[FSQPSingleLocationRequestConfig shouldRunInBackground]
+-[FSQPSingleLocationRequestConfig setShouldRunInBackground:]
+-[FSQPSingleLocationRequestConfig startBoundaryDate]
+-[FSQPSingleLocationRequestConfig setStartBoundaryDate:]
+-[FSQPSingleLocationRequestConfig maximumAcceptableRecency]
+-[FSQPSingleLocationRequestConfig setMaximumAcceptableRecency:]
+-[FSQPSingleLocationRequestConfig .cxx_destruct]
+_OBJC_IVAR_$_FSQPSingleLocationRequestConfig._desiredAccuracy
+_OBJC_IVAR_$_FSQPSingleLocationRequestConfig._maximumAcceptableAccuracy
+_OBJC_IVAR_$_FSQPSingleLocationRequestConfig._cutoffTimeInterval
+_OBJC_IVAR_$_FSQPSingleLocationRequestConfig._shouldRunInBackground
+_OBJC_IVAR_$_FSQPSingleLocationRequestConfig._startBoundaryDate
+_OBJC_IVAR_$_FSQPSingleLocationRequestConfig._maximumAcceptableRecency
+l_OBJC_PROTOCOL_$_NSCopying
+l_OBJC_LABEL_PROTOCOL_$_NSCopying
+/tmp/sandbox/workspace/PilgrimSDK/PilgrimSDK/Private/FSQPSingleLocationRequestConfig.m
+/tmp/sandbox/workspace/PilgrimSDK/PilgrimSDK/Private/FSQPSingleLocationRequestConfig.h
+-[FSQPKeepAliveManager init]
+-[FSQPKeepAliveManager isEnabled]
+-[FSQPKeepAliveManager configure]
+-[FSQPKeepAliveManager hasAnySubscribers]
+-[FSQPKeepAliveManager addSubscriber:]
+-[FSQPKeepAliveManager removeSubscriber:]
+-[FSQPKeepAliveManager containsSubscriber:]
+-[FSQPKeepAliveManager locationManager:didUpdateLocations:]
++[FSQPKeepAliveManager canEnableKeepAlive]
+-[FSQPKeepAliveManager subscribers]
+-[FSQPKeepAliveManager setSubscribers:]
+-[FSQPKeepAliveManager isActive]
+-[FSQPKeepAliveManager setIsActive:]
+-[FSQPKeepAliveManager locationManager]
+-[FSQPKeepAliveManager setLocationManager:]
+-[FSQPKeepAliveManager .cxx_destruct]
+___clang_at_available_requires_core_foundation_framework
+_OBJC_IVAR_$_FSQPKeepAliveManager._subscribers
+_OBJC_IVAR_$_FSQPKeepAliveManager._isActive
+_OBJC_IVAR_$_FSQPKeepAliveManager._locationManager
+l_OBJC_PROTOCOL_$_NSObject
+l_OBJC_LABEL_PROTOCOL_$_NSObject
+l_OBJC_PROTOCOL_$_CLLocationManagerDelegate
+l_OBJC_LABEL_PROTOCOL_$_CLLocationManagerDelegate
+l_OBJC_PROTOCOL_$_PilgrimKeepAliveProtocol
+l_OBJC_LABEL_PROTOCOL_$_PilgrimKeepAliveProtocol
+/tmp/sandbox/workspace/PilgrimSDK/PilgrimSDK/Foursquare Passive/FSQPKeepAliveManager.m
+-[FSQPDebugModeViewController initWithPilgrimManager:]
+/tmp/sandbox/workspace/PilgrimSDK/PilgrimSDK/Private/Debug Mode/FSQPDebugModeViewController.m
++[FSQPGlobalObject shared]
+-[FSQPGlobalObject performLogin]
+-[FSQPGlobalObject performLogout]
+-[FSQPGlobalObject login]
+-[FSQPGlobalObject logout]
+-[FSQPGlobalObject isLoggedIn]
+-[FSQPGlobalObject setIsLoggedIn:]
+_OBJC_IVAR_$_FSQPGlobalObject._isLoggedIn
+/tmp/sandbox/workspace/PilgrimSDK/PilgrimSDK/Foursquare Passive/FSQPGlobalObject.m
+/tmp/sandbox/workspace/PilgrimSDK/PilgrimSDK/Foursquare Passive/FSQPGlobalObject.h
+-[FSQPPolygonalBoundary initWithCoordinates:]
+-[FSQPPolygonalBoundary initWithCoder:]
+-[FSQPPolygonalBoundary encodeWithCoder:]
++[FSQPPolygonalBoundary supportsSecureCoding]
+-[FSQPPolygonalBoundary center]
+-[FSQPPolygonalBoundary didEnterWithLocation:useHacc:]
+-[FSQPPolygonalBoundary didExitWithLocation:]
+-[FSQPPolygonalBoundary description]
+-[FSQPPolygonalBoundary coordinates]
+-[FSQPPolygonalBoundary setCoordinates:]
+-[FSQPPolygonalBoundary .cxx_destruct]
+_OBJC_IVAR_$_FSQPPolygonalBoundary._coordinates
+l_OBJC_PROTOCOL_$_GeofenceBoundary
+l_OBJC_LABEL_PROTOCOL_$_GeofenceBoundary
+l_OBJC_PROTOCOL_$_NSCoding
+l_OBJC_LABEL_PROTOCOL_$_NSCoding
+l_OBJC_PROTOCOL_$_NSSecureCoding
+l_OBJC_LABEL_PROTOCOL_$_NSSecureCoding
+/tmp/sandbox/workspace/PilgrimSDK/PilgrimSDK/Private/Geofences/FSQPPolygonalBoundary.m
+/tmp/sandbox/workspace/PilgrimSDK/PilgrimSDK/Private/Geofences/FSQPPolygonalBoundary.h
+-[FSQPNearbyVenue initWithNearbyVenueDict:]
++[FSQPNearbyVenue supportsSecureCoding]
+-[FSQPNearbyVenue initWithCoder:]
+-[FSQPNearbyVenue encodeWithCoder:]
+-[FSQPNearbyVenue description]
+-[FSQPNearbyVenue venue]
+-[FSQPNearbyVenue matchTypes]
+-[FSQPNearbyVenue .cxx_destruct]
+_OBJC_IVAR_$_FSQPNearbyVenue._venue
+_OBJC_IVAR_$_FSQPNearbyVenue._matchTypes
+/tmp/sandbox/workspace/PilgrimSDK/PilgrimSDK/Public/FSQPNearbyVenue.m
+/tmp/sandbox/workspace/PilgrimSDK/PilgrimSDK/Public/FSQPNearbyVenue.h
+-[FSQPSingleLocationSubscriber initWithDesiredAccuracy:maximumAcceptableAccuracy:maximumAcceptableLocationRecency:cutoffTime:shouldRunInBackground:onCompletion:]
++[FSQPSingleLocationSubscriber startWithDesiredAccuracy:maximumAcceptableAccuracy:maximumAcceptableLocationRecency:cutoffTime:shouldRunInBackground:onCompletion:]
++[FSQPSingleLocationSubscriber startWithConfig:onCompletion:]
+-[FSQPSingleLocationSubscriber startListening]
+-[FSQPSingleLocationSubscriber stopListening]
+-[FSQPSingleLocationSubscriber cancel]
+-[FSQPSingleLocationSubscriber cutoffTimerFired:]
+-[FSQPSingleLocationSubscriber isListening]
+-[FSQPSingleLocationSubscriber setShouldRunInBackground:]
+-[FSQPSingleLocationSubscriber shouldRunInBackground]
+-[FSQPSingleLocationSubscriber isBestReceivedLocation:]
+-[FSQPSingleLocationSubscriber locationManagerDidUpdateLocations:]
+-[FSQPSingleLocationSubscriber locationManagerFailedWithError:]
+-[FSQPSingleLocationSubscriber applicationDidEnterBackground:]
+-[FSQPSingleLocationSubscriber dealloc]
+-[FSQPSingleLocationSubscriber desiredAccuracy]
+-[FSQPSingleLocationSubscriber maximumAcceptableAccuracy]
+-[FSQPSingleLocationSubscriber cutoffTimeInterval]
+-[FSQPSingleLocationSubscriber onCompletion]
+-[FSQPSingleLocationSubscriber cutoffTimer]
+-[FSQPSingleLocationSubscriber setCutoffTimer:]
+-[FSQPSingleLocationSubscriber bestLocationReceived]
+-[FSQPSingleLocationSubscriber setBestLocationReceived:]
+-[FSQPSingleLocationSubscriber startTime]
+-[FSQPSingleLocationSubscriber setStartTime:]
+-[FSQPSingleLocationSubscriber locationSubscriberOptions]
+-[FSQPSingleLocationSubscriber setLocationSubscriberOptions:]
+-[FSQPSingleLocationSubscriber startBoundaryDate]
+-[FSQPSingleLocationSubscriber setStartBoundaryDate:]
+-[FSQPSingleLocationSubscriber .cxx_destruct]
+_OBJC_IVAR_$_FSQPSingleLocationSubscriber._desiredAccuracy
+_OBJC_IVAR_$_FSQPSingleLocationSubscriber._maximumAcceptableAccuracy
+_OBJC_IVAR_$_FSQPSingleLocationSubscriber._onCompletion
+_OBJC_IVAR_$_FSQPSingleLocationSubscriber._cutoffTimeInterval
+_OBJC_IVAR_$_FSQPSingleLocationSubscriber._locationSubscriberOptions
+_OBJC_IVAR_$_FSQPSingleLocationSubscriber._cutoffTimer
+_OBJC_IVAR_$_FSQPSingleLocationSubscriber._bestLocationReceived
+_OBJC_IVAR_$_FSQPSingleLocationSubscriber._startTime
+_OBJC_IVAR_$_FSQPSingleLocationSubscriber._startBoundaryDate
+l_OBJC_PROTOCOL_$_FSQPLocationSubscriber
+l_OBJC_LABEL_PROTOCOL_$_FSQPLocationSubscriber
+/tmp/sandbox/workspace/PilgrimSDK/PilgrimSDK/FSQPSingleLocationSubscriber.m
+/tmp/sandbox/workspace/PilgrimSDK/PilgrimSDK/FSQPSingleLocationSubscriber.h
+-[CLRegion(FSQP) isIdentifierEqual:]
+/tmp/sandbox/workspace/PilgrimSDK/PilgrimSDK/Private/Foundation/Core Location/CLRegion+FSQP.m
+-[FSQPCLVisitRequest initWithCLVisit:]
+-[FSQPCLVisitRequest consumerKeyInPath]
+-[FSQPCLVisitRequest endpoint]
+-[FSQPCLVisitRequest method]
+-[FSQPCLVisitRequest params]
+-[FSQPCLVisitRequest clVisit]
+-[FSQPCLVisitRequest setClVisit:]
+-[FSQPCLVisitRequest .cxx_destruct]
+_OBJC_IVAR_$_FSQPCLVisitRequest._clVisit
+l_OBJC_PROTOCOL_$_APIRequest
+l_OBJC_LABEL_PROTOCOL_$_APIRequest
+/tmp/sandbox/workspace/PilgrimSDK/PilgrimSDK/Private/Networking/Models/FSQPCLVisitRequest.m
+fsqpLatLonStringFromCoord
+/tmp/sandbox/workspace/PilgrimSDK/PilgrimSDK/Private/Foundation/Core Location/CLLocation+FS.h
+-[FSQPAPITokenService initWithConsumerKey:userAgent:pilgrimSource:secret:]
+-[FSQPAPITokenService hashAndEncodeString:]
+-[FSQPAPITokenService hs256SignedString:withSecret:]
+-[FSQPAPITokenService consumerKey]
+-[FSQPAPITokenService setConsumerKey:]
+-[FSQPAPITokenService userAgent]
+-[FSQPAPITokenService setUserAgent:]
+-[FSQPAPITokenService pilgrimSource]
+-[FSQPAPITokenService setPilgrimSource:]
+-[FSQPAPITokenService secret]
+-[FSQPAPITokenService setSecret:]
+-[FSQPAPITokenService .cxx_destruct]
+_OBJC_IVAR_$_FSQPAPITokenService._consumerKey
+_OBJC_IVAR_$_FSQPAPITokenService._userAgent
+_OBJC_IVAR_$_FSQPAPITokenService._pilgrimSource
+_OBJC_IVAR_$_FSQPAPITokenService._secret
+l_OBJC_PROTOCOL_$_FSQPTokenService
+l_OBJC_LABEL_PROTOCOL_$_FSQPTokenService
+/tmp/sandbox/workspace/PilgrimSDK/PilgrimSDK/Private/Services/FSQPAPITokenService.m
+/tmp/sandbox/workspace/PilgrimSDK/PilgrimSDK/Private/Services/FSQPAPITokenService.h
++[FSQPServicesBuilder shared]
+___29+[FSQPServicesBuilder shared]_block_invoke
+___copy_helper_block_e4_
+___destroy_helper_block_e4_
+-[FSQPServicesBuilder initSharedBuilder]
+-[FSQPServicesBuilder init]
+-[FSQPServicesBuilder setSettings:]
+-[FSQPServicesBuilder setKeepAliveManager:]
+-[FSQPServicesBuilder setCoreLogger:]
+-[FSQPServicesBuilder setLogger:]
+-[FSQPServicesBuilder setPublicLogger:]
+-[FSQPServicesBuilder settings]
+-[FSQPServicesBuilder keepAliveManager]
+-[FSQPServicesBuilder coreLogger]
+-[FSQPServicesBuilder logger]
+-[FSQPServicesBuilder publicLogger]
+-[FSQPServicesBuilder .cxx_destruct]
++[FSQPServices defaultServices]
+-[FSQPServices initWithServicesBuilder:]
+-[FSQPServices settings]
+-[FSQPServices keepAliveManager]
+-[FSQPServices coreLogger]
+-[FSQPServices setCoreLogger:]
+-[FSQPServices logger]
+-[FSQPServices setLogger:]
+-[FSQPServices publicLogger]
+-[FSQPServices setPublicLogger:]
+-[FSQPServices .cxx_destruct]
+_shared.once
+_shared.sharedInstance
+___block_descriptor_24_e4__e5_v4@?0l
+_OBJC_IVAR_$_FSQPServicesBuilder._settings
+_OBJC_IVAR_$_FSQPServicesBuilder._keepAliveManager
+_OBJC_IVAR_$_FSQPServicesBuilder._coreLogger
+_OBJC_IVAR_$_FSQPServicesBuilder._logger
+_OBJC_IVAR_$_FSQPServicesBuilder._publicLogger
+_OBJC_IVAR_$_FSQPServices._settings
+_OBJC_IVAR_$_FSQPServices._keepAliveManager
+_OBJC_IVAR_$_FSQPServices._coreLogger
+_OBJC_IVAR_$_FSQPServices._logger
+_OBJC_IVAR_$_FSQPServices._publicLogger
+/tmp/sandbox/workspace/PilgrimSDK/PilgrimSDK/Private/Services/FSQPServices.m
+/tmp/sandbox/workspace/PilgrimSDK/PilgrimSDK/Private/Services/FSQPServices.h
+__destroy_helper_block_e4_
+__copy_helper_block_e4_
+__29+[FSQPServicesBuilder shared]_block_invoke
+/Applications/Xcode-10.2.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/usr/include/dispatch/once.h
++[NSString(FSQP) fsqp_queryEncodeString:]
+-[NSString(FSQP) fsqp_queryEncoded]
+-[NSString(FSQP) isEmpty]
+-[NSString(FSQP) isNotEmpty]
+/tmp/sandbox/workspace/PilgrimSDK/PilgrimSDK/Private/Foundation/NSString+FSQP.m
+-[FSQPMultistopManager initWithServices:api:]
+-[FSQPMultistopManager enable]
+-[FSQPMultistopManager disable]
+-[FSQPMultistopManager processLocation:]
+-[FSQPMultistopManager flushCache]
+___34-[FSQPMultistopManager flushCache]_block_invoke
+___copy_helper_block_e4_20w
+___destroy_helper_block_e4_20w
+-[FSQPMultistopManager services]
+-[FSQPMultistopManager api]
+-[FSQPMultistopManager isEnabled]
+-[FSQPMultistopManager setIsEnabled:]
+-[FSQPMultistopManager cache]
+-[FSQPMultistopManager setCache:]
+-[FSQPMultistopManager .cxx_destruct]
+_OBJC_IVAR_$_FSQPMultistopManager._services
+_OBJC_IVAR_$_FSQPMultistopManager._api
+_OBJC_IVAR_$_FSQPMultistopManager._isEnabled
+_OBJC_IVAR_$_FSQPMultistopManager._cache
+___block_descriptor_24_e4_20w_e34_v8@?0@"FSQPFoursquareAPIResponse"4l
+/tmp/sandbox/workspace/PilgrimSDK/PilgrimSDK/Private/FSQPMultistopManager.m
+/tmp/sandbox/workspace/PilgrimSDK/PilgrimSDK/Private/FSQPMultistopManager.h
+__destroy_helper_block_e4_20w
+__copy_helper_block_e4_20w
+__34-[FSQPMultistopManager flushCache]_block_invoke
+-[FSQPLocationScan initWithLocation:wifiScan:]
+-[FSQPLocationScan initWithLocation:wifiScan:scanDate:]
+-[FSQPLocationScan copy]
+-[FSQPLocationScan requestMapping]
+-[FSQPLocationScan location]
+-[FSQPLocationScan scanDate]
+-[FSQPLocationScan wifiScan]
+-[FSQPLocationScan .cxx_destruct]
+-[FSQPLocationScanner generateLocationScan:]
+___44-[FSQPLocationScanner generateLocationScan:]_block_invoke
+___copy_helper_block_e4_20b
+___destroy_helper_block_e4_20s
+-[FSQPLocationScanner singleLocationSubscriber]
+-[FSQPLocationScanner setSingleLocationSubscriber:]
+-[FSQPLocationScanner .cxx_destruct]
+_OBJC_IVAR_$_FSQPLocationScan._location
+_OBJC_IVAR_$_FSQPLocationScan._wifiScan
+_OBJC_IVAR_$_FSQPLocationScan._scanDate
+___block_descriptor_24_e4_20bs_e47_v20@?0c4@"CLLocation"8@"NSNumber"12@"NSError"16l
+_OBJC_IVAR_$_FSQPLocationScanner._singleLocationSubscriber
+/tmp/sandbox/workspace/PilgrimSDK/PilgrimSDK/Foursquare Passive/FSQPLocationScanner.m
+__destroy_helper_block_e4_20s
+__copy_helper_block_e4_20b
+__44-[FSQPLocationScanner generateLocationScan:]_block_invoke
+/tmp/sandbox/workspace/PilgrimSDK/PilgrimSDK/Foursquare Passive/FSQPLocationScanner.h
+-[FSQPEventReport initWithMessage:timestamp:eventType:]
+-[FSQPEventReport JSONObjectDictionary]
++[FSQPEventReport valueForEventType:]
++[FSQPEventReport supportsSecureCoding]
+-[FSQPEventReport encodeWithCoder:]
+-[FSQPEventReport initWithCoder:]
+-[FSQPEventReport isEqualToEventReport:]
+-[FSQPEventReport message]
+-[FSQPEventReport setMessage:]
+-[FSQPEventReport timestamp]
+-[FSQPEventReport setTimestamp:]
+-[FSQPEventReport eventType]
+-[FSQPEventReport setEventType:]
+-[FSQPEventReport .cxx_destruct]
+_OBJC_IVAR_$_FSQPEventReport._message
+_OBJC_IVAR_$_FSQPEventReport._timestamp
+_OBJC_IVAR_$_FSQPEventReport._eventType
+/tmp/sandbox/workspace/PilgrimSDK/PilgrimSDK/Private/FSQPEventReport.m
+/private/tmp/sandbox/workspace/PilgrimSDK/PilgrimSDK/Private/FSQPEventReport.h
++[FSQPReachability reachabilityWithHostName:]
++[FSQPReachability reachabilityWithAddress:]
++[FSQPReachability reachabilityForInternetConnection]
++[FSQPReachability reachabilityForLocalWiFi]
+-[FSQPReachability startNotifier]
+_FSQPReachabilityCallback
+-[FSQPReachability stopNotifier]
+-[FSQPReachability dealloc]
+-[FSQPReachability localWiFiStatusForFlags:]
+_PrintReachabilityFlags
+-[FSQPReachability networkStatusForFlags:]
+-[FSQPReachability connectionRequired]
+-[FSQPReachability currentReachabilityStatus]
+_OBJC_IVAR_$_FSQPReachability._reachabilityRef
+_OBJC_IVAR_$_FSQPReachability._alwaysReturnLocalWiFiStatus
+/tmp/sandbox/workspace/PilgrimSDK/PilgrimSDK/Foursquare Passive/FSQPReachability.m
+PrintReachabilityFlags
+FSQPReachabilityCallback
+-[FSQPTimerBlockRunner runBlock:]
+-[FSQPTimerBlockRunner timerBlock]
+-[FSQPTimerBlockRunner setTimerBlock:]
+-[FSQPTimerBlockRunner .cxx_destruct]
++[NSTimer(FSQP) fs_scheduledTimerWithTimeInterval:repeats:block:]
+_OBJC_IVAR_$_FSQPTimerBlockRunner._timerBlock
+/tmp/sandbox/workspace/PilgrimSDK/PilgrimSDK/Private/Foundation/NSTimer+FSQP.m
+-[FSQPExperimentManager initWithSettings:]
+-[FSQPExperimentManager experimentForKey:]
+-[FSQPExperimentManager objectForKeyedSubscript:]
+-[FSQPExperimentManager processResponse:]
+-[FSQPExperimentManager persistExperiments:atPath:]
+-[FSQPExperimentManager loadExperimentsAtPath:]
+-[FSQPExperimentManager settings]
+-[FSQPExperimentManager experiments]
+-[FSQPExperimentManager setExperiments:]
+-[FSQPExperimentManager defaultExperiments]
+-[FSQPExperimentManager setDefaultExperiments:]
+-[FSQPExperimentManager .cxx_destruct]
+_OBJC_IVAR_$_FSQPExperimentManager._settings
+_OBJC_IVAR_$_FSQPExperimentManager._experiments
+_OBJC_IVAR_$_FSQPExperimentManager._defaultExperiments
+/tmp/sandbox/workspace/PilgrimSDK/PilgrimSDK/Private/Settings/FSQPExperimentManager.m
+-[FSQPReachability(FSQP) isReachable]
+-[FSQPReachability(FSQP) isReachableViaWWAN]
+-[FSQPReachability(FSQP) isReachableViaWiFi]
+/tmp/sandbox/workspace/PilgrimSDK/PilgrimSDK/Foursquare Passive/FSQPReachability+FS.m
+-[FSQPUserInfo source]
+-[FSQPUserInfo init]
+-[FSQPUserInfo initWithBackingStore:]
+-[FSQPUserInfo setUserInfo:forKey:]
+_validateKey
+-[FSQPUserInfo removeKey:]
+-[FSQPUserInfo setUserId:]
+-[FSQPUserInfo setGender:]
+-[FSQPUserInfo setBirthday:]
+-[FSQPUserInfo backingStore]
+-[FSQPUserInfo .cxx_destruct]
+_OBJC_IVAR_$_FSQPUserInfo._backingStore
+/tmp/sandbox/workspace/PilgrimSDK/PilgrimSDK/Public/FSQPUserInfo.m
+/tmp/sandbox/workspace/PilgrimSDK/PilgrimSDK/Private/Internal Headers/FSQPUserInfo_Private.h
+validateKey
++[FSQPExperimentManager(Experiments) defaultExperiments]
+/tmp/sandbox/workspace/PilgrimSDK/PilgrimSDK/Private/Settings/FSQPExperimentManager+Experiments.m
+-[FSQPCLVisit initWithCLVisitID:clVisit:]
+-[FSQPCLVisit initWithVisit:]
+-[FSQPCLVisit initWithCoder:]
+-[FSQPCLVisit encodeWithCoder:]
++[FSQPCLVisit supportsSecureCoding]
+-[FSQPCLVisit isEqualToCLVisit:]
+-[FSQPCLVisit isEqual:]
+-[FSQPCLVisit hash]
+-[FSQPCLVisit visitID]
+-[FSQPCLVisit visit]
+-[FSQPCLVisit .cxx_destruct]
+_OBJC_IVAR_$_FSQPCLVisit._visitID
+_OBJC_IVAR_$_FSQPCLVisit._visit
+/tmp/sandbox/workspace/PilgrimSDK/PilgrimSDK/Private/FSQPCLVisit.m
+/tmp/sandbox/workspace/PilgrimSDK/PilgrimSDK/Private/FSQPCLVisit.h
+-[FSQPErrorReport initWithMessage:timestamp:className:eventType:breadcrumbLogs:]
+-[FSQPErrorReport initWithMessage:className:]
+-[FSQPErrorReport initFatalErrorWithMessage:className:]
+-[FSQPErrorReport initWithMessage:className:includeBreadcrumbs:]
+-[FSQPErrorReport initFatalErrorWithMessage:className:includeBreadcrumbs:]
+-[FSQPErrorReport JSONObjectDictionary]
++[FSQPErrorReport supportsSecureCoding]
+-[FSQPErrorReport encodeWithCoder:]
+-[FSQPErrorReport initWithCoder:]
+-[FSQPErrorReport populateStackFramesWith:]
+-[FSQPErrorReport stackFrames]
+-[FSQPErrorReport setStackFrames:]
+-[FSQPErrorReport breadcrumbLogs]
+-[FSQPErrorReport setBreadcrumbLogs:]
+-[FSQPErrorReport exception]
+-[FSQPErrorReport setException:]
+-[FSQPErrorReport error]
+-[FSQPErrorReport setError:]
+-[FSQPErrorReport className]
+-[FSQPErrorReport setClassName:]
+-[FSQPErrorReport .cxx_destruct]
+_OBJC_IVAR_$_FSQPErrorReport._breadcrumbLogs
+_OBJC_IVAR_$_FSQPErrorReport._className
+_OBJC_IVAR_$_FSQPErrorReport._stackFrames
+_OBJC_IVAR_$_FSQPErrorReport._exception
+_OBJC_IVAR_$_FSQPErrorReport._error
+/tmp/sandbox/workspace/PilgrimSDK/PilgrimSDK/Private/FSQPErrorReport.m
+/tmp/sandbox/workspace/PilgrimSDK/PilgrimSDK/Private/FSQPErrorReport.h
+getLoadAddressForLibrary
+-[FSQPGeofenceCache init]
+-[FSQPGeofenceCache setGeofenceRegion:]
+-[FSQPGeofenceCache geofenceRegion]
+-[FSQPGeofenceCache setGeofences:]
+-[FSQPGeofenceCache geofences]
+-[FSQPGeofenceCache cachedEvents]
+-[FSQPGeofenceCache eventTriggered:]
+___36-[FSQPGeofenceCache eventTriggered:]_block_invoke
+___copy_helper_block_e4_20s
+___36-[FSQPGeofenceCache eventTriggered:]_block_invoke.69
+-[FSQPGeofenceCache hasAlreadyEnteredGeofence:]
+-[FSQPGeofenceCache hasAlreadyDwelledGeofence:]
+-[FSQPGeofenceCache hasDwelledGeofence:withLocation:]
+___53-[FSQPGeofenceCache hasDwelledGeofence:withLocation:]_block_invoke
+-[FSQPGeofenceCache enteredGeofences]
+___37-[FSQPGeofenceCache enteredGeofences]_block_invoke
+___37-[FSQPGeofenceCache enteredGeofences]_block_invoke_2
+-[FSQPGeofenceCache hasGeofence:withEventType:]
+___47-[FSQPGeofenceCache hasGeofence:withEventType:]_block_invoke
+-[FSQPGeofenceCache setApiFailedEventsQueue:]
+-[FSQPGeofenceCache apiFailedEventsQueue]
++[FSQPGeofenceCache fsqp_archivePath:]
+-[FSQPGeofenceCache setLastGeofenceChecksum:]
+-[FSQPGeofenceCache lastGeofenceChecksum]
+-[FSQPGeofenceCache clear]
+-[FSQPGeofenceCache migrateFrom:to:]
+-[FSQPGeofenceCache cachedGeofenceRegion]
+-[FSQPGeofenceCache setCachedGeofenceRegion:]
+-[FSQPGeofenceCache cachedGeofences]
+-[FSQPGeofenceCache setCachedGeofences:]
+-[FSQPGeofenceCache setCachedEvents:]
+-[FSQPGeofenceCache userDefaults]
+-[FSQPGeofenceCache setUserDefaults:]
+-[FSQPGeofenceCache .cxx_destruct]
+_OBJC_IVAR_$_FSQPGeofenceCache._userDefaults
+_OBJC_IVAR_$_FSQPGeofenceCache._cachedEvents
+___block_descriptor_24_e4_20s_e26_c8@?0@"FSQPGeofenceEvent"4l
+___block_descriptor_20_e26_c8@?0@"FSQPGeofenceEvent"4l
+___block_literal_global
+___block_descriptor_20_e40_@"FSQPGeofence"8@?0@"FSQPGeofenceEvent"4l
+___block_literal_global.85
+___block_descriptor_28_e4_20s_e26_c8@?0@"FSQPGeofenceEvent"4l
+_OBJC_IVAR_$_FSQPGeofenceCache._cachedGeofenceRegion
+_OBJC_IVAR_$_FSQPGeofenceCache._cachedGeofences
+l_OBJC_PROTOCOL_$_FSQPMigratable
+l_OBJC_LABEL_PROTOCOL_$_FSQPMigratable
+/tmp/sandbox/workspace/PilgrimSDK/PilgrimSDK/Private/Geofences/FSQPGeofenceCache.m
+__47-[FSQPGeofenceCache hasGeofence:withEventType:]_block_invoke
+__37-[FSQPGeofenceCache enteredGeofences]_block_invoke_2
+__37-[FSQPGeofenceCache enteredGeofences]_block_invoke
+__53-[FSQPGeofenceCache hasDwelledGeofence:withLocation:]_block_invoke
+__36-[FSQPGeofenceCache eventTriggered:]_block_invoke.69
+__copy_helper_block_e4_20s
+__36-[FSQPGeofenceCache eventTriggered:]_block_invoke
++[CLLocation(FSQP) stringForBearingInDegrees:]
++[CLLocation(FSQP) withCoordinate:]
+-[CLLocation(FSQP) apiString]
+-[CLLocation(FSQP) age]
+-[CLLocation(FSQP) locationByReplacingCoordinate:]
+-[CLLocation(FSQP) locationByReplacingLat:lon:]
++[CLLocation(FSQP) fsqpLatLonStringFromCoordinate:]
++[CLLocation(FSQP) coordinate:equals:]
+-[CLLocation(FSQP) hasCoordinate:]
++[CLLocation(FSQP) venueSearchDesiredAccuracy]
++[CLLocation(FSQP) venueSearchMaximumAcceptableAccuracy]
++[CLLocation(FSQP) venueSearchMaximumAcceptableLocationRecency]
++[CLLocation(FSQP) venueSearchCutoffTime]
++[CLLocation(FSQP) currentLocationDesiredAccuracy]
++[CLLocation(FSQP) currentLocationMaximumAcceptableAccuracy]
++[CLLocation(FSQP) currentLocationMaximumAcceptableLocationRecency]
++[CLLocation(FSQP) currentLocationCutoffTime]
+-[CLLocation(FSQP) dictionaryForTrailLocationJSON]
+-[CLLocation(FSQP) isEqual:]
+/tmp/sandbox/workspace/PilgrimSDK/PilgrimSDK/Private/Foundation/Core Location/CLLocation+FS.m
+-[FSQPGeofenceManager initWithServices:foursquareAPI:cache:]
+-[FSQPGeofenceManager areGeofencesEnabled]
+-[FSQPGeofenceManager needsToUpdateGeofences:]
+-[FSQPGeofenceManager processLocation:]
+-[FSQPGeofenceManager runClientGeofencesWithLocation:]
+___54-[FSQPGeofenceManager runClientGeofencesWithLocation:]_block_invoke
+___copy_helper_block_e4_20s24s28s
+___destroy_helper_block_e4_20s24s28s
+-[FSQPGeofenceManager updateGeofencesWithLocation:]
+___51-[FSQPGeofenceManager updateGeofencesWithLocation:]_block_invoke
+___51-[FSQPGeofenceManager updateGeofencesWithLocation:]_block_invoke_2
+___copy_helper_block_e4_20b24s
+___destroy_helper_block_e4_20s24s
+___copy_helper_block_e4_20s24s
+-[FSQPGeofenceManager sendTriggeredEvents:]
+___43-[FSQPGeofenceManager sendTriggeredEvents:]_block_invoke
+-[FSQPGeofenceManager delegate]
+-[FSQPGeofenceManager setDelegate:]
+-[FSQPGeofenceManager cache]
+-[FSQPGeofenceManager setCache:]
+-[FSQPGeofenceManager services]
+-[FSQPGeofenceManager setServices:]
+-[FSQPGeofenceManager foursquareAPI]
+-[FSQPGeofenceManager setFoursquareAPI:]
+-[FSQPGeofenceManager .cxx_destruct]
+_OBJC_IVAR_$_FSQPGeofenceManager._services
+_OBJC_IVAR_$_FSQPGeofenceManager._foursquareAPI
+_OBJC_IVAR_$_FSQPGeofenceManager._cache
+___block_descriptor_32_e4_20s24s28s_e34_v8@?0@"FSQPFoursquareAPIResponse"4l
+___block_descriptor_28_e4_20bs24s_e34_v8@?0@"FSQPFoursquareAPIResponse"4l
+___block_descriptor_28_e4_20s24s_e17_v16@?0@?<v@?i>4d8l
+___block_descriptor_28_e4_20s24s_e34_v8@?0@"FSQPFoursquareAPIResponse"4l
+_OBJC_IVAR_$_FSQPGeofenceManager._delegate
+/tmp/sandbox/workspace/PilgrimSDK/PilgrimSDK/Private/Geofences/FSQPGeofenceManager.m
+/tmp/sandbox/workspace/PilgrimSDK/PilgrimSDK/Private/Geofences/FSQPGeofenceManager.h
+__43-[FSQPGeofenceManager sendTriggeredEvents:]_block_invoke
+__copy_helper_block_e4_20s24s
+__destroy_helper_block_e4_20s24s
+__copy_helper_block_e4_20b24s
+__51-[FSQPGeofenceManager updateGeofencesWithLocation:]_block_invoke_2
+__51-[FSQPGeofenceManager updateGeofencesWithLocation:]_block_invoke
+__destroy_helper_block_e4_20s24s28s
+__copy_helper_block_e4_20s24s28s
+__54-[FSQPGeofenceManager runClientGeofencesWithLocation:]_block_invoke
+-[FSQPExperiment initWithKey:isEnabled:]
++[FSQPExperiment missingExperimentWithKey:]
+-[FSQPExperiment isDisabled]
++[FSQPExperiment supportsSecureCoding]
+-[FSQPExperiment initWithCoder:]
+-[FSQPExperiment encodeWithCoder:]
+-[FSQPExperiment description]
+-[FSQPExperiment key]
+-[FSQPExperiment isEnabled]
+-[FSQPExperiment .cxx_destruct]
+_OBJC_IVAR_$_FSQPExperiment._key
+_OBJC_IVAR_$_FSQPExperiment._isEnabled
+/tmp/sandbox/workspace/PilgrimSDK/PilgrimSDK/Private/Settings/FSQPExperiment.m
+/tmp/sandbox/workspace/PilgrimSDK/PilgrimSDK/Private/Settings/FSQPExperiment.h
+-[CLBeacon(FSQP) identifier]
+-[CLBeacon(FSQP) proximityAsString]
+/tmp/sandbox/workspace/PilgrimSDK/PilgrimSDK/Private/Foundation/Core Location/CLBeacon+FS.m
+-[FSQPUserInfoCache setUserInfo:]
+-[FSQPUserInfoCache userInfo]
++[FSQPUserInfoCache fsqp_archivePath:]
+/tmp/sandbox/workspace/PilgrimSDK/PilgrimSDK/Private/FSQPUserInfoCache.m
+-[FSQPGeofenceResult initWithGeofenceRegion:geofences:geofenceChecksum:]
++[FSQPGeofenceResult resultWithResponse:]
+___41+[FSQPGeofenceResult resultWithResponse:]_block_invoke
+-[FSQPGeofenceResult geofenceRegion]
+-[FSQPGeofenceResult geofences]
+-[FSQPGeofenceResult geofenceChecksum]
+-[FSQPGeofenceResult .cxx_destruct]
+_OBJC_IVAR_$_FSQPGeofenceResult._geofenceRegion
+_OBJC_IVAR_$_FSQPGeofenceResult._geofences
+_OBJC_IVAR_$_FSQPGeofenceResult._geofenceChecksum
+___block_descriptor_20_e21_@8@?0@"NSDictionary"4l
+/tmp/sandbox/workspace/PilgrimSDK/PilgrimSDK/Private/Networking/Models/FSQPGeofenceResult.m
+/tmp/sandbox/workspace/PilgrimSDK/PilgrimSDK/Private/Networking/Models/FSQPGeofenceResult.h
+__41+[FSQPGeofenceResult resultWithResponse:]_block_invoke
+-[FSQPWifiScan initWithSSID:BSSID:scanDate:]
+-[FSQPWifiScan requestParam]
+-[FSQPWifiScan copy]
+-[FSQPWifiScan ssid]
+-[FSQPWifiScan bssid]
+-[FSQPWifiScan scanDate]
+-[FSQPWifiScan .cxx_destruct]
++[FSQPWifiManager sharedManager]
+___32+[FSQPWifiManager sharedManager]_block_invoke
++[FSQPWifiManager wifiScan]
++[FSQPWifiManager wifiScanWithScanner:]
+-[FSQPWifiManager currentSSID]
+-[FSQPWifiManager currentBSSID]
+_OBJC_IVAR_$_FSQPWifiScan._ssid
+_OBJC_IVAR_$_FSQPWifiScan._bssid
+_OBJC_IVAR_$_FSQPWifiScan._scanDate
+_sharedManager.once
+_sharedManager.sharedInstance
+l_OBJC_PROTOCOL_$_FSQPWifiScanner
+l_OBJC_LABEL_PROTOCOL_$_FSQPWifiScanner
+/tmp/sandbox/workspace/PilgrimSDK/PilgrimSDK/Foursquare Passive/FSQPWifi.m
+__32+[FSQPWifiManager sharedManager]_block_invoke
+/tmp/sandbox/workspace/PilgrimSDK/PilgrimSDK/Foursquare Passive/FSQPWifi.h
+-[FSQPVisitTester initWithServices:api:]
+-[FSQPVisitTester fireTestDeparture:dwellTime:]
+-[FSQPVisitTester fireTestVisit:]
+___33-[FSQPVisitTester fireTestVisit:]_block_invoke
+-[FSQPVisitTester fireTestVisit:locationType:isDeparture:]
+-[FSQPVisitTester foursquareAPI]
+-[FSQPVisitTester services]
+-[FSQPVisitTester .cxx_destruct]
+_OBJC_IVAR_$_FSQPVisitTester._foursquareAPI
+_OBJC_IVAR_$_FSQPVisitTester._services
+/tmp/sandbox/workspace/PilgrimSDK/PilgrimSDK/Public/FSQPVisitTester.m
+__33-[FSQPVisitTester fireTestVisit:]_block_invoke
++[FSQPSystemSettingsMonitor shared]
+___35+[FSQPSystemSettingsMonitor shared]_block_invoke
+-[FSQPSystemSettingsMonitor login]
+-[FSQPSystemSettingsMonitor logout]
+-[FSQPSystemSettingsMonitor updateStatusAndSendNotifications]
+-[FSQPSystemSettingsMonitor backgroundAppRefreshAvailable]
+-[FSQPSystemSettingsMonitor backgroundAppRefreshDisabled]
+-[FSQPSystemSettingsMonitor locationServicesAvailable]
+-[FSQPSystemSettingsMonitor backgroundLocationAvailable]
+-[FSQPSystemSettingsMonitor locationServicesDisabled]
+-[FSQPSystemSettingsMonitor backgroundRefreshStatus]
+-[FSQPSystemSettingsMonitor pushNotificationsEnabled]
+-[FSQPSystemSettingsMonitor locationAuthorizationStatus]
+-[FSQPSystemSettingsMonitor previousBackgroundRefreshStatus]
+-[FSQPSystemSettingsMonitor setPreviousBackgroundRefreshStatus:]
+-[FSQPSystemSettingsMonitor previousPushNotificationsEnabled]
+-[FSQPSystemSettingsMonitor setPreviousPushNotificationsEnabled:]
+-[FSQPSystemSettingsMonitor previousLocationAuthorizationStatus]
+-[FSQPSystemSettingsMonitor setPreviousLocationAuthorizationStatus:]
+_OBJC_IVAR_$_FSQPSystemSettingsMonitor._previousBackgroundRefreshStatus
+_OBJC_IVAR_$_FSQPSystemSettingsMonitor._previousPushNotificationsEnabled
+_OBJC_IVAR_$_FSQPSystemSettingsMonitor._previousLocationAuthorizationStatus
+/tmp/sandbox/workspace/PilgrimSDK/PilgrimSDK/Foursquare Passive/FSQPSystemSettingsMonitor.m
+__35+[FSQPSystemSettingsMonitor shared]_block_invoke
+-[FSQPParamLogger init]
+-[FSQPParamLogger save]
+-[FSQPParamLogger dealloc]
+-[FSQPParamLogger locations]
++[FSQPParamLogger locationFilterPredicate]
++[FSQPParamLogger continuousLocationCount]
++[FSQPParamLogger logContinuousLocationCount:]
++[FSQPParamLogger clearContinuousLocationCount]
+-[FSQPParamLogger logLocation:]
+___31-[FSQPParamLogger logLocation:]_block_invoke
+-[FSQPParamLogger loggedLocations]
+-[FSQPParamLogger clearLoggedLocations]
+-[FSQPParamLogger batteryLevels]
+-[FSQPParamLogger logBatteryLevel:]
+___35-[FSQPParamLogger logBatteryLevel:]_block_invoke
+-[FSQPParamLogger loggedBatteryLevels]
+-[FSQPParamLogger clearLoggedBatteryLevels]
+-[FSQPParamLogger archivePathWithFileName:]
+-[FSQPParamLogger setLocations:]
+-[FSQPParamLogger setBatteryLevels:]
+-[FSQPParamLogger locationsNeedSave]
+-[FSQPParamLogger setLocationsNeedSave:]
+-[FSQPParamLogger batteryLevelsNeedSave]
+-[FSQPParamLogger setBatteryLevelsNeedSave:]
+-[FSQPParamLogger .cxx_destruct]
+_OBJC_IVAR_$_FSQPParamLogger._locations
+___block_descriptor_24_e4_20s_e5_v4@?0l
+_OBJC_IVAR_$_FSQPParamLogger._batteryLevels
+_OBJC_IVAR_$_FSQPParamLogger._locationsNeedSave
+_OBJC_IVAR_$_FSQPParamLogger._batteryLevelsNeedSave
+/tmp/sandbox/workspace/PilgrimSDK/PilgrimSDK/Foursquare Passive/FSQPParamLogger.m
+__35-[FSQPParamLogger logBatteryLevel:]_block_invoke
+__31-[FSQPParamLogger logLocation:]_block_invoke
++[FSQPBatteryManager shared]
+___28+[FSQPBatteryManager shared]_block_invoke
+-[FSQPBatteryManager init]
+-[FSQPBatteryManager dealloc]
+-[FSQPBatteryManager batteryLevelAsParameterValue]
+-[FSQPBatteryManager batteryStateAsParameterValue]
+-[FSQPBatteryManager hasSufficientBatteryLevel]
+-[FSQPBatteryManager hasUserEnabledLowPowerMode]
+-[FSQPBatteryManager checkForChangeInBatteryLevel]
+-[FSQPBatteryManager lastReportedHasSufficientBatteryLabel]
+-[FSQPBatteryManager setLastReportedHasSufficientBatteryLabel:]
+_OBJC_IVAR_$_FSQPBatteryManager._lastReportedHasSufficientBatteryLabel
+/tmp/sandbox/workspace/PilgrimSDK/PilgrimSDK/Foursquare Passive/FSQPBatteryManager.m
+__28+[FSQPBatteryManager shared]_block_invoke
++[FSQPCoreLocationSubscriber shared]
+___36+[FSQPCoreLocationSubscriber shared]_block_invoke
+-[FSQPCoreLocationSubscriber init]
+-[FSQPCoreLocationSubscriber settingsDidChange]
+-[FSQPCoreLocationSubscriber login]
+-[FSQPCoreLocationSubscriber logout]
+-[FSQPCoreLocationSubscriber resetProperties]
+-[FSQPCoreLocationSubscriber isSupportedDevice]
+-[FSQPCoreLocationSubscriber isOSBackgroundLocationSettingEnabled]
+-[FSQPCoreLocationSubscriber enabled]
+-[FSQPCoreLocationSubscriber startEngineShouldRestoreState:]
+-[FSQPCoreLocationSubscriber stopEngine]
+-[FSQPCoreLocationSubscriber lastReportedStillSailingTime]
+-[FSQPCoreLocationSubscriber setLastReportedStillSailingTime:]
+-[FSQPCoreLocationSubscriber subscribeToApplicationTerminateNotification]
+-[FSQPCoreLocationSubscriber unsubscribeFromApplicationTerminateNotification]
+-[FSQPCoreLocationSubscriber subscribeToReachabilityNotification]
+-[FSQPCoreLocationSubscriber unsubscribeFromReachabilityNotification]
+-[FSQPCoreLocationSubscriber subscribeToAuthorizationChange]
+-[FSQPCoreLocationSubscriber unsubscribeFromAuthorizationChange]
+-[FSQPCoreLocationSubscriber locationOSSettingsDidChange]
+-[FSQPCoreLocationSubscriber reachabilityDidChange:]
+-[FSQPCoreLocationSubscriber applicationWillTerminate:]
+-[FSQPCoreLocationSubscriber logNewLocation:]
+___45-[FSQPCoreLocationSubscriber logNewLocation:]_block_invoke
+-[FSQPCoreLocationSubscriber updateLocation:withTrigger:]
+-[FSQPCoreLocationSubscriber shouldUpdateLocation:withTrigger:]
+-[FSQPCoreLocationSubscriber startUpdateLocationTransaction:trigger:]
+-[FSQPCoreLocationSubscriber loggedParams]
+-[FSQPCoreLocationSubscriber updateLocationForStop:]
+___52-[FSQPCoreLocationSubscriber updateLocationForStop:]_block_invoke
+___52-[FSQPCoreLocationSubscriber updateLocationForStop:]_block_invoke_2
+___copy_helper_block_e4_20s24w
+___destroy_helper_block_e4_20s24w
+-[FSQPCoreLocationSubscriber updateLocationForExit:]
+___52-[FSQPCoreLocationSubscriber updateLocationForExit:]_block_invoke
+-[FSQPCoreLocationSubscriber processSearchResult:]
+-[FSQPCoreLocationSubscriber logSearchResult:apiResponse:]
+-[FSQPCoreLocationSubscriber validateAuthorization:]
+-[FSQPCoreLocationSubscriber handleConnectionResponseForStop:withSearchResult:]
+-[FSQPCoreLocationSubscriber handleConnectionResponseForExit:withSearchResult:]
+-[FSQPCoreLocationSubscriber queueDepartureVisitForRetry:]
+-[FSQPCoreLocationSubscriber sendNextQueuedDepartureVisit]
+___58-[FSQPCoreLocationSubscriber sendNextQueuedDepartureVisit]_block_invoke
+-[FSQPCoreLocationSubscriber locationManagerDidVisit:]
+-[FSQPCoreLocationSubscriber significantLocationManager:didUpdateSignificantLocations:]
+-[FSQPCoreLocationSubscriber startMonitoringArrival]
+-[FSQPCoreLocationSubscriber stopMonitoringArrival]
+-[FSQPCoreLocationSubscriber processLocation:]
+-[FSQPCoreLocationSubscriber disabledMonitoringAt:]
+-[FSQPCoreLocationSubscriber multistopManager]
+-[FSQPCoreLocationSubscriber geofenceManager:didReceieveGeofenceEvents:]
+-[FSQPCoreLocationSubscriber clVisitManager]
+-[FSQPCoreLocationSubscriber locationProducer]
+-[FSQPCoreLocationSubscriber setLocationProducer:]
+-[FSQPCoreLocationSubscriber updateThrottleTimeInterval]
+-[FSQPCoreLocationSubscriber setUpdateThrottleTimeInterval:]
+-[FSQPCoreLocationSubscriber shouldMonitorVisits]
+-[FSQPCoreLocationSubscriber setShouldMonitorVisits:]
+-[FSQPCoreLocationSubscriber foursquareAPI]
+-[FSQPCoreLocationSubscriber setFoursquareAPI:]
+-[FSQPCoreLocationSubscriber homeWorkModel]
+-[FSQPCoreLocationSubscriber setHomeWorkModel:]
+-[FSQPCoreLocationSubscriber geofenceManager]
+-[FSQPCoreLocationSubscriber setGeofenceManager:]
+-[FSQPCoreLocationSubscriber delegate]
+-[FSQPCoreLocationSubscriber setDelegate:]
+-[FSQPCoreLocationSubscriber failedVisitsQueue]
+-[FSQPCoreLocationSubscriber setFailedVisitsQueue:]
+-[FSQPCoreLocationSubscriber reachability]
+-[FSQPCoreLocationSubscriber setReachability:]
+-[FSQPCoreLocationSubscriber lastUpdatedTime]
+-[FSQPCoreLocationSubscriber setLastUpdatedTime:]
+-[FSQPCoreLocationSubscriber lastLoggedHistoryLocationTime]
+-[FSQPCoreLocationSubscriber setLastLoggedHistoryLocationTime:]
+-[FSQPCoreLocationSubscriber lastLoggedBatteryLevelTime]
+-[FSQPCoreLocationSubscriber setLastLoggedBatteryLevelTime:]
+-[FSQPCoreLocationSubscriber isStarted]
+-[FSQPCoreLocationSubscriber setIsStarted:]
+-[FSQPCoreLocationSubscriber subscribedToLocationServicesChangeNotification]
+-[FSQPCoreLocationSubscriber setSubscribedToLocationServicesChangeNotification:]
+-[FSQPCoreLocationSubscriber isProcessingRequest]
+-[FSQPCoreLocationSubscriber setIsProcessingRequest:]
+-[FSQPCoreLocationSubscriber isProcessingFailedVisits]
+-[FSQPCoreLocationSubscriber setIsProcessingFailedVisits:]
+-[FSQPCoreLocationSubscriber paramLogger]
+-[FSQPCoreLocationSubscriber setParamLogger:]
+-[FSQPCoreLocationSubscriber significantLocationManager]
+-[FSQPCoreLocationSubscriber setSignificantLocationManager:]
+-[FSQPCoreLocationSubscriber arrivalMonitor]
+-[FSQPCoreLocationSubscriber setArrivalMonitor:]
+-[FSQPCoreLocationSubscriber .cxx_destruct]
+_OBJC_IVAR_$_FSQPCoreLocationSubscriber._lastReportedStillSailingTime
+___block_descriptor_24_e4_20s_e34_v8@?0@"FSQPFoursquareAPIResponse"4l
+___block_descriptor_28_e4_20s24w_e22_v12@?0i4@"FSQPRegion"8l
+___block_descriptor_28_e4_20s24w_e34_v8@?0@"FSQPFoursquareAPIResponse"4l
+_OBJC_IVAR_$_FSQPCoreLocationSubscriber._multistopManager
+_OBJC_IVAR_$_FSQPCoreLocationSubscriber._clVisitManager
+_OBJC_IVAR_$_FSQPCoreLocationSubscriber._locationProducer
+_OBJC_IVAR_$_FSQPCoreLocationSubscriber._updateThrottleTimeInterval
+_OBJC_IVAR_$_FSQPCoreLocationSubscriber._shouldMonitorVisits
+_OBJC_IVAR_$_FSQPCoreLocationSubscriber._foursquareAPI
+_OBJC_IVAR_$_FSQPCoreLocationSubscriber._homeWorkModel
+_OBJC_IVAR_$_FSQPCoreLocationSubscriber._geofenceManager
+_OBJC_IVAR_$_FSQPCoreLocationSubscriber._delegate
+_OBJC_IVAR_$_FSQPCoreLocationSubscriber._failedVisitsQueue
+_OBJC_IVAR_$_FSQPCoreLocationSubscriber._reachability
+_OBJC_IVAR_$_FSQPCoreLocationSubscriber._lastUpdatedTime
+_OBJC_IVAR_$_FSQPCoreLocationSubscriber._lastLoggedHistoryLocationTime
+_OBJC_IVAR_$_FSQPCoreLocationSubscriber._lastLoggedBatteryLevelTime
+_OBJC_IVAR_$_FSQPCoreLocationSubscriber._isStarted
+_OBJC_IVAR_$_FSQPCoreLocationSubscriber._subscribedToLocationServicesChangeNotification
+_OBJC_IVAR_$_FSQPCoreLocationSubscriber._isProcessingRequest
+_OBJC_IVAR_$_FSQPCoreLocationSubscriber._isProcessingFailedVisits
+_OBJC_IVAR_$_FSQPCoreLocationSubscriber._paramLogger
+_OBJC_IVAR_$_FSQPCoreLocationSubscriber._significantLocationManager
+_OBJC_IVAR_$_FSQPCoreLocationSubscriber._arrivalMonitor
+l_OBJC_PROTOCOL_$_FSQPLocationMonitorConsumer
+l_OBJC_LABEL_PROTOCOL_$_FSQPLocationMonitorConsumer
+l_OBJC_PROTOCOL_$_FSQPGeofenceManagerDelegate
+l_OBJC_LABEL_PROTOCOL_$_FSQPGeofenceManagerDelegate
+l_OBJC_PROTOCOL_$_FSQPilgrimLocationConsumer
+l_OBJC_LABEL_PROTOCOL_$_FSQPilgrimLocationConsumer
+l_OBJC_PROTOCOL_$_FSQPSignificantLocationDelegate
+l_OBJC_LABEL_PROTOCOL_$_FSQPSignificantLocationDelegate
+l_OBJC_PROTOCOL_$_FSQPVisitMonitoringSubscriber
+l_OBJC_LABEL_PROTOCOL_$_FSQPVisitMonitoringSubscriber
+/tmp/sandbox/workspace/PilgrimSDK/PilgrimSDK/Foursquare Passive/FSQPCoreLocationSubscriber.m
+/tmp/sandbox/workspace/PilgrimSDK/PilgrimSDK/Foursquare Passive/FSQPCoreLocationSubscriber.h
+__58-[FSQPCoreLocationSubscriber sendNextQueuedDepartureVisit]_block_invoke
+__52-[FSQPCoreLocationSubscriber updateLocationForExit:]_block_invoke
+__destroy_helper_block_e4_20s24w
+__copy_helper_block_e4_20s24w
+__52-[FSQPCoreLocationSubscriber updateLocationForStop:]_block_invoke_2
+__52-[FSQPCoreLocationSubscriber updateLocationForStop:]_block_invoke
+__45-[FSQPCoreLocationSubscriber logNewLocation:]_block_invoke
+__36+[FSQPCoreLocationSubscriber shared]_block_invoke
+-[NSDate(FSQP) fsTimestampValue]
+-[NSDate(FSQP) fsTimestampString]
+-[NSDate(FSQP) fsTimestampInMilliseconds]
+-[NSDate(FSQP) isAfterDate:]
+-[NSDate(FSQP) isBeforeDate:]
+-[NSDate(FSQP) occurredWithinTheLastInterval:]
+-[NSDate(FSQP) didNotOccurWithinTheLastInterval:]
+-[NSDate(FSQP) isBetweenStartDate:endDate:]
+-[NSDate(FSQP) isInDistantPast]
+-[NSDate(FSQP) isInDistantFuture]
+/tmp/sandbox/workspace/PilgrimSDK/PilgrimSDK/Private/Foundation/NSDate+FSQP.m
++[FSQPEMASpeedStrategy emaWithAverage:atTimestamp:value:atTimestamp:tau:]
++[FSQPEMASpeedStrategy emaLocation:withLocation:tau:]
+-[FSQPEMASpeedStrategy init]
+-[FSQPEMASpeedStrategy resetSpeedData]
+-[FSQPEMASpeedStrategy setSpeedState:]
+-[FSQPEMASpeedStrategy updateWithStopDetectionDict:]
+-[FSQPEMASpeedStrategy _baseUpdateWithStopDetectionDict:]
+-[FSQPEMASpeedStrategy highAccuracySampleRate]
+-[FSQPEMASpeedStrategy shouldUseLocation:]
+-[FSQPEMASpeedStrategy addLocation:]
+-[FSQPEMASpeedStrategy processLocation:]
+-[FSQPEMASpeedStrategy currentSpeed]
+-[FSQPEMASpeedStrategy setCurrentSpeed:]
+-[FSQPEMASpeedStrategy filterRate]
+-[FSQPEMASpeedStrategy desiredAcc]
+-[FSQPEMASpeedStrategy speedState]
+-[FSQPEMASpeedStrategy laterLocation]
+-[FSQPEMASpeedStrategy setLaterLocation:]
+-[FSQPEMASpeedStrategy shutdownOnNetworkFailure]
+-[FSQPEMASpeedStrategy shutdownOnNetworkFailureThreshold]
+-[FSQPEMASpeedStrategy locationLag]
+-[FSQPEMASpeedStrategy setLocationLag:]
+-[FSQPEMASpeedStrategy speedLag]
+-[FSQPEMASpeedStrategy setSpeedLag:]
+-[FSQPEMASpeedStrategy lowSpeedThreshold]
+-[FSQPEMASpeedStrategy setLowSpeedThreshold:]
+-[FSQPEMASpeedStrategy highSpeedThreshold]
+-[FSQPEMASpeedStrategy setHighSpeedThreshold:]
+-[FSQPEMASpeedStrategy highSpeedSamplingThreshold]
+-[FSQPEMASpeedStrategy setHighSpeedSamplingThreshold:]
+-[FSQPEMASpeedStrategy defaultSpeedHighAccuracySampleRate]
+-[FSQPEMASpeedStrategy setDefaultSpeedHighAccuracySampleRate:]
+-[FSQPEMASpeedStrategy highSpeedHighAccuracySampleRate]
+-[FSQPEMASpeedStrategy setHighSpeedHighAccuracySampleRate:]
+-[FSQPEMASpeedStrategy lastLocation]
+-[FSQPEMASpeedStrategy setLastLocation:]
+-[FSQPEMASpeedStrategy secondToLastLocation]
+-[FSQPEMASpeedStrategy setSecondToLastLocation:]
+-[FSQPEMASpeedStrategy earlierLocation]
+-[FSQPEMASpeedStrategy setEarlierLocation:]
+-[FSQPEMASpeedStrategy speedStateChangeDate]
+-[FSQPEMASpeedStrategy setSpeedStateChangeDate:]
+-[FSQPEMASpeedStrategy .cxx_destruct]
+_OBJC_IVAR_$_FSQPEMASpeedStrategy._defaultSpeedHighAccuracySampleRate
+_OBJC_IVAR_$_FSQPEMASpeedStrategy._highSpeedSamplingThreshold
+_OBJC_IVAR_$_FSQPEMASpeedStrategy._highSpeedHighAccuracySampleRate
+_OBJC_IVAR_$_FSQPEMASpeedStrategy._filterRate
+_OBJC_IVAR_$_FSQPEMASpeedStrategy._desiredAcc
+_OBJC_IVAR_$_FSQPEMASpeedStrategy._shutdownOnNetworkFailure
+_OBJC_IVAR_$_FSQPEMASpeedStrategy._shutdownOnNetworkFailureThreshold
+_OBJC_IVAR_$_FSQPEMASpeedStrategy._speedState
+_OBJC_IVAR_$_FSQPEMASpeedStrategy._locationLag
+_OBJC_IVAR_$_FSQPEMASpeedStrategy._speedLag
+_OBJC_IVAR_$_FSQPEMASpeedStrategy._lowSpeedThreshold
+_OBJC_IVAR_$_FSQPEMASpeedStrategy._highSpeedThreshold
+_OBJC_IVAR_$_FSQPEMASpeedStrategy._currentSpeed
+_OBJC_IVAR_$_FSQPEMASpeedStrategy._laterLocation
+_OBJC_IVAR_$_FSQPEMASpeedStrategy._lastLocation
+_OBJC_IVAR_$_FSQPEMASpeedStrategy._secondToLastLocation
+_OBJC_IVAR_$_FSQPEMASpeedStrategy._earlierLocation
+_OBJC_IVAR_$_FSQPEMASpeedStrategy._speedStateChangeDate
+/tmp/sandbox/workspace/PilgrimSDK/PilgrimSDK/Foursquare Passive/FSQPEMASpeedStrategy.m
+/tmp/sandbox/workspace/PilgrimSDK/PilgrimSDK/Foursquare Passive/FSQPEMASpeedStrategy.h
+FSQPSpeedStringForState
+-[FSQPEdge initWithPointA:pointB:]
+-[FSQPEdge pointIntersectingLineAtY:]
++[FSQPEdge calculateEdgeIntersectionPointWithEdge1:edge2:]
++[FSQPEdge isA:onOrAboveY:]
+-[FSQPEdge pointA]
+-[FSQPEdge pointB]
+-[FSQPEdge .cxx_destruct]
+_OBJC_IVAR_$_FSQPEdge._pointA
+_OBJC_IVAR_$_FSQPEdge._pointB
+/tmp/sandbox/workspace/PilgrimSDK/PilgrimSDK/Private/Geofences/Polygonal/FSQPEdge.m
+/tmp/sandbox/workspace/PilgrimSDK/PilgrimSDK/Private/Geofences/Polygonal/FSQPEdge.h
+FSQPApproximately
+/tmp/sandbox/workspace/PilgrimSDK/PilgrimSDK/Private/FSQPGlobalFunctions.h
++[NSDictionary(FSQP) queryStringForDictionary:]
+___47+[NSDictionary(FSQP) queryStringForDictionary:]_block_invoke
+-[NSDictionary(FSQP) isEmpty]
+-[NSDictionary(FSQP) isNotEmpty]
+___block_descriptor_24_e4_20s_e34_v16@?0@"NSString"4@"NSString"8^c12l
+/tmp/sandbox/workspace/PilgrimSDK/PilgrimSDK/Private/Foundation/NSDictionary+FSQP.m
+__47+[NSDictionary(FSQP) queryStringForDictionary:]_block_invoke
+-[UIDevice(FSQP) fsqp_getSysInfoByName:]
+-[UIDevice(FSQP) fsqp_hardwareMachineString]
+-[UIDevice(FSQP) fsqp_hardwareModelString]
+/tmp/sandbox/workspace/PilgrimSDK/PilgrimSDK/Private/Foundation/UIDevice+FSQP.m
+-[FSQPSignificantLocationManager init]
+-[FSQPSignificantLocationManager startMonitoringSignificantLocationChanges]
+-[FSQPSignificantLocationManager stopMonitoringSignificantLocationChanges]
+-[FSQPSignificantLocationManager locationManager:didUpdateLocations:]
+-[FSQPSignificantLocationManager locationManager:didFailWithError:]
++[FSQPSignificantLocationManager canMonitorSignificantLocationChanges]
+-[FSQPSignificantLocationManager isMonitoringSignificantLocationChanges]
+-[FSQPSignificantLocationManager setIsMonitoringSignificantLocationChanges:]
+-[FSQPSignificantLocationManager delegate]
+-[FSQPSignificantLocationManager setDelegate:]
+-[FSQPSignificantLocationManager locationManager]
+-[FSQPSignificantLocationManager setLocationManager:]
+-[FSQPSignificantLocationManager .cxx_destruct]
+_OBJC_IVAR_$_FSQPSignificantLocationManager._isMonitoringSignificantLocationChanges
+_OBJC_IVAR_$_FSQPSignificantLocationManager._locationManager
+_OBJC_IVAR_$_FSQPSignificantLocationManager._delegate
+l_OBJC_PROTOCOL_$_PilgrimSignificantLocationManager
+l_OBJC_LABEL_PROTOCOL_$_PilgrimSignificantLocationManager
+/tmp/sandbox/workspace/PilgrimSDK/PilgrimSDK/Foursquare Passive/FSQPSignificantLocationManager.m
+/tmp/sandbox/workspace/PilgrimSDK/PilgrimSDK/Foursquare Passive/FSQPSignificantLocationManager.h
+/tmp/sandbox/workspace/PilgrimSDK/PilgrimSDK/Foursquare Passive/FSQPilgrim.m
+FSPTriggerTypeStringForType
++[NSError(FSQP) userInfoWithDescription:]
+/tmp/sandbox/workspace/PilgrimSDK/PilgrimSDK/Private/Foundation/NSError+FSQP.m
++[FSQPLocationSubscriber shared]
+___32+[FSQPLocationSubscriber shared]_block_invoke
++[FSQPLocationSubscriber hereNowDesiredAccuracy]
++[FSQPLocationSubscriber hereNowMaxAccuracy]
++[FSQPLocationSubscriber hereNowMaxRecency]
++[FSQPLocationSubscriber hereNowCutoffTime]
+-[FSQPLocationSubscriber init]
+-[FSQPLocationSubscriber startMonitoring:]
+___42-[FSQPLocationSubscriber startMonitoring:]_block_invoke
+___42-[FSQPLocationSubscriber startMonitoring:]_block_invoke_2
+-[FSQPLocationSubscriber endMonitoring]
+-[FSQPLocationSubscriber updateSettingsWithApiResult:]
+-[FSQPLocationSubscriber locationManagerDidUpdateLocations:]
+___60-[FSQPLocationSubscriber locationManagerDidUpdateLocations:]_block_invoke
+-[FSQPLocationSubscriber locationManagerFailedWithError:]
+-[FSQPLocationSubscriber subscriberIdentifier]
+-[FSQPLocationSubscriber addMonitoredRegion:]
+-[FSQPLocationSubscriber startMonitoringForCircularRegion:]
+-[FSQPLocationSubscriber stopMonitoringForCircularRegion:]
+-[FSQPLocationSubscriber stopMonitoringAllCircularRegions]
+-[FSQPLocationSubscriber didEnterRegion:]
+-[FSQPLocationSubscriber didExitRegion:]
+-[FSQPLocationSubscriber didDetermineState:forRegion:]
+-[FSQPLocationSubscriber monitoringDidFailForRegion:withError:]
+-[FSQPLocationSubscriber subscribeToOnPilgrimStartNotifications]
+-[FSQPLocationSubscriber unsubscribeFromOnPilgrimStartNotifications]
+-[FSQPLocationSubscriber resetProperties]
+-[FSQPLocationSubscriber batteryLevelBecameInsufficient]
+-[FSQPLocationSubscriber batteryLevelBecameSufficient]
+-[FSQPLocationSubscriber suspend]
+-[FSQPLocationSubscriber resume]
+-[FSQPLocationSubscriber logCandidateLocations:]
+-[FSQPLocationSubscriber logNewLocation:]
+-[FSQPLocationSubscriber stopDetectedWithLocation:]
+___51-[FSQPLocationSubscriber stopDetectedWithLocation:]_block_invoke
+-[FSQPLocationSubscriber stopDetectSubscriberFinishedWithLocation:]
+-[FSQPLocationSubscriber beaconRegionWithUUIDString:]
+-[FSQPLocationSubscriber setupMonitoringRegion:]
+-[FSQPLocationSubscriber setupMonitoringDefaultRegionForVisit:]
+-[FSQPLocationSubscriber setupMonitoringForStillAtVenue]
+-[FSQPLocationSubscriber fs_setupMonitoringRegion:]
+-[FSQPLocationSubscriber setupMonitoringForMallMode]
+-[FSQPLocationSubscriber checkForDepartureFromStopRegion]
+-[FSQPLocationSubscriber checkForDepartureFromRegion:]
+___54-[FSQPLocationSubscriber checkForDepartureFromRegion:]_block_invoke
+-[FSQPLocationSubscriber stopMonitoringRegionForExit:]
+-[FSQPLocationSubscriber setStopRegion:]
+-[FSQPLocationSubscriber enableLowAccuracy]
+___43-[FSQPLocationSubscriber enableLowAccuracy]_block_invoke
+-[FSQPLocationSubscriber desiredAccuracyLocationReceived]
+-[FSQPLocationSubscriber locationsAreInsideFence:]
+-[FSQPLocationSubscriber scheduleFilterTimer]
+-[FSQPLocationSubscriber filterCandidateLocations]
+-[FSQPLocationSubscriber setShouldUpdateLocations:]
+-[FSQPLocationSubscriber shouldUpdateLocations]
+-[FSQPLocationSubscriber setShouldMonitorSignificantLocationChanges:]
+-[FSQPLocationSubscriber shouldMonitorSignificantLocationChanges]
+-[FSQPLocationSubscriber setShouldReceiveLocationManagerErrors:]
+-[FSQPLocationSubscriber shouldReceiveLocationManagerErrors]
+-[FSQPLocationSubscriber fsPilgrimLocationConsumer]
+-[FSQPLocationSubscriber setFsPilgrimLocationConsumer:]
+-[FSQPLocationSubscriber state]
+-[FSQPLocationSubscriber setState:]
+-[FSQPLocationSubscriber highAccuracyTimer]
+-[FSQPLocationSubscriber setHighAccuracyTimer:]
+-[FSQPLocationSubscriber filterTimer]
+-[FSQPLocationSubscriber setFilterTimer:]
+-[FSQPLocationSubscriber candidateLocations]
+-[FSQPLocationSubscriber setCandidateLocations:]
+-[FSQPLocationSubscriber lastUsedLocation]
+-[FSQPLocationSubscriber setLastUsedLocation:]
+-[FSQPLocationSubscriber stopRegion]
+-[FSQPLocationSubscriber stopRegionTime]
+-[FSQPLocationSubscriber setStopRegionTime:]
+-[FSQPLocationSubscriber speedStrategy]
+-[FSQPLocationSubscriber setSpeedStrategy:]
+-[FSQPLocationSubscriber timeAtWhichFenceExitDidntHaveLocation]
+-[FSQPLocationSubscriber setTimeAtWhichFenceExitDidntHaveLocation:]
+-[FSQPLocationSubscriber lastSpeedState]
+-[FSQPLocationSubscriber setLastSpeedState:]
+-[FSQPLocationSubscriber stopDetectBestAccSubscriber]
+-[FSQPLocationSubscriber setStopDetectBestAccSubscriber:]
+-[FSQPLocationSubscriber exitDetectionSubscriber]
+-[FSQPLocationSubscriber setExitDetectionSubscriber:]
+-[FSQPLocationSubscriber desiredAccuracy]
+-[FSQPLocationSubscriber setDesiredAccuracy:]
+-[FSQPLocationSubscriber locationSubscriberOptions]
+-[FSQPLocationSubscriber setLocationSubscriberOptions:]
+-[FSQPLocationSubscriber monitoredRegions]
+-[FSQPLocationSubscriber setMonitoredRegions:]
+-[FSQPLocationSubscriber shouldReceiveRegionMonitoringErrors]
+-[FSQPLocationSubscriber setShouldReceiveRegionMonitoringErrors:]
+-[FSQPLocationSubscriber mallModeIsEnabled]
+-[FSQPLocationSubscriber setMallModeIsEnabled:]
+-[FSQPLocationSubscriber .cxx_destruct]
+___block_descriptor_29_e4_20s24s_e5_v4@?0l
+___block_descriptor_25_e4_20s_e47_v20@?0c4@"CLLocation"8@"NSNumber"12@"NSError"16l
+___block_descriptor_24_e4_20s_e19_c8@?0@"CLLocation"4l
+___block_descriptor_28_e4_20s24w_e47_v20@?0c4@"CLLocation"8@"NSNumber"12@"NSError"16l
+_OBJC_IVAR_$_FSQPLocationSubscriber._stopRegion
+___block_descriptor_24_e4_20w_e16_v8@?0@"NSTimer"4l
+_OBJC_IVAR_$_FSQPLocationSubscriber._fsPilgrimLocationConsumer
+_OBJC_IVAR_$_FSQPLocationSubscriber._state
+_OBJC_IVAR_$_FSQPLocationSubscriber._highAccuracyTimer
+_OBJC_IVAR_$_FSQPLocationSubscriber._filterTimer
+_OBJC_IVAR_$_FSQPLocationSubscriber._candidateLocations
+_OBJC_IVAR_$_FSQPLocationSubscriber._lastUsedLocation
+_OBJC_IVAR_$_FSQPLocationSubscriber._stopRegionTime
+_OBJC_IVAR_$_FSQPLocationSubscriber._speedStrategy
+_OBJC_IVAR_$_FSQPLocationSubscriber._timeAtWhichFenceExitDidntHaveLocation
+_OBJC_IVAR_$_FSQPLocationSubscriber._lastSpeedState
+_OBJC_IVAR_$_FSQPLocationSubscriber._stopDetectBestAccSubscriber
+_OBJC_IVAR_$_FSQPLocationSubscriber._exitDetectionSubscriber
+_OBJC_IVAR_$_FSQPLocationSubscriber._desiredAccuracy
+_OBJC_IVAR_$_FSQPLocationSubscriber._locationSubscriberOptions
+_OBJC_IVAR_$_FSQPLocationSubscriber._monitoredRegions
+_OBJC_IVAR_$_FSQPLocationSubscriber._shouldReceiveRegionMonitoringErrors
+_OBJC_IVAR_$_FSQPLocationSubscriber._mallModeIsEnabled
+l_OBJC_PROTOCOL_$_FSQPRegionMonitoringSubscriber
+l_OBJC_LABEL_PROTOCOL_$_FSQPRegionMonitoringSubscriber
+l_OBJC_PROTOCOL_$_FSQPilgrimLocationProducer
+l_OBJC_LABEL_PROTOCOL_$_FSQPilgrimLocationProducer
+/tmp/sandbox/workspace/PilgrimSDK/PilgrimSDK/Foursquare Passive/FSQPLocationSubscriber.m
+/tmp/sandbox/workspace/PilgrimSDK/PilgrimSDK/Foursquare Passive/FSQPLocationSubscriber.h
+__43-[FSQPLocationSubscriber enableLowAccuracy]_block_invoke
+__54-[FSQPLocationSubscriber checkForDepartureFromRegion:]_block_invoke
+__51-[FSQPLocationSubscriber stopDetectedWithLocation:]_block_invoke
+__60-[FSQPLocationSubscriber locationManagerDidUpdateLocations:]_block_invoke
+__42-[FSQPLocationSubscriber startMonitoring:]_block_invoke_2
+__42-[FSQPLocationSubscriber startMonitoring:]_block_invoke
+__32+[FSQPLocationSubscriber shared]_block_invoke
+-[FSQPCircularBoundary initWithCenter:radius:]
+-[FSQPCircularBoundary initWithCoder:]
+-[FSQPCircularBoundary encodeWithCoder:]
++[FSQPCircularBoundary supportsSecureCoding]
+-[FSQPCircularBoundary center]
+-[FSQPCircularBoundary didEnterWithLocation:useHacc:]
+-[FSQPCircularBoundary didExitWithLocation:]
+-[FSQPCircularBoundary description]
+-[FSQPCircularBoundary radius]
+-[FSQPCircularBoundary setRadius:]
+-[FSQPCircularBoundary centerCoordinate]
+-[FSQPCircularBoundary setCenterCoordinate:]
+-[FSQPCircularBoundary .cxx_destruct]
+_OBJC_IVAR_$_FSQPCircularBoundary._centerCoordinate
+_OBJC_IVAR_$_FSQPCircularBoundary._radius
+/tmp/sandbox/workspace/PilgrimSDK/PilgrimSDK/Private/Geofences/FSQPCircularBoundary.m
+/tmp/sandbox/workspace/PilgrimSDK/PilgrimSDK/Private/Geofences/FSQPCircularBoundary.h
+-[FSQPDebugLogsViewController initWithPilgrimManager:]
+-[FSQPDebugLogsViewController viewDidLoad]
+-[FSQPDebugLogsViewController configureLogCellViewModelsWithLogs:]
+___66-[FSQPDebugLogsViewController configureLogCellViewModelsWithLogs:]_block_invoke
+-[FSQPDebugLogsViewController configureNavigationBar]
+-[FSQPDebugLogsViewController configureHeaderView]
+-[FSQPDebugLogsViewController segmentedControl]
+-[FSQPDebugLogsViewController showShareViewController]
+-[FSQPDebugLogsViewController filePathForLogs]
+-[FSQPDebugLogsViewController fileDate]
+___39-[FSQPDebugLogsViewController fileDate]_block_invoke
+-[FSQPDebugLogsViewController logString]
+-[FSQPDebugLogsViewController deleteLogFiles]
+-[FSQPDebugLogsViewController filterLogs]
+-[FSQPDebugLogsViewController filterLogsForScope:]
+-[FSQPDebugLogsViewController presentAlertControllerWithTitle:message:style:actions:]
+___85-[FSQPDebugLogsViewController presentAlertControllerWithTitle:message:style:actions:]_block_invoke
+-[FSQPDebugLogsViewController presentErrorAlert]
+___48-[FSQPDebugLogsViewController presentErrorAlert]_block_invoke
+-[FSQPDebugLogsViewController clearLogs]
+___40-[FSQPDebugLogsViewController clearLogs]_block_invoke
+-[FSQPDebugLogsViewController deleteLogData]
+-[FSQPDebugLogsViewController dismiss]
+-[FSQPDebugLogsViewController tableView:cellForRowAtIndexPath:]
+-[FSQPDebugLogsViewController tableView:numberOfRowsInSection:]
+-[FSQPDebugLogsViewController tableView:didSelectRowAtIndexPath:]
+-[FSQPDebugLogsViewController logCellViewModels]
+-[FSQPDebugLogsViewController setLogCellViewModels:]
+-[FSQPDebugLogsViewController pilgrimManager]
+-[FSQPDebugLogsViewController tableViewBackgroundView]
+-[FSQPDebugLogsViewController setTableViewBackgroundView:]
+-[FSQPDebugLogsViewController logs]
+-[FSQPDebugLogsViewController setLogs:]
+-[FSQPDebugLogsViewController .cxx_destruct]
+_OBJC_IVAR_$_FSQPDebugLogsViewController._pilgrimManager
+___block_descriptor_20_e21_@8@?0@"FSQPDebugLog"4l
+_OBJC_IVAR_$_FSQPDebugLogsViewController._segmentedControl
+_fileDate.fileDateFormatter
+_fileDate.onceToken
+___block_descriptor_20_e5_v4@?0l
+___block_literal_global.168
+___block_descriptor_24_e4_20s_e29_v16@?0@"UIAlertAction"4I8^c12l
+___block_descriptor_24_e4_20s_e22_v8@?0@"UIAlertAction"4l
+_OBJC_IVAR_$_FSQPDebugLogsViewController._logCellViewModels
+_OBJC_IVAR_$_FSQPDebugLogsViewController._tableViewBackgroundView
+_OBJC_IVAR_$_FSQPDebugLogsViewController._logs
+l_OBJC_PROTOCOL_$_UIBarPositioningDelegate
+l_OBJC_LABEL_PROTOCOL_$_UIBarPositioningDelegate
+l_OBJC_PROTOCOL_$_UINavigationBarDelegate
+l_OBJC_LABEL_PROTOCOL_$_UINavigationBarDelegate
+/tmp/sandbox/workspace/PilgrimSDK/PilgrimSDK/Private/Debug Mode/FSQPDebugLogsViewController.m
+__40-[FSQPDebugLogsViewController clearLogs]_block_invoke
+__48-[FSQPDebugLogsViewController presentErrorAlert]_block_invoke
+__85-[FSQPDebugLogsViewController presentAlertControllerWithTitle:message:style:actions:]_block_invoke
+__39-[FSQPDebugLogsViewController fileDate]_block_invoke
+__66-[FSQPDebugLogsViewController configureLogCellViewModelsWithLogs:]_block_invoke
++[FSQPUserState supportsSecureCoding]
+-[FSQPUserState initWithDictionary:]
+-[FSQPUserState encodeWithCoder:]
+-[FSQPUserState initWithCoder:]
+-[FSQPUserState name]
+-[FSQPUserState properties]
+-[FSQPUserState .cxx_destruct]
+_OBJC_IVAR_$_FSQPUserState._name
+_OBJC_IVAR_$_FSQPUserState._properties
+/tmp/sandbox/workspace/PilgrimSDK/PilgrimSDK/Public/FSQPUserState.m
+/tmp/sandbox/workspace/PilgrimSDK/PilgrimSDK/Public/FSQPUserState.h
+-[FSQPEventReportRequest initWithEventReports:]
+-[FSQPEventReportRequest consumerKeyInPath]
+-[FSQPEventReportRequest endpoint]
+-[FSQPEventReportRequest method]
+-[FSQPEventReportRequest params]
+___32-[FSQPEventReportRequest params]_block_invoke
+-[FSQPEventReportRequest eventReports]
+-[FSQPEventReportRequest setEventReports:]
+-[FSQPEventReportRequest .cxx_destruct]
+_OBJC_IVAR_$_FSQPEventReportRequest._eventReports
+___block_descriptor_20_e38_@"NSDictionary"8@?0@"FSQPEventReport"4l
+/tmp/sandbox/workspace/PilgrimSDK/PilgrimSDK/Private/Networking/Models/FSQPEventReportRequest.m
+__32-[FSQPEventReportRequest params]_block_invoke
+-[FSQPLocationMonitorSettings initWithServices:]
+-[FSQPLocationMonitorSettings initWithName:services:]
+-[FSQPLocationMonitorSettings setName:]
+-[FSQPLocationMonitorSettings setFrequency:]
+-[FSQPLocationMonitorSettings setMonitoringInterval:]
+-[FSQPLocationMonitorSettings name]
+-[FSQPLocationMonitorSettings desiredAccuracy]
+-[FSQPLocationMonitorSettings setDesiredAccuracy:]
+-[FSQPLocationMonitorSettings frequency]
+-[FSQPLocationMonitorSettings monitoringInterval]
+-[FSQPLocationMonitorSettings .cxx_destruct]
+-[FSQPLocationMonitor initWithSettings:services:]
+-[FSQPLocationMonitor isMonitoring]
+-[FSQPLocationMonitor enable]
+-[FSQPLocationMonitor disable]
+-[FSQPLocationMonitor requestLocation]
+___38-[FSQPLocationMonitor requestLocation]_block_invoke
+-[FSQPLocationMonitor processLocation:]
+-[FSQPLocationMonitor locationRequestConfig]
++[FSQPLocationMonitor canEnableLocationMonitor]
++[FSQPLocationMonitor shouldRunInBackground]
+-[FSQPLocationMonitor name]
+-[FSQPLocationMonitor locationConsumer]
+-[FSQPLocationMonitor setLocationConsumer:]
+-[FSQPLocationMonitor desiredAccuracy]
+-[FSQPLocationMonitor frequency]
+-[FSQPLocationMonitor setFrequency:]
+-[FSQPLocationMonitor monitoringInterval]
+-[FSQPLocationMonitor enabledDate]
+-[FSQPLocationMonitor setEnabledDate:]
+-[FSQPLocationMonitor services]
+-[FSQPLocationMonitor setServices:]
+-[FSQPLocationMonitor endMonitoringDate]
+-[FSQPLocationMonitor setEndMonitoringDate:]
+-[FSQPLocationMonitor locationSubscriber]
+-[FSQPLocationMonitor setLocationSubscriber:]
+-[FSQPLocationMonitor timer]
+-[FSQPLocationMonitor setTimer:]
+-[FSQPLocationMonitor .cxx_destruct]
+_OBJC_IVAR_$_FSQPLocationMonitorSettings._name
+_OBJC_IVAR_$_FSQPLocationMonitorSettings._desiredAccuracy
+_OBJC_IVAR_$_FSQPLocationMonitorSettings._frequency
+_OBJC_IVAR_$_FSQPLocationMonitorSettings._monitoringInterval
+_OBJC_IVAR_$_FSQPLocationMonitor._services
+_OBJC_IVAR_$_FSQPLocationMonitor._name
+_OBJC_IVAR_$_FSQPLocationMonitor._desiredAccuracy
+_OBJC_IVAR_$_FSQPLocationMonitor._frequency
+_OBJC_IVAR_$_FSQPLocationMonitor._monitoringInterval
+___block_descriptor_24_e4_20w_e47_v20@?0c4@"CLLocation"8@"NSNumber"12@"NSError"16l
+_OBJC_IVAR_$_FSQPLocationMonitor._locationConsumer
+_OBJC_IVAR_$_FSQPLocationMonitor._enabledDate
+_OBJC_IVAR_$_FSQPLocationMonitor._endMonitoringDate
+_OBJC_IVAR_$_FSQPLocationMonitor._locationSubscriber
+_OBJC_IVAR_$_FSQPLocationMonitor._timer
+/tmp/sandbox/workspace/PilgrimSDK/PilgrimSDK/Foursquare Passive/FSQPLocationMonitor.m
+/tmp/sandbox/workspace/PilgrimSDK/PilgrimSDK/Foursquare Passive/FSQPLocationMonitor.h
+__38-[FSQPLocationMonitor requestLocation]_block_invoke
+-[FSQPMemoryStore initWithServices:]
+-[FSQPMemoryStore addItem:]
+-[FSQPMemoryStore allItems]
+-[FSQPMemoryStore count]
+-[FSQPMemoryStore clearStoreWithCompletion:]
+-[FSQPMemoryStore services]
+-[FSQPMemoryStore items]
+-[FSQPMemoryStore setItems:]
+-[FSQPMemoryStore .cxx_destruct]
+_OBJC_IVAR_$_FSQPMemoryStore._services
+_OBJC_IVAR_$_FSQPMemoryStore._items
+/tmp/sandbox/workspace/PilgrimSDK/PilgrimSDK/Private/FSQPMemoryStore.m
+/tmp/sandbox/workspace/PilgrimSDK/PilgrimSDK/Private/FSQPMemoryStore.h
+-[FSQPDebugLog initWithLevel:type:event:data:isPublic:]
+-[FSQPDebugLog initWithCoder:]
+-[FSQPDebugLog encodeWithCoder:]
+-[FSQPDebugLog logDateFormatter]
+___32-[FSQPDebugLog logDateFormatter]_block_invoke
+-[FSQPDebugLog description]
+-[FSQPDebugLog timestamp]
+-[FSQPDebugLog setTimestamp:]
+-[FSQPDebugLog level]
+-[FSQPDebugLog setLevel:]
+-[FSQPDebugLog type]
+-[FSQPDebugLog setType:]
+-[FSQPDebugLog data]
+-[FSQPDebugLog setData:]
+-[FSQPDebugLog eventDescription]
+-[FSQPDebugLog setEventDescription:]
+-[FSQPDebugLog isPublic]
+-[FSQPDebugLog .cxx_destruct]
+_OBJC_IVAR_$_FSQPDebugLog._level
+_OBJC_IVAR_$_FSQPDebugLog._type
+_OBJC_IVAR_$_FSQPDebugLog._data
+_OBJC_IVAR_$_FSQPDebugLog._timestamp
+_OBJC_IVAR_$_FSQPDebugLog._eventDescription
+_OBJC_IVAR_$_FSQPDebugLog._isPublic
+_logDateFormatter.logDateFormatter
+_logDateFormatter.onceToken
+/tmp/sandbox/workspace/PilgrimSDK/PilgrimSDK/Public/FSQPDebugLog.m
+/tmp/sandbox/workspace/PilgrimSDK/PilgrimSDK/Private/Internal Headers/FSQPDebugLog_Private.h
+/tmp/sandbox/workspace/PilgrimSDK/PilgrimSDK/Public/FSQPDebugLog.h
+__32-[FSQPDebugLog logDateFormatter]_block_invoke
+fsqpLogTypeForString
+stringForFSQPLogType
+fsqpLogLevelForString
+stringForFSQPLogLevel
+-[FSQPSearchResult initWithVisit:nearbyVenues:segments:]
++[FSQPSearchResult resultWithResponse:locationVisit:]
+___53+[FSQPSearchResult resultWithResponse:locationVisit:]_block_invoke
+___53+[FSQPSearchResult resultWithResponse:locationVisit:]_block_invoke_2
++[FSQPSearchResult resultWithResponse:departureVisit:]
+-[FSQPSearchResult description]
+-[FSQPSearchResult visit]
+-[FSQPSearchResult nearbyVenues]
+-[FSQPSearchResult segments]
+-[FSQPSearchResult .cxx_destruct]
+_OBJC_IVAR_$_FSQPSearchResult._visit
+_OBJC_IVAR_$_FSQPSearchResult._nearbyVenues
+_OBJC_IVAR_$_FSQPSearchResult._segments
+___block_descriptor_20_e38_@"FSQPNearbyVenue"8@?0@"NSDictionary"4l
+___block_descriptor_20_e38_@"FSQPUserSegment"8@?0@"NSDictionary"4l
+___block_literal_global.25
+/tmp/sandbox/workspace/PilgrimSDK/PilgrimSDK/Private/Networking/Models/FSQPSearchResult.m
+/tmp/sandbox/workspace/PilgrimSDK/PilgrimSDK/Private/Networking/Models/FSQPSearchResult.h
+__53+[FSQPSearchResult resultWithResponse:locationVisit:]_block_invoke_2
+__53+[FSQPSearchResult resultWithResponse:locationVisit:]_block_invoke
+-[FSQPDebugCellViewModel initWithDebugLog:]
+-[FSQPDebugCellViewModel setColorsAndStringForLogLevel]
+-[FSQPDebugCellViewModel debugLog]
+-[FSQPDebugCellViewModel logLevelColor]
+-[FSQPDebugCellViewModel logLevelString]
+-[FSQPDebugCellViewModel .cxx_destruct]
+-[FSQPDebugCell initWithStyle:reuseIdentifier:]
+-[FSQPDebugCell layoutSubviews]
+-[FSQPDebugCell configureCellWithViewModel:]
+-[FSQPDebugCell logLevelIndicator]
+-[FSQPDebugCell logLevelString]
+-[FSQPDebugCell titleLabel]
+-[FSQPDebugCell timestampLabel]
+-[FSQPDebugCell .cxx_destruct]
+_OBJC_IVAR_$_FSQPDebugCellViewModel._debugLog
+_OBJC_IVAR_$_FSQPDebugCellViewModel._logLevelColor
+_OBJC_IVAR_$_FSQPDebugCellViewModel._logLevelString
+_OBJC_IVAR_$_FSQPDebugCell._logLevelIndicator
+_OBJC_IVAR_$_FSQPDebugCell._logLevelString
+_OBJC_IVAR_$_FSQPDebugCell._titleLabel
+_OBJC_IVAR_$_FSQPDebugCell._timestampLabel
+/tmp/sandbox/workspace/PilgrimSDK/PilgrimSDK/Private/Debug Mode/FSQPDebugCell.m
+CGRectMake
+/Applications/Xcode-10.2.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGGeometry.h
++[FSQPEventReportManager shared]
+___32+[FSQPEventReportManager shared]_block_invoke
+-[FSQPEventReportManager initWithLogger:]
+___41-[FSQPEventReportManager initWithLogger:]_block_invoke
+-[FSQPEventReportManager logReport:]
+-[FSQPEventReportManager logReport:logType:data:]
+-[FSQPEventReportManager logReport:logType:data:completion:]
++[FSQPEventReportManager logLevelForEventType:]
+-[FSQPEventReportManager fsqp_saveEventReport:completion:]
+___58-[FSQPEventReportManager fsqp_saveEventReport:completion:]_block_invoke
+___58-[FSQPEventReportManager fsqp_saveEventReport:completion:]_block_invoke_2
+___copy_helper_block_e4_20s24r
+___destroy_helper_block_e4_20s24r
+___copy_helper_block_e4_20s24s28b
+-[FSQPEventReportManager fsqp_saveReportsToDisk]
+-[FSQPEventReportManager fsqp_retrieveSavedReports]
+___51-[FSQPEventReportManager fsqp_retrieveSavedReports]_block_invoke
++[FSQPEventReportManager fsqp_archivePath]
+-[FSQPEventReportManager deleteSavedReportsWithCompletion:]
+___59-[FSQPEventReportManager deleteSavedReportsWithCompletion:]_block_invoke
+___copy_helper_block_e4_20s24b
+-[FSQPEventReportManager fetchAllReportsWithCompletion:]
+___56-[FSQPEventReportManager fetchAllReportsWithCompletion:]_block_invoke
+-[FSQPEventReportManager flushAllReportsIfNecessary]
+-[FSQPEventReportManager fsqp_flushAllReports:]
+___47-[FSQPEventReportManager fsqp_flushAllReports:]_block_invoke
+___47-[FSQPEventReportManager fsqp_flushAllReports:]_block_invoke_2
+___47-[FSQPEventReportManager fsqp_flushAllReports:]_block_invoke_3
+-[FSQPEventReportManager addTestReportCompletion:]
+-[FSQPEventReportManager addTestFatalReportCompletion:]
+-[FSQPEventReportManager clearFatalFlushDates]
+-[FSQPEventReportManager testAssertionFailure]
+-[FSQPEventReportManager api]
+-[FSQPEventReportManager setApi:]
+-[FSQPEventReportManager inMemoryEventReports]
+-[FSQPEventReportManager setInMemoryEventReports:]
+-[FSQPEventReportManager serialQueueForSaving]
+-[FSQPEventReportManager logger]
+-[FSQPEventReportManager flushInProgress]
+-[FSQPEventReportManager setFlushInProgress:]
+-[FSQPEventReportManager .cxx_destruct]
+_OBJC_IVAR_$_FSQPEventReportManager._serialQueueForSaving
+_OBJC_IVAR_$_FSQPEventReportManager._logger
+_OBJC_IVAR_$_FSQPEventReportManager._inMemoryEventReports
+___block_descriptor_28_e4_20s24r_e31_v16@?0@"FSQPEventReport"4I8^c12l
+___block_descriptor_32_e4_20s24s28bs_e5_v4@?0l
+___block_descriptor_28_e4_20s24s_e5_v4@?0l
+___block_descriptor_28_e4_20s24bs_e5_v4@?0l
+___block_descriptor_28_e4_20bs24s_e5_v4@?0l
+___block_descriptor_24_e4_20s_e16_v8@?0@"NSError"4l
+___block_descriptor_25_e4_20s_e34_v8@?0@"FSQPFoursquareAPIResponse"4l
+___block_descriptor_25_e4_20s_e16_v8@?0@"NSArray"4l
+_OBJC_IVAR_$_FSQPEventReportManager._api
+_OBJC_IVAR_$_FSQPEventReportManager._flushInProgress
+/tmp/sandbox/workspace/PilgrimSDK/PilgrimSDK/Private/FSQPEventReportManager.m
+/tmp/sandbox/workspace/PilgrimSDK/PilgrimSDK/Private/FSQPEventReportManager.h
+__47-[FSQPEventReportManager fsqp_flushAllReports:]_block_invoke_3
+__47-[FSQPEventReportManager fsqp_flushAllReports:]_block_invoke_2
+__47-[FSQPEventReportManager fsqp_flushAllReports:]_block_invoke
+__56-[FSQPEventReportManager fetchAllReportsWithCompletion:]_block_invoke
+__copy_helper_block_e4_20s24b
+__59-[FSQPEventReportManager deleteSavedReportsWithCompletion:]_block_invoke
+__51-[FSQPEventReportManager fsqp_retrieveSavedReports]_block_invoke
+__copy_helper_block_e4_20s24s28b
+__destroy_helper_block_e4_20s24r
+__copy_helper_block_e4_20s24r
+__58-[FSQPEventReportManager fsqp_saveEventReport:completion:]_block_invoke_2
+__58-[FSQPEventReportManager fsqp_saveEventReport:completion:]_block_invoke
+__41-[FSQPEventReportManager initWithLogger:]_block_invoke
+__32+[FSQPEventReportManager shared]_block_invoke
++[FSQPPilgrimManager sharedManager]
+___35+[FSQPPilgrimManager sharedManager]_block_invoke
+-[FSQPPilgrimManager init]
+___26-[FSQPPilgrimManager init]_block_invoke
+-[FSQPPilgrimManager dealloc]
++[FSQPPilgrimManager canTriggerVisit:withTriggers:]
+___51+[FSQPPilgrimManager canTriggerVisit:withTriggers:]_block_invoke
+-[FSQPPilgrimManager didReceiveSearchResult:]
+-[FSQPPilgrimManager didBackfillVisit:]
+-[FSQPPilgrimManager didReceiveGeofenceEvents:]
+-[FSQPPilgrimManager isSupportedDevice]
+-[FSQPPilgrimManager canEnable]
+-[FSQPPilgrimManager setDebugLogsEnabled:]
++[FSQPPilgrimManager pilgrimSDKVersionString]
+-[FSQPPilgrimManager requestAlwaysAuthorizationWithCompletion:]
+-[FSQPPilgrimManager configureWithConsumerKey:secret:delegate:completion:]
+-[FSQPPilgrimManager configureWithConsumerKey:secret:oauthToken:delegate:completion:]
+___85-[FSQPPilgrimManager configureWithConsumerKey:secret:oauthToken:delegate:completion:]_block_invoke
+___85-[FSQPPilgrimManager configureWithConsumerKey:secret:oauthToken:delegate:completion:]_block_invoke_2
+-[FSQPPilgrimManager logPilgrimConfigure]
+-[FSQPPilgrimManager start]
+___27-[FSQPPilgrimManager start]_block_invoke
+___27-[FSQPPilgrimManager start]_block_invoke_2
+-[FSQPPilgrimManager stop]
+-[FSQPPilgrimManager clearAllData:]
+___35-[FSQPPilgrimManager clearAllData:]_block_invoke
+___copy_helper_block_e4_20b24w
+-[FSQPPilgrimManager hasHomeOrWork]
+-[FSQPPilgrimManager homeLocations]
+___35-[FSQPPilgrimManager homeLocations]_block_invoke
+-[FSQPPilgrimManager workLocations]
+___35-[FSQPPilgrimManager workLocations]_block_invoke
+-[FSQPPilgrimManager debugLogs]
+-[FSQPPilgrimManager deleteDebugLogs]
+-[FSQPPilgrimManager presentDebugViewController:]
+-[FSQPPilgrimManager reportStatus:completion:]
+-[FSQPPilgrimManager locationManager:didChangeAuthorizationStatus:]
+-[FSQPPilgrimManager applicationDidLaunch:]
+-[FSQPPilgrimManager triggerDescriptions]
+___41-[FSQPPilgrimManager triggerDescriptions]_block_invoke
+-[FSQPPilgrimManager setNearbyTriggers:]
+-[FSQPPilgrimManager setOauthToken:]
+-[FSQPPilgrimManager geofences]
+-[FSQPPilgrimManager geofenceRegion]
+-[FSQPPilgrimManager getCurrentLocationWithCompletion:]
+___55-[FSQPPilgrimManager getCurrentLocationWithCompletion:]_block_invoke
+-[FSQPPilgrimManager requestCurrentLocation:completion:]
+___56-[FSQPPilgrimManager requestCurrentLocation:completion:]_block_invoke
+-[FSQPPilgrimManager userInfo]
+-[FSQPPilgrimManager setUserInfo:]
+-[FSQPPilgrimManager setUserInfo:persisted:]
+-[FSQPPilgrimManager delegate]
+-[FSQPPilgrimManager setDelegate:]
+-[FSQPPilgrimManager isDebugLogsEnabled]
+-[FSQPPilgrimManager visitTester]
+-[FSQPPilgrimManager feedbackProvider]
+-[FSQPPilgrimManager nearbyTriggers]
+-[FSQPPilgrimManager oauthToken]
+-[FSQPPilgrimManager installId]
+-[FSQPPilgrimManager systemLocationManager]
+-[FSQPPilgrimManager setSystemLocationManager:]
+-[FSQPPilgrimManager foursquareAPI]
+-[FSQPPilgrimManager setFoursquareAPI:]
+-[FSQPPilgrimManager hasBeenConfigured]
+-[FSQPPilgrimManager setHasBeenConfigured:]
+-[FSQPPilgrimManager authorizationCompletion]
+-[FSQPPilgrimManager setAuthorizationCompletion:]
+-[FSQPPilgrimManager logger]
+-[FSQPPilgrimManager setLogger:]
+-[FSQPPilgrimManager visitStore]
+-[FSQPPilgrimManager setVisitStore:]
+-[FSQPPilgrimManager homeWorkModel]
+-[FSQPPilgrimManager setHomeWorkModel:]
+-[FSQPPilgrimManager terminateObserver]
+-[FSQPPilgrimManager setTerminateObserver:]
+-[FSQPPilgrimManager geofenceManager]
+-[FSQPPilgrimManager setGeofenceManager:]
+-[FSQPPilgrimManager userInfoCache]
+-[FSQPPilgrimManager migrationManager]
+-[FSQPPilgrimManager setMigrationManager:]
+-[FSQPPilgrimManager endVisitBlock]
+-[FSQPPilgrimManager setEndVisitBlock:]
+-[FSQPPilgrimManager .cxx_destruct]
+_OBJC_IVAR_$_FSQPPilgrimManager._systemLocationManager
+_OBJC_IVAR_$_FSQPPilgrimManager._logger
+_OBJC_IVAR_$_FSQPPilgrimManager._visitStore
+_OBJC_IVAR_$_FSQPPilgrimManager._userInfoCache
+_OBJC_IVAR_$_FSQPPilgrimManager._userInfo
+_OBJC_IVAR_$_FSQPPilgrimManager._homeWorkModel
+___block_descriptor_24_e4_20w_e23_v8@?0@"NSNotification"4l
+___block_descriptor_24_e4_20s_e27_c16@?0@"FSQPTrigger"4I8^c12l
+_OBJC_IVAR_$_FSQPPilgrimManager._debugLogsEnabled
+_OBJC_IVAR_$_FSQPPilgrimManager._installId
+_OBJC_IVAR_$_FSQPPilgrimManager._feedbackProvider
+_OBJC_IVAR_$_FSQPPilgrimManager._visitTester
+___block_descriptor_20_e34_v8@?0@"FSQPFoursquareAPIResponse"4l
+___block_descriptor_24_e4_20bs_e5_v4@?0l
+___block_descriptor_28_e4_20bs24w_e16_v8@?0@"NSError"4l
+___block_descriptor_20_e28_@"NSValue"8@?0@"FSQPRegion"4l
+___block_literal_global.344
+___block_literal_global.352
+___block_descriptor_20_e30_@"NSString"8@?0@"FSQPTrigger"4l
+___block_literal_global.375
+_OBJC_IVAR_$_FSQPPilgrimManager._nearbyTriggers
+_OBJC_IVAR_$_FSQPPilgrimManager._oauthToken
+___block_descriptor_28_e4_20bs24w_e47_v20@?0c4@"CLLocation"8@"NSNumber"12@"NSError"16l
+___block_descriptor_28_e4_20s24bs_e34_v8@?0@"FSQPFoursquareAPIResponse"4l
+_OBJC_IVAR_$_FSQPPilgrimManager._delegate
+_OBJC_IVAR_$_FSQPPilgrimManager._foursquareAPI
+_OBJC_IVAR_$_FSQPPilgrimManager._hasBeenConfigured
+_OBJC_IVAR_$_FSQPPilgrimManager._authorizationCompletion
+_OBJC_IVAR_$_FSQPPilgrimManager._terminateObserver
+_OBJC_IVAR_$_FSQPPilgrimManager._geofenceManager
+_OBJC_IVAR_$_FSQPPilgrimManager._migrationManager
+_OBJC_IVAR_$_FSQPPilgrimManager._endVisitBlock
+l_OBJC_PROTOCOL_$_FSQPCoreLocationDelegate
+l_OBJC_LABEL_PROTOCOL_$_FSQPCoreLocationDelegate
+/tmp/sandbox/workspace/PilgrimSDK/PilgrimSDK/Public/FSQPPilgrimManager.m
+/tmp/sandbox/workspace/PilgrimSDK/PilgrimSDK/Public/FSQPPilgrimManager.h
+__56-[FSQPPilgrimManager requestCurrentLocation:completion:]_block_invoke
+__55-[FSQPPilgrimManager getCurrentLocationWithCompletion:]_block_invoke
+__41-[FSQPPilgrimManager triggerDescriptions]_block_invoke
+__35-[FSQPPilgrimManager workLocations]_block_invoke
+__35-[FSQPPilgrimManager homeLocations]_block_invoke
+__copy_helper_block_e4_20b24w
+__35-[FSQPPilgrimManager clearAllData:]_block_invoke
+__27-[FSQPPilgrimManager start]_block_invoke_2
+__27-[FSQPPilgrimManager start]_block_invoke
+__85-[FSQPPilgrimManager configureWithConsumerKey:secret:oauthToken:delegate:completion:]_block_invoke_2
+__85-[FSQPPilgrimManager configureWithConsumerKey:secret:oauthToken:delegate:completion:]_block_invoke
+__51+[FSQPPilgrimManager canTriggerVisit:withTriggers:]_block_invoke
+__26-[FSQPPilgrimManager init]_block_invoke
+__35+[FSQPPilgrimManager sharedManager]_block_invoke
+-[FSQPCategoryIcon initWithDict:]
++[FSQPCategoryIcon supportsSecureCoding]
+-[FSQPCategoryIcon initWithCoder:]
+-[FSQPCategoryIcon encodeWithCoder:]
+-[FSQPCategoryIcon isEqual:]
+-[FSQPCategoryIcon hash]
+-[FSQPCategoryIcon prefix]
+-[FSQPCategoryIcon suffix]
+-[FSQPCategoryIcon .cxx_destruct]
+-[FSQPCategory initWithCategoryDict:]
++[FSQPCategory supportsSecureCoding]
+-[FSQPCategory initWithCoder:]
+-[FSQPCategory encodeWithCoder:]
+-[FSQPCategory isEqual:]
+-[FSQPCategory hash]
+-[FSQPCategory foursquareID]
+-[FSQPCategory name]
+-[FSQPCategory pluralName]
+-[FSQPCategory shortName]
+-[FSQPCategory icon]
+-[FSQPCategory isPrimary]
+-[FSQPCategory .cxx_destruct]
+-[FSQPChain initWithChainDict:]
++[FSQPChain supportsSecureCoding]
+-[FSQPChain initWithCoder:]
+-[FSQPChain encodeWithCoder:]
+-[FSQPChain description]
+-[FSQPChain isEqual:]
+-[FSQPChain hash]
+-[FSQPChain foursquareID]
+-[FSQPChain name]
+-[FSQPChain .cxx_destruct]
+-[FSQPVenue initWithVenueDict:]
+-[FSQPVenue primaryCategory]
++[FSQPVenue supportsSecureCoding]
+-[FSQPVenue initWithCoder:]
+-[FSQPVenue encodeWithCoder:]
+-[FSQPVenue description]
+-[FSQPVenue isEqual:]
+-[FSQPVenue hash]
+-[FSQPVenue foursquareID]
+-[FSQPVenue name]
+-[FSQPVenue probability]
+-[FSQPVenue partnerVenueId]
+-[FSQPVenue locationInformation]
+-[FSQPVenue chains]
+-[FSQPVenue categories]
+-[FSQPVenue hierarchy]
+-[FSQPVenue .cxx_destruct]
+_OBJC_IVAR_$_FSQPCategoryIcon._prefix
+_OBJC_IVAR_$_FSQPCategoryIcon._suffix
+_OBJC_IVAR_$_FSQPCategory._foursquareID
+_OBJC_IVAR_$_FSQPCategory._name
+_OBJC_IVAR_$_FSQPCategory._pluralName
+_OBJC_IVAR_$_FSQPCategory._shortName
+_OBJC_IVAR_$_FSQPCategory._icon
+_OBJC_IVAR_$_FSQPCategory._isPrimary
+_OBJC_IVAR_$_FSQPChain._foursquareID
+_OBJC_IVAR_$_FSQPChain._name
+_OBJC_IVAR_$_FSQPVenue._foursquareID
+_OBJC_IVAR_$_FSQPVenue._name
+_OBJC_IVAR_$_FSQPVenue._probability
+_OBJC_IVAR_$_FSQPVenue._partnerVenueId
+_OBJC_IVAR_$_FSQPVenue._locationInformation
+_OBJC_IVAR_$_FSQPVenue._categories
+_OBJC_IVAR_$_FSQPVenue._chains
+_OBJC_IVAR_$_FSQPVenue._hierarchy
+/tmp/sandbox/workspace/PilgrimSDK/PilgrimSDK/Public/FSQPVenue.m
+/tmp/sandbox/workspace/PilgrimSDK/PilgrimSDK/Public/FSQPVenue.h
+-[FSQPVenueLocation initWithVenueLocationDictionary:]
++[FSQPVenueLocation supportsSecureCoding]
+-[FSQPVenueLocation initWithCoder:]
+-[FSQPVenueLocation encodeWithCoder:]
+-[FSQPVenueLocation description]
+-[FSQPVenueLocation isEqual:]
+-[FSQPVenueLocation address]
+-[FSQPVenueLocation crossStreet]
+-[FSQPVenueLocation city]
+-[FSQPVenueLocation state]
+-[FSQPVenueLocation postalCode]
+-[FSQPVenueLocation country]
+-[FSQPVenueLocation coordinate]
+-[FSQPVenueLocation .cxx_destruct]
+_OBJC_IVAR_$_FSQPVenueLocation._address
+_OBJC_IVAR_$_FSQPVenueLocation._crossStreet
+_OBJC_IVAR_$_FSQPVenueLocation._city
+_OBJC_IVAR_$_FSQPVenueLocation._state
+_OBJC_IVAR_$_FSQPVenueLocation._postalCode
+_OBJC_IVAR_$_FSQPVenueLocation._country
+_OBJC_IVAR_$_FSQPVenueLocation._coordinate
+/tmp/sandbox/workspace/PilgrimSDK/PilgrimSDK/Public/FSQPVenueLocation.m
+/tmp/sandbox/workspace/PilgrimSDK/PilgrimSDK/Public/FSQPVenueLocation.h
+-[FSQPVisit initWithLocationVisit:locationType:confidence:venue:pilgrimVisitId:]
++[FSQPVisit departureVisitForVisit:departureLocation:]
++[FSQPVisit backfillDepartureVisit:response:]
+-[FSQPVisit processDepartureReponse:]
+-[FSQPVisit initWithLocationVisit:response:]
+___44-[FSQPVisit initWithLocationVisit:response:]_block_invoke
+___44-[FSQPVisit initWithLocationVisit:response:]_block_invoke_2
+___44-[FSQPVisit initWithLocationVisit:response:]_block_invoke_3
++[FSQPVisit supportsSecureCoding]
+-[FSQPVisit initWithCoder:]
+-[FSQPVisit encodeWithCoder:]
+-[FSQPVisit arrivalDate]
+-[FSQPVisit arrivalLocation]
+-[FSQPVisit departureDate]
+-[FSQPVisit departureLocation]
+-[FSQPVisit hasDeparted]
+-[FSQPVisit displayName]
+-[FSQPVisit description]
+___24-[FSQPVisit description]_block_invoke
+-[FSQPVisit confidenceString]
++[FSQPVisit confidenceStringForValue:]
+-[FSQPVisit requestMapping]
+-[FSQPVisit isEqual:]
+-[FSQPVisit locationType]
+-[FSQPVisit confidence]
+-[FSQPVisit venue]
+-[FSQPVisit otherPossibleVenues]
+-[FSQPVisit nearbyVenues]
+-[FSQPVisit segments]
+-[FSQPVisit pilgrimVisitId]
+-[FSQPVisit userStates]
+-[FSQPVisit isBackfilled]
+-[FSQPVisit setIsBackfilled:]
+-[FSQPVisit serverMatchedTrigger]
+-[FSQPVisit locationVisit]
+-[FSQPVisit setLocationVisit:]
+-[FSQPVisit regionLL]
+-[FSQPVisit setRegionLL:]
+-[FSQPVisit .cxx_destruct]
+_OBJC_IVAR_$_FSQPVisit._locationVisit
+_OBJC_IVAR_$_FSQPVisit._locationType
+_OBJC_IVAR_$_FSQPVisit._confidence
+_OBJC_IVAR_$_FSQPVisit._venue
+_OBJC_IVAR_$_FSQPVisit._pilgrimVisitId
+_OBJC_IVAR_$_FSQPVisit._otherPossibleVenues
+_OBJC_IVAR_$_FSQPVisit._segments
+_OBJC_IVAR_$_FSQPVisit._userStates
+_OBJC_IVAR_$_FSQPVisit._serverMatchedTrigger
+___block_descriptor_20_e32_@"FSQPVenue"8@?0@"NSDictionary"4l
+___block_literal_global.102
+_OBJC_IVAR_$_FSQPVisit._nearbyVenues
+___block_literal_global.109
+_OBJC_IVAR_$_FSQPVisit._isBackfilled
+_OBJC_IVAR_$_FSQPVisit._regionLL
+_description.descriptionTimeFormatter
+_description.onceToken
+___block_literal_global.196
+/tmp/sandbox/workspace/PilgrimSDK/PilgrimSDK/Public/FSQPVisit.m
+/tmp/sandbox/workspace/PilgrimSDK/PilgrimSDK/Private/Internal Headers/FSQPVisit_Private.h
+/tmp/sandbox/workspace/PilgrimSDK/PilgrimSDK/Public/FSQPVisit.h
+fsqpLocationCoordinateIsNonZeroAndValid
+fsqp_stringForStopDetectionAlgorithm
+/tmp/sandbox/workspace/PilgrimSDK/PilgrimSDK/Private/Settings/PilgrimStopDetection.h
+__24-[FSQPVisit description]_block_invoke
+__44-[FSQPVisit initWithLocationVisit:response:]_block_invoke_3
+__44-[FSQPVisit initWithLocationVisit:response:]_block_invoke_2
+__44-[FSQPVisit initWithLocationVisit:response:]_block_invoke
+FSQPConfidenceFromString
+FSQPLocationTypeForString
+StringForFSQPLocationType
+-[FSQPStatusRequest initWithStatus:hasEverBeenEnabled:]
+-[FSQPStatusRequest consumerKeyInPath]
+-[FSQPStatusRequest endpoint]
+-[FSQPStatusRequest method]
+-[FSQPStatusRequest params]
+-[FSQPStatusRequest status]
+-[FSQPStatusRequest hasEverBeenEnabled]
+_OBJC_IVAR_$_FSQPStatusRequest._status
+_OBJC_IVAR_$_FSQPStatusRequest._hasEverBeenEnabled
+/tmp/sandbox/workspace/PilgrimSDK/PilgrimSDK/Private/Networking/Models/FSQPStatusRequest.m
+/tmp/sandbox/workspace/PilgrimSDK/PilgrimSDK/Private/Networking/Models/FSQPStatusRequest.h
+FSQPStatusString
+-[FSQPPolygon initWithCoordinates:]
+-[FSQPPolygon contains:]
+-[FSQPPolygon edges]
+-[FSQPPolygon .cxx_destruct]
+_OBJC_IVAR_$_FSQPPolygon._edges
+/tmp/sandbox/workspace/PilgrimSDK/PilgrimSDK/Private/Geofences/Polygonal/FSQPPolygon.m
+/tmp/sandbox/workspace/PilgrimSDK/PilgrimSDK/Private/Geofences/Polygonal/FSQPPolygon.h
+-[FSQPFeedbackProvider initWithFoursquareAPI:]
+-[FSQPFeedbackProvider leaveVisitFeedback:visitId:actualVenueId:completion:]
+___76-[FSQPFeedbackProvider leaveVisitFeedback:visitId:actualVenueId:completion:]_block_invoke
+-[FSQPFeedbackProvider checkInWithVenueId:]
+-[FSQPFeedbackProvider checkInWithPartnerVenueId:]
+-[FSQPFeedbackProvider checkInWithVenueId:isFoursquareId:]
+___58-[FSQPFeedbackProvider checkInWithVenueId:isFoursquareId:]_block_invoke
+___58-[FSQPFeedbackProvider checkInWithVenueId:isFoursquareId:]_block_invoke_2
++[FSQPFeedbackProvider endpointForCheckin]
+-[FSQPFeedbackProvider foursquareAPI]
+-[FSQPFeedbackProvider locationScanner]
+-[FSQPFeedbackProvider .cxx_destruct]
+_OBJC_IVAR_$_FSQPFeedbackProvider._foursquareAPI
+_OBJC_IVAR_$_FSQPFeedbackProvider._locationScanner
+___block_descriptor_24_e4_20bs_e34_v8@?0@"FSQPFoursquareAPIResponse"4l
+___block_descriptor_29_e4_20s24w_e37_v12@?0@"FSQPLocationScan"4@"NSError"8l
+/tmp/sandbox/workspace/PilgrimSDK/PilgrimSDK/Public/FSQPFeedbackProvider.m
+__58-[FSQPFeedbackProvider checkInWithVenueId:isFoursquareId:]_block_invoke_2
+__58-[FSQPFeedbackProvider checkInWithVenueId:isFoursquareId:]_block_invoke
+__76-[FSQPFeedbackProvider leaveVisitFeedback:visitId:actualVenueId:completion:]_block_invoke
++[NSCharacterSet(FSQP) fsqp_URLQueryItemAllowedCharacterSet]
+___60+[NSCharacterSet(FSQP) fsqp_URLQueryItemAllowedCharacterSet]_block_invoke
+_fsqp_URLQueryItemAllowedCharacterSet.onceToken
+_fsqp_URLQueryItemAllowedCharacterSet.characterSet
+/tmp/sandbox/workspace/PilgrimSDK/PilgrimSDK/Private/Foundation/NSCharacterSet+FSQP.m
+__60+[NSCharacterSet(FSQP) fsqp_URLQueryItemAllowedCharacterSet]_block_invoke
+-[FSQPGetCurrentLocationResponse initWithCurrentPlace:matchedGeofences:location:]
++[FSQPGetCurrentLocationResponse responseWithLocation:apiResponse:]
+___67+[FSQPGetCurrentLocationResponse responseWithLocation:apiResponse:]_block_invoke
+-[FSQPGetCurrentLocationResponse currentLocation]
+-[FSQPGetCurrentLocationResponse setCurrentLocation:]
+-[FSQPGetCurrentLocationResponse .cxx_destruct]
+_OBJC_IVAR_$_FSQPGetCurrentLocationResponse._currentLocation
+___block_descriptor_24_e4_20s_e21_@8@?0@"NSDictionary"4l
+/tmp/sandbox/workspace/PilgrimSDK/PilgrimSDK/Private/Networking/Models/FSQPGetCurrentLocationResponse.m
+/tmp/sandbox/workspace/PilgrimSDK/PilgrimSDK/Private/Networking/Models/FSQPGetCurrentLocationResponse.h
+__67+[FSQPGetCurrentLocationResponse responseWithLocation:apiResponse:]_block_invoke
+-[FSQPMultiStopRequest initWithEncodedTrail:location:]
+-[FSQPMultiStopRequest consumerKeyInPath]
+-[FSQPMultiStopRequest endpoint]
+-[FSQPMultiStopRequest method]
+-[FSQPMultiStopRequest params]
+-[FSQPMultiStopRequest encodedTrail]
+-[FSQPMultiStopRequest location]
+-[FSQPMultiStopRequest .cxx_destruct]
+_OBJC_IVAR_$_FSQPMultiStopRequest._encodedTrail
+_OBJC_IVAR_$_FSQPMultiStopRequest._location
+/tmp/sandbox/workspace/PilgrimSDK/PilgrimSDK/Private/Networking/Models/FSQPMultiStopRequest.m
++[FSQPTrailsEncoder trailWithLocations:error:]
+___46+[FSQPTrailsEncoder trailWithLocations:error:]_block_invoke
+___block_descriptor_20_e19_@8@?0@"CLLocation"4l
+/tmp/sandbox/workspace/PilgrimSDK/PilgrimSDK/Private/Networking/Encoders/FSQPTrailsEncoder.m
+__46+[FSQPTrailsEncoder trailWithLocations:error:]_block_invoke
+-[FSQPCLVisitManager initWithServices:foursquareAPI:cache:]
+-[FSQPCLVisitManager sendVisit:]
+___32-[FSQPCLVisitManager sendVisit:]_block_invoke
+-[FSQPCLVisitManager sendQueuedFailedVisit]
+___43-[FSQPCLVisitManager sendQueuedFailedVisit]_block_invoke
+___copy_helper_block_e4_20s24s28w
+___destroy_helper_block_e4_20s24s28w
+-[FSQPCLVisitManager services]
+-[FSQPCLVisitManager setServices:]
+-[FSQPCLVisitManager foursquareAPI]
+-[FSQPCLVisitManager setFoursquareAPI:]
+-[FSQPCLVisitManager cache]
+-[FSQPCLVisitManager setCache:]
+-[FSQPCLVisitManager isProcessingFailedVisits]
+-[FSQPCLVisitManager setProcessingFailedVisits:]
+-[FSQPCLVisitManager .cxx_destruct]
+_OBJC_IVAR_$_FSQPCLVisitManager._services
+_OBJC_IVAR_$_FSQPCLVisitManager._foursquareAPI
+_OBJC_IVAR_$_FSQPCLVisitManager._cache
+___block_descriptor_32_e4_20s24s28w_e34_v8@?0@"FSQPFoursquareAPIResponse"4l
+_OBJC_IVAR_$_FSQPCLVisitManager._processingFailedVisits
+/tmp/sandbox/workspace/PilgrimSDK/PilgrimSDK/Private/FSQPCLVisitManager.m
+__destroy_helper_block_e4_20s24s28w
+__copy_helper_block_e4_20s24s28w
+__43-[FSQPCLVisitManager sendQueuedFailedVisit]_block_invoke
+__32-[FSQPCLVisitManager sendVisit:]_block_invoke
+-[FSQPGeofenceEventsRequest initWithGeofenceEvents:]
+-[FSQPGeofenceEventsRequest consumerKeyInPath]
+-[FSQPGeofenceEventsRequest endpoint]
+-[FSQPGeofenceEventsRequest method]
+-[FSQPGeofenceEventsRequest params]
+___35-[FSQPGeofenceEventsRequest params]_block_invoke
+-[FSQPGeofenceEventsRequest events]
+-[FSQPGeofenceEventsRequest setEvents:]
+-[FSQPGeofenceEventsRequest .cxx_destruct]
+_OBJC_IVAR_$_FSQPGeofenceEventsRequest._events
+___block_descriptor_20_e40_@"NSDictionary"8@?0@"FSQPGeofenceEvent"4l
+/tmp/sandbox/workspace/PilgrimSDK/PilgrimSDK/Private/Networking/Models/FSQPGeofenceEventsRequest.m
+__35-[FSQPGeofenceEventsRequest params]_block_invoke
+-[FSQPGeofenceRegion initWithCenterCoordinate:radius:threshold:]
+-[FSQPGeofenceRegion initWithGeofenceRegionDict:]
++[FSQPGeofenceRegion supportsSecureCoding]
+-[FSQPGeofenceRegion initWithCoder:]
+-[FSQPGeofenceRegion encodeWithCoder:]
+-[FSQPGeofenceRegion hasPassedThreshold:]
+-[FSQPGeofenceRegion center]
+-[FSQPGeofenceRegion radius]
+-[FSQPGeofenceRegion setRadius:]
+-[FSQPGeofenceRegion threshold]
+-[FSQPGeofenceRegion setThreshold:]
+-[FSQPGeofenceRegion centerCoordinate]
+-[FSQPGeofenceRegion setCenterCoordinate:]
+-[FSQPGeofenceRegion .cxx_destruct]
+_OBJC_IVAR_$_FSQPGeofenceRegion._centerCoordinate
+_OBJC_IVAR_$_FSQPGeofenceRegion._radius
+_OBJC_IVAR_$_FSQPGeofenceRegion._threshold
+/tmp/sandbox/workspace/PilgrimSDK/PilgrimSDK/Private/Geofences/FSQPGeofenceRegion.m
+/tmp/sandbox/workspace/PilgrimSDK/PilgrimSDK/Private/Geofences/FSQPGeofenceRegion.h
+-[FSQPPoint2D initWithX:y:]
+-[FSQPPoint2D x]
+-[FSQPPoint2D setX:]
+-[FSQPPoint2D y]
+-[FSQPPoint2D setY:]
+_OBJC_IVAR_$_FSQPPoint2D._x
+_OBJC_IVAR_$_FSQPPoint2D._y
+/tmp/sandbox/workspace/PilgrimSDK/PilgrimSDK/Private/Geofences/Polygonal/FSQPPoint2D.m
+/tmp/sandbox/workspace/PilgrimSDK/PilgrimSDK/Private/Geofences/Polygonal/FSQPPoint2D.h
+-[FSQPCurrentLocation initWithCurrentPlace:matchedGeofences:location:]
+-[FSQPCurrentLocation description]
+-[FSQPCurrentLocation currentPlace]
+-[FSQPCurrentLocation matchedGeofences]
+-[FSQPCurrentLocation location]
+-[FSQPCurrentLocation .cxx_destruct]
+_OBJC_IVAR_$_FSQPCurrentLocation._currentPlace
+_OBJC_IVAR_$_FSQPCurrentLocation._matchedGeofences
+_OBJC_IVAR_$_FSQPCurrentLocation._location
+/tmp/sandbox/workspace/PilgrimSDK/PilgrimSDK/Public/FSQPCurrentLocation.m
+/tmp/sandbox/workspace/PilgrimSDK/PilgrimSDK/Public/FSQPCurrentLocation.h
+-[FSQPDebugLogsEmptyView initWithFrame:]
+-[FSQPDebugLogsEmptyView setHidden:forSelectedScope:]
+-[FSQPDebugLogsEmptyView emptyLabel]
+-[FSQPDebugLogsEmptyView setEmptyLabel:]
+-[FSQPDebugLogsEmptyView .cxx_destruct]
+_OBJC_IVAR_$_FSQPDebugLogsEmptyView._emptyLabel
+/tmp/sandbox/workspace/PilgrimSDK/PilgrimSDK/Private/Debug Mode/FSQPDebugLogsEmptyView.m
+-[FSQPCoordinate initWithCoordinate:]
++[FSQPCoordinate supportsSecureCoding]
+-[FSQPCoordinate initWithCoder:]
+-[FSQPCoordinate encodeWithCoder:]
+-[FSQPCoordinate location]
+-[FSQPCoordinate description]
+-[FSQPCoordinate value]
+_OBJC_IVAR_$_FSQPCoordinate._value
+/tmp/sandbox/workspace/PilgrimSDK/PilgrimSDK/Private/FSQPCoordinate.m
+/tmp/sandbox/workspace/PilgrimSDK/PilgrimSDK/Private/FSQPCoordinate.h
+-[FSQPTrigger initWithType:foursquareID:notifyOnExit:minimumConfidence:name:]
++[FSQPTrigger triggersForNotificationConfigDictionary:]
+-[FSQPTrigger passes:]
++[FSQPTrigger supportsSecureCoding]
+-[FSQPTrigger initWithCoder:]
+-[FSQPTrigger encodeWithCoder:]
+-[FSQPTrigger description]
++[FSQPTrigger displayStringForTriggerVenueType:]
+-[FSQPTrigger type]
+-[FSQPTrigger foursquareID]
+-[FSQPTrigger notifyOnExit]
+-[FSQPTrigger minimumConfidence]
+-[FSQPTrigger name]
+-[FSQPTrigger .cxx_destruct]
+_OBJC_IVAR_$_FSQPTrigger._type
+_OBJC_IVAR_$_FSQPTrigger._foursquareID
+_OBJC_IVAR_$_FSQPTrigger._notifyOnExit
+_OBJC_IVAR_$_FSQPTrigger._minimumConfidence
+_OBJC_IVAR_$_FSQPTrigger._name
+/tmp/sandbox/workspace/PilgrimSDK/PilgrimSDK/Private/Settings/FSQPTrigger.m
+/tmp/sandbox/workspace/PilgrimSDK/PilgrimSDK/Private/Settings/FSQPTrigger.h
+-[FSQPGeofenceRequest initWithChecksum:location:]
+-[FSQPGeofenceRequest consumerKeyInPath]
+-[FSQPGeofenceRequest endpoint]
+-[FSQPGeofenceRequest method]
+-[FSQPGeofenceRequest params]
+-[FSQPGeofenceRequest checksum]
+-[FSQPGeofenceRequest setChecksum:]
+-[FSQPGeofenceRequest location]
+-[FSQPGeofenceRequest setLocation:]
+-[FSQPGeofenceRequest .cxx_destruct]
+_OBJC_IVAR_$_FSQPGeofenceRequest._checksum
+_OBJC_IVAR_$_FSQPGeofenceRequest._location
+/tmp/sandbox/workspace/PilgrimSDK/PilgrimSDK/Private/Networking/Models/FSQPGeofenceRequest.m
+-[FSQPGetCurrentLocationRequest initWithLocation:wifiScan:]
+-[FSQPGetCurrentLocationRequest consumerKeyInPath]
+-[FSQPGetCurrentLocationRequest endpoint]
+-[FSQPGetCurrentLocationRequest method]
+-[FSQPGetCurrentLocationRequest params]
+-[FSQPGetCurrentLocationRequest location]
+-[FSQPGetCurrentLocationRequest setLocation:]
+-[FSQPGetCurrentLocationRequest wifiScan]
+-[FSQPGetCurrentLocationRequest setWifiScan:]
+-[FSQPGetCurrentLocationRequest .cxx_destruct]
+_OBJC_IVAR_$_FSQPGetCurrentLocationRequest._location
+_OBJC_IVAR_$_FSQPGetCurrentLocationRequest._wifiScan
+/tmp/sandbox/workspace/PilgrimSDK/PilgrimSDK/Private/Networking/Models/FSQPGetCurrentLocationRequest.m
+-[FSQPPilgrimSearchRequest initWithLocation:skipLogging:locationType:wifiScan:nearbyTriggers:optionalParams:]
+-[FSQPPilgrimSearchRequest consumerKeyInPath]
+-[FSQPPilgrimSearchRequest endpoint]
+-[FSQPPilgrimSearchRequest method]
+-[FSQPPilgrimSearchRequest params]
+-[FSQPPilgrimSearchRequest locationTypeParamsStringFrom:]
+-[FSQPPilgrimSearchRequest nearbyTriggersForApi:]
+___49-[FSQPPilgrimSearchRequest nearbyTriggersForApi:]_block_invoke
+-[FSQPPilgrimSearchRequest location]
+-[FSQPPilgrimSearchRequest skipLogging]
+-[FSQPPilgrimSearchRequest locationType]
+-[FSQPPilgrimSearchRequest wifiScan]
+-[FSQPPilgrimSearchRequest nearbyTriggers]
+-[FSQPPilgrimSearchRequest optionalParams]
+-[FSQPPilgrimSearchRequest .cxx_destruct]
+_OBJC_IVAR_$_FSQPPilgrimSearchRequest._location
+_OBJC_IVAR_$_FSQPPilgrimSearchRequest._skipLogging
+_OBJC_IVAR_$_FSQPPilgrimSearchRequest._locationType
+_OBJC_IVAR_$_FSQPPilgrimSearchRequest._wifiScan
+_OBJC_IVAR_$_FSQPPilgrimSearchRequest._nearbyTriggers
+_OBJC_IVAR_$_FSQPPilgrimSearchRequest._optionalParams
+___block_descriptor_20_e36_@"NSString"8@?0@"FSQPNearbyTrigger"4l
+/tmp/sandbox/workspace/PilgrimSDK/PilgrimSDK/Private/Networking/Models/FSQPPilgrimSearchRequest.m
+__49-[FSQPPilgrimSearchRequest nearbyTriggersForApi:]_block_invoke
+-[FSQPCLVisitCache setFailedVisitsQueue:]
+-[FSQPCLVisitCache failedVisitsQueue]
++[FSQPCLVisitCache fsqp_archivePath:]
+/tmp/sandbox/workspace/PilgrimSDK/PilgrimSDK/Private/FSQPCLVisitCache.m
+-[FSQPGeofenceEvent initWithEventType:geofence:location:]
++[FSQPGeofenceEvent eventWithEventType:geofence:location:]
++[FSQPGeofenceEvent supportsSecureCoding]
+-[FSQPGeofenceEvent initWithCoder:]
+-[FSQPGeofenceEvent encodeWithCoder:]
+-[FSQPGeofenceEvent geofenceID]
+-[FSQPGeofenceEvent name]
+-[FSQPGeofenceEvent categoryIDs]
+-[FSQPGeofenceEvent chainIDs]
+-[FSQPGeofenceEvent partnerVenueID]
+-[FSQPGeofenceEvent venue]
+-[FSQPGeofenceEvent timestamp]
+-[FSQPGeofenceEvent description]
+-[FSQPGeofenceEvent JSONObjectDictionary]
+-[FSQPGeofenceEvent eventType]
+-[FSQPGeofenceEvent location]
+-[FSQPGeofenceEvent userStates]
+-[FSQPGeofenceEvent setUserStates:]
+-[FSQPGeofenceEvent geofence]
+-[FSQPGeofenceEvent .cxx_destruct]
+_OBJC_IVAR_$_FSQPGeofenceEvent._eventType
+_OBJC_IVAR_$_FSQPGeofenceEvent._geofence
+_OBJC_IVAR_$_FSQPGeofenceEvent._location
+_OBJC_IVAR_$_FSQPGeofenceEvent._userStates
+/tmp/sandbox/workspace/PilgrimSDK/PilgrimSDK/Public/FSQPGeofenceEvent.m
+/tmp/sandbox/workspace/PilgrimSDK/PilgrimSDK/Private/Internal Headers/FSQPGeofenceEvent_Private.h
+/tmp/sandbox/workspace/PilgrimSDK/PilgrimSDK/Public/FSQPGeofenceEvent.h
+-[CLVisit(FSQP) trigger]
+-[CLVisit(FSQP) triggerDisplayString]
++[CLVisit(FSQP) displayStringForTrigger:]
+/tmp/sandbox/workspace/PilgrimSDK/PilgrimSDK/Private/Foundation/Core Location/CLVisit+FSQP.m
+-[FSQPLocationVisit initWithDepartureLocation:arrivalLocation:stopDetectionAlgorithm:]
+-[FSQPLocationVisit initWithArrivalLocation:stopDetectionAlgorithm:]
+-[FSQPLocationVisit arrivalDate]
+-[FSQPLocationVisit departureDate]
+-[FSQPLocationVisit hasDeparted]
++[FSQPLocationVisit supportsSecureCoding]
+-[FSQPLocationVisit initWithCoder:]
+-[FSQPLocationVisit encodeWithCoder:]
+-[FSQPLocationVisit description]
+-[FSQPLocationVisit requestMapping]
+-[FSQPLocationVisit isEqual:]
+-[FSQPLocationVisit hash]
+-[FSQPLocationVisit arrivalLocation]
+-[FSQPLocationVisit departureLocation]
+-[FSQPLocationVisit stopDetectionAlgorithm]
+-[FSQPLocationVisit setStopDetectionAlgorithm:]
+-[FSQPLocationVisit .cxx_destruct]
+_OBJC_IVAR_$_FSQPLocationVisit._arrivalLocation
+_OBJC_IVAR_$_FSQPLocationVisit._departureLocation
+_OBJC_IVAR_$_FSQPLocationVisit._stopDetectionAlgorithm
+/tmp/sandbox/workspace/PilgrimSDK/PilgrimSDK/FSQPLocationVisit.m
+/tmp/sandbox/workspace/PilgrimSDK/PilgrimSDK/FSQPLocationVisit.h
++[NSKeyedArchiver(FSQP) fsqp_backgroundSaveObject:toPath:error:]
+___64+[NSKeyedArchiver(FSQP) fsqp_backgroundSaveObject:toPath:error:]_block_invoke
+___copy_helper_block_e4_20r
+___destroy_helper_block_e4_20r
+___block_descriptor_24_e4_20r_e5_v4@?0l
+/tmp/sandbox/workspace/PilgrimSDK/PilgrimSDK/Private/Foundation/NSKeyedArchiver+FSQP.m
+__destroy_helper_block_e4_20r
+__copy_helper_block_e4_20r
+__64+[NSKeyedArchiver(FSQP) fsqp_backgroundSaveObject:toPath:error:]_block_invoke
++[FSQPBackOff shared]
+___21+[FSQPBackOff shared]_block_invoke
+-[FSQPBackOff init]
+-[FSQPBackOff runWithName:code:]
+___32-[FSQPBackOff runWithName:code:]_block_invoke
+-[FSQPBackOff runOnMainWithName:code:]
+___38-[FSQPBackOff runOnMainWithName:code:]_block_invoke
+___38-[FSQPBackOff runOnMainWithName:code:]_block_invoke_2
+___copy_helper_block_e4_20s24r28r
+___destroy_helper_block_e4_20s24r28r
+___38-[FSQPBackOff runOnMainWithName:code:]_block_invoke.24
+___38-[FSQPBackOff runOnMainWithName:code:]_block_invoke.29
+___copy_helper_block_e8_20b36b
+___destroy_helper_block_e8_20s36s
+___38-[FSQPBackOff runOnMainWithName:code:]_block_invoke.31
+___copy_helper_block_e4_20b24s28s
+-[FSQPBackOff runNames]
+-[FSQPBackOff runQueue]
+-[FSQPBackOff .cxx_destruct]
+_OBJC_IVAR_$_FSQPBackOff._runNames
+_OBJC_IVAR_$_FSQPBackOff._runQueue
+___block_descriptor_32_e4_20s24r28r_e7_v8@?0i4l
+___block_descriptor_40_e8_20bs36bs_e5_v4@?0l
+___block_descriptor_32_e4_20bs24s28s_e5_v4@?0l
+/tmp/sandbox/workspace/PilgrimSDK/PilgrimSDK/FSQPBackOff.m
+__copy_helper_block_e4_20b24s28s
+__38-[FSQPBackOff runOnMainWithName:code:]_block_invoke.31
+__destroy_helper_block_e8_20s36s
+__copy_helper_block_e8_20b36b
+__38-[FSQPBackOff runOnMainWithName:code:]_block_invoke.29
+__38-[FSQPBackOff runOnMainWithName:code:]_block_invoke.24
+__destroy_helper_block_e4_20s24r28r
+__copy_helper_block_e4_20s24r28r
+__38-[FSQPBackOff runOnMainWithName:code:]_block_invoke_2
+__38-[FSQPBackOff runOnMainWithName:code:]_block_invoke
+__32-[FSQPBackOff runWithName:code:]_block_invoke
+__21+[FSQPBackOff shared]_block_invoke
+-[CLCircularRegion(FSQP) centerLocation]
+-[CLCircularRegion(FSQP) possiblyContainsLocation:]
+/tmp/sandbox/workspace/PilgrimSDK/PilgrimSDK/Private/Foundation/Core Location/CLCircularRegion+FS.m
++[FSQPKeys arrivalMonitoringIntervalKey]
++[FSQPKeys arrivalMonitoringSampleRateKey]
+/tmp/sandbox/workspace/PilgrimSDK/PilgrimSDK/Private/Settings/FSQPKeys.m
+-[FSQPGeofenceEventConfirmationRequest initWithVenueId:location:]
+-[FSQPGeofenceEventConfirmationRequest consumerKeyInPath]
+-[FSQPGeofenceEventConfirmationRequest endpoint]
+-[FSQPGeofenceEventConfirmationRequest params]
+-[FSQPGeofenceEventConfirmationRequest method]
+-[FSQPGeofenceEventConfirmationRequest venueId]
+-[FSQPGeofenceEventConfirmationRequest setVenueId:]
+-[FSQPGeofenceEventConfirmationRequest location]
+-[FSQPGeofenceEventConfirmationRequest setLocation:]
+-[FSQPGeofenceEventConfirmationRequest .cxx_destruct]
+_OBJC_IVAR_$_FSQPGeofenceEventConfirmationRequest._venueId
+_OBJC_IVAR_$_FSQPGeofenceEventConfirmationRequest._location
+/tmp/sandbox/workspace/PilgrimSDK/PilgrimSDK/Private/Networking/Models/FSQPGeofenceEventConfirmationRequest.m
+-[NSData(FSQP) gzipCompress]
+-[NSData(FSQP) gzipDeflateWithCompressionLevel:bufferSize:]
+-[NSData(FSQP) gzipInflate]
+-[NSData(FSQP) foursquareBase64URLEncodedString]
+/tmp/sandbox/workspace/PilgrimSDK/PilgrimSDK/Private/Foundation/NSData+FSQP.m
+-[FSQPVisitAddRequest initWithVisit:optionalParams:]
+-[FSQPVisitAddRequest consumerKeyInPath]
+-[FSQPVisitAddRequest endpoint]
+-[FSQPVisitAddRequest method]
+-[FSQPVisitAddRequest params]
+-[FSQPVisitAddRequest visit]
+-[FSQPVisitAddRequest optionalParams]
+-[FSQPVisitAddRequest setOptionalParams:]
+-[FSQPVisitAddRequest .cxx_destruct]
+_OBJC_IVAR_$_FSQPVisitAddRequest._visit
+_OBJC_IVAR_$_FSQPVisitAddRequest._optionalParams
+/tmp/sandbox/workspace/PilgrimSDK/PilgrimSDK/Private/Networking/Models/FSQPVisitAddRequest.m
+-[FSQPGeofence initWithDwellTime:venue:categoryIDs:chainIDs:partnerVenueID:type:name:geofenceID:boundary:]
+-[FSQPGeofence initWithVenueGeofenceDict:]
+-[FSQPGeofence initWithArbitraryLatLongGeofenceDict:]
+-[FSQPGeofence internalInitWithDict:]
+-[FSQPGeofence getBoundaryForType:withDict:]
+-[FSQPGeofence enumFromString:]
++[FSQPGeofence supportsSecureCoding]
+-[FSQPGeofence initWithCoder:]
+-[FSQPGeofence encodeWithCoder:]
+-[FSQPGeofence didEnterWithLocation:useHacc:]
+-[FSQPGeofence didExitWithLocation:]
+-[FSQPGeofence isEqualToGeofence:]
+-[FSQPGeofence isEqual:]
+-[FSQPGeofence hash]
+-[FSQPGeofence description]
+-[FSQPGeofence geofenceID]
+-[FSQPGeofence categoryIDs]
+-[FSQPGeofence chainIDs]
+-[FSQPGeofence partnerVenueID]
+-[FSQPGeofence dwellTime]
+-[FSQPGeofence venue]
+-[FSQPGeofence type]
+-[FSQPGeofence name]
+-[FSQPGeofence boundary]
+-[FSQPGeofence setBoundary:]
+-[FSQPGeofence .cxx_destruct]
+_OBJC_IVAR_$_FSQPGeofence._dwellTime
+_OBJC_IVAR_$_FSQPGeofence._venue
+_OBJC_IVAR_$_FSQPGeofence._categoryIDs
+_OBJC_IVAR_$_FSQPGeofence._chainIDs
+_OBJC_IVAR_$_FSQPGeofence._partnerVenueID
+_OBJC_IVAR_$_FSQPGeofence._type
+_OBJC_IVAR_$_FSQPGeofence._name
+_OBJC_IVAR_$_FSQPGeofence._geofenceID
+_OBJC_IVAR_$_FSQPGeofence._boundary
+/tmp/sandbox/workspace/PilgrimSDK/PilgrimSDK/Private/Geofences/FSQPGeofence.m
+/tmp/sandbox/workspace/PilgrimSDK/PilgrimSDK/Private/Geofences/FSQPGeofence.h
++[FSQPUserSegment supportsSecureCoding]
+-[FSQPUserSegment initWithDictionary:]
+-[FSQPUserSegment initWithCoder:]
+-[FSQPUserSegment encodeWithCoder:]
+-[FSQPUserSegment hash]
+-[FSQPUserSegment isEqual:]
+-[FSQPUserSegment description]
+-[FSQPUserSegment segmentId]
+-[FSQPUserSegment name]
+-[FSQPUserSegment .cxx_destruct]
+_OBJC_IVAR_$_FSQPUserSegment._segmentId
+_OBJC_IVAR_$_FSQPUserSegment._name
+/tmp/sandbox/workspace/PilgrimSDK/PilgrimSDK/Public/FSQPUserSegment.m
+/tmp/sandbox/workspace/PilgrimSDK/PilgrimSDK/Public/FSQPUserSegment.h
++[FSQPFoursquareAPI hostname]
++[FSQPFoursquareAPI pathPrefix]
++[FSQPFoursquareAPI hostnameWithPilgrimBundleObject:]
++[FSQPFoursquareAPI pathPrefixWithPilgrimBundleObject:]
+-[FSQPFoursquareAPI initWithConsumerKey:secret:installId:bundleId:]
+-[FSQPFoursquareAPI startRequestWithEndpoint:params:method:completion:]
+-[FSQPFoursquareAPI startRequestWithEndpoint:params:consumerKeyInPath:method:completion:]
+___89-[FSQPFoursquareAPI startRequestWithEndpoint:params:consumerKeyInPath:method:completion:]_block_invoke
+___89-[FSQPFoursquareAPI startRequestWithEndpoint:params:consumerKeyInPath:method:completion:]_block_invoke_2
+___copy_helper_block_e4_20b24s28s32s
+___destroy_helper_block_e4_20s24s28s32s
+___copy_helper_block_e4_20s24b28s
++[FSQPFoursquareAPI HTTPStringForMethod:]
+-[FSQPFoursquareAPI startRequest:completion:]
+-[FSQPFoursquareAPI pathComponentsForEndpoint:consumerKeyInPath:]
+-[FSQPFoursquareAPI requestWithEndpoint:params:consumerKeyInPath:method:]
+___73-[FSQPFoursquareAPI requestWithEndpoint:params:consumerKeyInPath:method:]_block_invoke
+___73-[FSQPFoursquareAPI requestWithEndpoint:params:consumerKeyInPath:method:]_block_invoke.221
+-[FSQPFoursquareAPI userAgent]
+-[FSQPFoursquareAPI acceptLanguageString]
+-[FSQPFoursquareAPI defaultParams]
+-[FSQPFoursquareAPI nearbyTriggersForApi:]
+___42-[FSQPFoursquareAPI nearbyTriggersForApi:]_block_invoke
+-[FSQPFoursquareAPI consumerKey]
+-[FSQPFoursquareAPI setConsumerKey:]
+-[FSQPFoursquareAPI secret]
+-[FSQPFoursquareAPI setSecret:]
+-[FSQPFoursquareAPI oauthToken]
+-[FSQPFoursquareAPI setOauthToken:]
+-[FSQPFoursquareAPI hostname]
+-[FSQPFoursquareAPI pathPrefix]
+-[FSQPFoursquareAPI installId]
+-[FSQPFoursquareAPI setInstallId:]
+-[FSQPFoursquareAPI bundleId]
+-[FSQPFoursquareAPI setBundleId:]
+-[FSQPFoursquareAPI logger]
+-[FSQPFoursquareAPI setLogger:]
+-[FSQPFoursquareAPI tokenService]
+-[FSQPFoursquareAPI setTokenService:]
+-[FSQPFoursquareAPI defaultHTTPRequestHeaders]
+-[FSQPFoursquareAPI setDefaultHTTPRequestHeaders:]
+-[FSQPFoursquareAPI HTTPMethodsEncodingParametersInURI]
+-[FSQPFoursquareAPI setHTTPMethodsEncodingParametersInURI:]
+-[FSQPFoursquareAPI .cxx_destruct]
+_OBJC_IVAR_$_FSQPFoursquareAPI._hostname
+_OBJC_IVAR_$_FSQPFoursquareAPI._pathPrefix
+_OBJC_IVAR_$_FSQPFoursquareAPI._consumerKey
+_OBJC_IVAR_$_FSQPFoursquareAPI._secret
+_OBJC_IVAR_$_FSQPFoursquareAPI._installId
+_OBJC_IVAR_$_FSQPFoursquareAPI._bundleId
+_OBJC_IVAR_$_FSQPFoursquareAPI._logger
+_OBJC_IVAR_$_FSQPFoursquareAPI._tokenService
+_OBJC_IVAR_$_FSQPFoursquareAPI._defaultHTTPRequestHeaders
+___block_descriptor_36_e4_20bs24s28s32s_e5_v4@?0l
+___block_descriptor_32_e4_20s24bs28s_e45_v16@?0@"NSData"4@"NSURLResponse"8@"NSError"12l
+___block_descriptor_24_e4_20s_e14_v16@?0@4@8^c12l
+_OBJC_IVAR_$_FSQPFoursquareAPI._oauthToken
+_OBJC_IVAR_$_FSQPFoursquareAPI._HTTPMethodsEncodingParametersInURI
+l_OBJC_PROTOCOL_$_FSQPAPI
+l_OBJC_LABEL_PROTOCOL_$_FSQPAPI
+/tmp/sandbox/workspace/PilgrimSDK/PilgrimSDK/Private/Networking/FSQPFoursquareAPI.m
+/tmp/sandbox/workspace/PilgrimSDK/PilgrimSDK/Private/Networking/FSQPFoursquareAPI.h
+__42-[FSQPFoursquareAPI nearbyTriggersForApi:]_block_invoke
+__73-[FSQPFoursquareAPI requestWithEndpoint:params:consumerKeyInPath:method:]_block_invoke.221
+__73-[FSQPFoursquareAPI requestWithEndpoint:params:consumerKeyInPath:method:]_block_invoke
+__copy_helper_block_e4_20s24b28s
+__destroy_helper_block_e4_20s24s28s32s
+__copy_helper_block_e4_20b24s28s32s
+__89-[FSQPFoursquareAPI startRequestWithEndpoint:params:consumerKeyInPath:method:completion:]_block_invoke_2
+__89-[FSQPFoursquareAPI startRequestWithEndpoint:params:consumerKeyInPath:method:completion:]_block_invoke
+-[FSQPFoursquareAPIResponse initWithResponseData:response:error:]
+-[FSQPFoursquareAPIResponse statusCodeType]
++[FSQPFoursquareAPIResponse typeForStatusCode:]
+-[FSQPFoursquareAPIResponse description]
+-[FSQPFoursquareAPIResponse wasSuccessful]
+-[FSQPFoursquareAPIResponse hadAnyError]
+-[FSQPFoursquareAPIResponse enableMallMode]
+-[FSQPFoursquareAPIResponse fullResponse]
+-[FSQPFoursquareAPIResponse response]
+-[FSQPFoursquareAPIResponse error]
+-[FSQPFoursquareAPIResponse statusCode]
+-[FSQPFoursquareAPIResponse stopDetectionInfo]
+-[FSQPFoursquareAPIResponse setStopDetectionInfo:]
+-[FSQPFoursquareAPIResponse geofenceRegion]
+-[FSQPFoursquareAPIResponse setGeofenceRegion:]
+-[FSQPFoursquareAPIResponse setStatusCodeType:]
+-[FSQPFoursquareAPIResponse .cxx_destruct]
+_OBJC_IVAR_$_FSQPFoursquareAPIResponse._fullResponse
+_OBJC_IVAR_$_FSQPFoursquareAPIResponse._response
+_OBJC_IVAR_$_FSQPFoursquareAPIResponse._stopDetectionInfo
+_OBJC_IVAR_$_FSQPFoursquareAPIResponse._geofenceRegion
+_OBJC_IVAR_$_FSQPFoursquareAPIResponse._error
+_OBJC_IVAR_$_FSQPFoursquareAPIResponse._statusCode
+_OBJC_IVAR_$_FSQPFoursquareAPIResponse._statusCodeType
+/tmp/sandbox/workspace/PilgrimSDK/PilgrimSDK/Private/Networking/FSQPFoursquareAPIResponse.m
+/tmp/sandbox/workspace/PilgrimSDK/PilgrimSDK/Private/Networking/FSQPFoursquareAPIResponse.h
+/tmp/sandbox/workspace/PilgrimSDK/PilgrimSDK/Private/FSQPGlobalFunctions.m
+FSQPQueueName
+FSQPDistance
+FSQPNumberOrNil
+FSQPStringOrNil
+FSQPArrayOrNil
+FSQPDictionaryOrNil
++[FSQPSettings shared]
+___22+[FSQPSettings shared]_block_invoke
+-[FSQPSettings init]
+-[FSQPSettings processResponse:]
+-[FSQPSettings setStopDetectionAlgorithm:]
+-[FSQPSettings stopDetectionAlgorithm]
+-[FSQPSettings setTriggers:]
+-[FSQPSettings triggers]
+-[FSQPSettings setNotificationConfigChecksum:]
+-[FSQPSettings notificationConfigChecksum]
+-[FSQPSettings collectHistory]
+-[FSQPSettings setCollectHistory:]
+-[FSQPSettings collectBattery]
+-[FSQPSettings setCollectBattery:]
+-[FSQPSettings setMinimumBatteryLevel:]
+-[FSQPSettings minimumBatteryLevel]
+-[FSQPSettings setGeofenceRadius:]
+-[FSQPSettings geofenceRadius]
+-[FSQPSettings setHomeGeofenceRadius:]
+-[FSQPSettings homeGeofenceRadius]
+-[FSQPSettings setWorkGeofenceRadius:]
+-[FSQPSettings workGeofenceRadius]
+-[FSQPSettings setInstallId:]
+-[FSQPSettings installId]
+-[FSQPSettings setPreviouslyStarted:]
+-[FSQPSettings hasPreviouslyStarted]
+-[FSQPSettings setEverBeenEnabled:]
+-[FSQPSettings hasEverBeenEnabled]
+-[FSQPSettings eventsLastSuccessfulFlushDate]
+-[FSQPSettings setEventsLastSuccessfulFlushDate:]
+-[FSQPSettings addFatalErrorFlushDate:]
+-[FSQPSettings fatalErrorLastFlushDates]
+-[FSQPSettings setFatalErrorLastFlushDates:]
+-[FSQPSettings setGeofenceChecksum:]
+-[FSQPSettings geofenceChecksum]
+-[FSQPSettings setGeofencesValid:]
+-[FSQPSettings areGeofencesValid]
+-[FSQPSettings setObject:forKey:]
+-[FSQPSettings objectForKey:]
+-[FSQPSettings setBool:forKey:]
+-[FSQPSettings boolForKey:]
+-[FSQPSettings stringForKey:]
+-[FSQPSettings setDouble:forKey:]
+-[FSQPSettings doubleForKey:]
+-[FSQPSettings experimentManager]
+-[FSQPSettings setExperimentManager:]
+-[FSQPSettings dynamicConfig]
+-[FSQPSettings userDefaults]
+-[FSQPSettings setUserDefaults:]
+-[FSQPSettings .cxx_destruct]
+_OBJC_IVAR_$_FSQPSettings._userDefaults
+_OBJC_IVAR_$_FSQPSettings._experimentManager
+_OBJC_IVAR_$_FSQPSettings._dynamicConfig
+l_OBJC_PROTOCOL_$_PilgrimSettings
+l_OBJC_LABEL_PROTOCOL_$_PilgrimSettings
+/tmp/sandbox/workspace/PilgrimSDK/PilgrimSDK/Private/Settings/FSQPSettings.m
+/tmp/sandbox/workspace/PilgrimSDK/PilgrimSDK/Private/Settings/FSQPSettings.h
+fsqp_stopDetectionAlgorithmFromString
+__22+[FSQPSettings shared]_block_invoke
++[FSQPDefaultValues arrivalMonitoringInterval]
++[FSQPDefaultValues arrivalMonitoringSampleRate]
+/tmp/sandbox/workspace/PilgrimSDK/PilgrimSDK/Private/Settings/FSQPDefaultValues.m
++[FSQPPoint withX:Y:location:]
+-[FSQPPoint distanceFrom:]
+-[FSQPPoint description]
+-[FSQPPoint x]
+-[FSQPPoint setX:]
+-[FSQPPoint y]
+-[FSQPPoint setY:]
+-[FSQPPoint location]
+-[FSQPPoint setLocation:]
+-[FSQPPoint .cxx_destruct]
+-[FSQPPointsCluster initWithCenter:]
+-[FSQPPointsCluster medianLocation]
+___35-[FSQPPointsCluster medianLocation]_block_invoke
+-[FSQPPointsCluster points]
+-[FSQPPointsCluster setPoints:]
+-[FSQPPointsCluster center]
+-[FSQPPointsCluster setCenter:]
+-[FSQPPointsCluster .cxx_destruct]
++[FSQPHomeWorkAlgorithm bucketedPingsFromVisits:]
++[FSQPHomeWorkAlgorithm bucketForDate:]
++[FSQPHomeWorkAlgorithm calculateRegionsFromVisits:]
++[FSQPHomeWorkAlgorithm medianCoordinateFromLocations:]
+___55+[FSQPHomeWorkAlgorithm medianCoordinateFromLocations:]_block_invoke
++[FSQPHomeWorkAlgorithm stereographicProjectionFromLocations:]
+___62+[FSQPHomeWorkAlgorithm stereographicProjectionFromLocations:]_block_invoke
++[FSQPHomeWorkAlgorithm kmeansClusterPoints:]
++[FSQPHomeWorkAlgorithm mergeNearbyClusters:]
+___45+[FSQPHomeWorkAlgorithm mergeNearbyClusters:]_block_invoke
++[FSQPHomeWorkAlgorithm calculateRegionsFromClusters:]
+___54+[FSQPHomeWorkAlgorithm calculateRegionsFromClusters:]_block_invoke
++[FSQPHomeWorkAlgorithm calendar]
+___33+[FSQPHomeWorkAlgorithm calendar]_block_invoke
++[FSQPHomeWorkAlgorithm hourOfWeekFromDate:]
++[FSQPHomeWorkAlgorithm dayOfYearFromDate:]
++[FSQPHomeWorkAlgorithm meanFromPoints:]
++[FSQPHomeWorkAlgorithm point:isTooCloseToPointsInSet:]
++[FSQPHomeWorkAlgorithm subSample:count:]
+_OBJC_IVAR_$_FSQPPoint._x
+_OBJC_IVAR_$_FSQPPoint._y
+_OBJC_IVAR_$_FSQPPoint._location
+_OBJC_IVAR_$_FSQPPointsCluster._points
+_OBJC_IVAR_$_FSQPPointsCluster._center
+___block_descriptor_20_e30_@"CLLocation"8@?0@"FSQPPoint"4l
+___block_descriptor_20_e16_d8@?0@"NSArray"4l
+___block_literal_global.149
+___block_descriptor_20_e8_d12@?0d4l
+___block_literal_global.159
+___block_descriptor_20_e38_@"CLLocation"8@?0@"FSQPPointsCluster"4l
+___block_literal_global.176
+___block_descriptor_28_e4__e38_@"FSQPRegion"8@?0@"FSQPPointsCluster"4l
+_calendar.calendar
+_calendar.onceToken
+___block_literal_global.199
+/tmp/sandbox/workspace/PilgrimSDK/PilgrimSDK/Private/FSQPHomeWorkAlgorithm.m
+FSQPRandomInt
+__33+[FSQPHomeWorkAlgorithm calendar]_block_invoke
+__54+[FSQPHomeWorkAlgorithm calculateRegionsFromClusters:]_block_invoke
+__45+[FSQPHomeWorkAlgorithm mergeNearbyClusters:]_block_invoke
+__62+[FSQPHomeWorkAlgorithm stereographicProjectionFromLocations:]_block_invoke
+__55+[FSQPHomeWorkAlgorithm medianCoordinateFromLocations:]_block_invoke
+/tmp/sandbox/workspace/PilgrimSDK/PilgrimSDK/Private/FSQPHomeWorkAlgorithm.h
+__35-[FSQPPointsCluster medianLocation]_block_invoke
++[NSJSONSerialization(FSQP) base64CompressedStringWithJSONObject:options:error:]
+/tmp/sandbox/workspace/PilgrimSDK/PilgrimSDK/Private/Foundation/NSJSONSerialization+FSQP.m
+-[FSQPRegion initWithCountByHourOfWeek:center:probability:]
+-[FSQPRegion initWithCountByHourOfWeek:center:probability:type:secondaryType:]
++[FSQPRegion supportsSecureCoding]
+-[FSQPRegion initWithCoder:]
+-[FSQPRegion encodeWithCoder:]
+-[FSQPRegion description]
+-[FSQPRegion probability]
+-[FSQPRegion countByHourOfWeek]
+-[FSQPRegion center]
+-[FSQPRegion type]
+-[FSQPRegion secondaryType]
+-[FSQPRegion .cxx_destruct]
+-[FSQPHomeWorkModel initWithVisitStore:]
+-[FSQPHomeWorkModel recalculateIfNeededWithCompletion:]
+___55-[FSQPHomeWorkModel recalculateIfNeededWithCompletion:]_block_invoke
+-[FSQPHomeWorkModel getLocationTypeForVisit:completion:]
+___56-[FSQPHomeWorkModel getLocationTypeForVisit:completion:]_block_invoke
+-[FSQPHomeWorkModel distanceLimitForHorizontalAccuracy:]
+-[FSQPHomeWorkModel regions]
+-[FSQPHomeWorkModel _archivePath]
+-[FSQPHomeWorkModel _hasRecalculatedRecentlyWithLastCalculationDate:]
+-[FSQPHomeWorkModel homeRegions]
+___32-[FSQPHomeWorkModel homeRegions]_block_invoke
+-[FSQPHomeWorkModel workRegions]
+___32-[FSQPHomeWorkModel workRegions]_block_invoke
+-[FSQPHomeWorkModel reset]
+-[FSQPHomeWorkModel logger]
+-[FSQPHomeWorkModel setLogger:]
+-[FSQPHomeWorkModel visitStore]
+-[FSQPHomeWorkModel setVisitStore:]
+-[FSQPHomeWorkModel serialQueue]
+-[FSQPHomeWorkModel setSerialQueue:]
+-[FSQPHomeWorkModel setRegions:]
+-[FSQPHomeWorkModel .cxx_destruct]
+___FSQPHomeHoursByWeek_block_invoke
+___FSQPHomeHours_block_invoke
+___FSQPWorkHoursByWeek_block_invoke
+___FSQPWorkHours_block_invoke
+_OBJC_IVAR_$_FSQPRegion._countByHourOfWeek
+_OBJC_IVAR_$_FSQPRegion._center
+_OBJC_IVAR_$_FSQPRegion._probability
+_OBJC_IVAR_$_FSQPRegion._type
+_OBJC_IVAR_$_FSQPRegion._secondaryType
+_OBJC_IVAR_$_FSQPHomeWorkModel._logger
+_OBJC_IVAR_$_FSQPHomeWorkModel._visitStore
+_OBJC_IVAR_$_FSQPHomeWorkModel._serialQueue
+_OBJC_IVAR_$_FSQPHomeWorkModel._regions
+___block_descriptor_20_e19_c8@?0@"FSQPRegion"4l
+___block_literal_global.192
+_FSQPHomeHoursByWeek.homeHoursByWeek
+_FSQPHomeHoursByWeek.onceToken
+___block_literal_global.226
+_FSQPHomeHours.homeHours
+_FSQPHomeHours.onceToken
+___block_literal_global.239
+_FSQPWorkHoursByWeek.workHoursByWeek
+_FSQPWorkHoursByWeek.onceToken
+___block_literal_global.240
+_FSQPWorkHours.workHours
+_FSQPWorkHours.onceToken
+___block_literal_global.241
+/tmp/sandbox/workspace/PilgrimSDK/PilgrimSDK/Private/FSQPHomeWorkModel.m
+__FSQPWorkHours_block_invoke
+__FSQPWorkHoursByWeek_block_invoke
+FSQPWorkHours
+__FSQPHomeHours_block_invoke
+__FSQPHomeHoursByWeek_block_invoke
+FSQPHomeHours
+__32-[FSQPHomeWorkModel workRegions]_block_invoke
+__32-[FSQPHomeWorkModel homeRegions]_block_invoke
+__56-[FSQPHomeWorkModel getLocationTypeForVisit:completion:]_block_invoke
+__55-[FSQPHomeWorkModel recalculateIfNeededWithCompletion:]_block_invoke
+/tmp/sandbox/workspace/PilgrimSDK/PilgrimSDK/Private/FSQPHomeWorkModel.h
+FSQPWorkHoursByWeek
+FSQPHomeHoursByWeek
++[FSQPLogger sharedLogger]
+___26+[FSQPLogger sharedLogger]_block_invoke
+-[FSQPLogger init]
+___18-[FSQPLogger init]_block_invoke
+___18-[FSQPLogger init]_block_invoke.35
+___18-[FSQPLogger init]_block_invoke_2
+___18-[FSQPLogger init]_block_invoke.47
+___18-[FSQPLogger init]_block_invoke_2.48
+-[FSQPLogger dealloc]
+-[FSQPLogger setAllowsNonPublicLogs:]
+___37-[FSQPLogger setAllowsNonPublicLogs:]_block_invoke
+-[FSQPLogger numberOfLogsToStore]
+-[FSQPLogger logLevel:type:event:data:isPublic:]
+___48-[FSQPLogger logLevel:type:event:data:isPublic:]_block_invoke
+-[FSQPLogger deleteLogs]
+___24-[FSQPLogger deleteLogs]_block_invoke
+-[FSQPLogger allPublicLogs]
+___27-[FSQPLogger allPublicLogs]_block_invoke
+-[FSQPLogger allLogs]
+___Block_byref_object_copy_
+___Block_byref_object_dispose_
+___21-[FSQPLogger allLogs]_block_invoke
+-[FSQPLogger newestLogs:]
+___25-[FSQPLogger newestLogs:]_block_invoke
+-[FSQPLogger archivePath]
+-[FSQPLogger save]
+___18-[FSQPLogger save]_block_invoke
+___18-[FSQPLogger save]_block_invoke_2
+-[FSQPLogger _actuallySave]
+___27-[FSQPLogger _actuallySave]_block_invoke
+-[FSQPLogger queue]
+-[FSQPLogger logs]
+-[FSQPLogger isEnabled]
+-[FSQPLogger setEnabled:]
+-[FSQPLogger allowsNonPublicLogs]
+-[FSQPLogger lastSave]
+-[FSQPLogger setLastSave:]
+-[FSQPLogger saveTimer]
+-[FSQPLogger setSaveTimer:]
+-[FSQPLogger terminating]
+-[FSQPLogger setTerminating:]
+-[FSQPLogger terminateObserver]
+-[FSQPLogger setTerminateObserver:]
+-[FSQPLogger backgroundObserver]
+-[FSQPLogger setBackgroundObserver:]
+-[FSQPLogger .cxx_destruct]
+-[FSQPQuickLogger initWithCoreLogger:isPublic:]
+-[FSQPQuickLogger debug:]
+-[FSQPQuickLogger debug:type:]
+-[FSQPQuickLogger debug:type:data:]
+-[FSQPQuickLogger info:]
+-[FSQPQuickLogger info:type:]
+-[FSQPQuickLogger info:type:data:]
+-[FSQPQuickLogger warn:]
+-[FSQPQuickLogger warn:type:]
+-[FSQPQuickLogger warn:type:data:]
+-[FSQPQuickLogger error:]
+-[FSQPQuickLogger error:type:]
+-[FSQPQuickLogger error:type:data:]
+-[FSQPQuickLogger isPublic]
+-[FSQPQuickLogger coreLogger]
+-[FSQPQuickLogger .cxx_destruct]
+_sharedLogger.once
+_sharedLogger.sharedInstance
+_OBJC_IVAR_$_FSQPLogger._allowsNonPublicLogs
+_OBJC_IVAR_$_FSQPLogger._queue
+_OBJC_IVAR_$_FSQPLogger._lastSave
+_OBJC_IVAR_$_FSQPLogger._logs
+___block_descriptor_41_e4_20s24s28s_e5_v4@?0l
+___block_descriptor_20_e21_c8@?0@"FSQPDebugLog"4l
+___block_descriptor_28_e4_20s24r_e5_v4@?0l
+___block_descriptor_24_e4_20s_e28_v16@?0@"FSQPDebugLog"4I8^c12l
+_OBJC_IVAR_$_FSQPLogger._enabled
+_OBJC_IVAR_$_FSQPLogger._saveTimer
+_OBJC_IVAR_$_FSQPLogger._terminating
+_OBJC_IVAR_$_FSQPLogger._terminateObserver
+_OBJC_IVAR_$_FSQPLogger._backgroundObserver
+l_OBJC_PROTOCOL_$_PilgrimCoreLogger
+l_OBJC_LABEL_PROTOCOL_$_PilgrimCoreLogger
+_OBJC_IVAR_$_FSQPQuickLogger._coreLogger
+_OBJC_IVAR_$_FSQPQuickLogger._isPublic
+l_OBJC_PROTOCOL_$_PilgrimLogger
+l_OBJC_LABEL_PROTOCOL_$_PilgrimLogger
+/tmp/sandbox/workspace/PilgrimSDK/PilgrimSDK/Private/FSQPLogger.m
+/tmp/sandbox/workspace/PilgrimSDK/PilgrimSDK/Private/FSQPLogger.h
+__27-[FSQPLogger _actuallySave]_block_invoke
+__18-[FSQPLogger save]_block_invoke_2
+__18-[FSQPLogger save]_block_invoke
+__25-[FSQPLogger newestLogs:]_block_invoke
+__21-[FSQPLogger allLogs]_block_invoke
+__Block_byref_object_dispose_
+__Block_byref_object_copy_
+__27-[FSQPLogger allPublicLogs]_block_invoke
+__24-[FSQPLogger deleteLogs]_block_invoke
+__48-[FSQPLogger logLevel:type:event:data:isPublic:]_block_invoke
+__37-[FSQPLogger setAllowsNonPublicLogs:]_block_invoke
+__18-[FSQPLogger init]_block_invoke_2.48
+__18-[FSQPLogger init]_block_invoke.47
+__18-[FSQPLogger init]_block_invoke_2
+__18-[FSQPLogger init]_block_invoke.35
+__18-[FSQPLogger init]_block_invoke
+__26+[FSQPLogger sharedLogger]_block_invoke
++[FSQPVisitStore sharedStore]
+___29+[FSQPVisitStore sharedStore]_block_invoke
+-[FSQPVisitStore init]
+___22-[FSQPVisitStore init]_block_invoke
+___22-[FSQPVisitStore init]_block_invoke_2
+-[FSQPVisitStore lastPVisitArchivePath]
+-[FSQPVisitStore setLastPVisit:]
+___32-[FSQPVisitStore setLastPVisit:]_block_invoke
+-[FSQPVisitStore locationsArchivePath]
+-[FSQPVisitStore locations]
+___27-[FSQPVisitStore locations]_block_invoke
+-[FSQPVisitStore saveLocationVisit:]
+-[FSQPVisitStore saveLocationVisit:onQueue:withCompletion:]
+___59-[FSQPVisitStore saveLocationVisit:onQueue:withCompletion:]_block_invoke
+___59-[FSQPVisitStore saveLocationVisit:onQueue:withCompletion:]_block_invoke_2
+___59-[FSQPVisitStore saveLocationVisit:onQueue:withCompletion:]_block_invoke_3
+___copy_helper_block_e4_20s24s28b32s36r
+___destroy_helper_block_e4_20s24s28s32s36r
+-[FSQPVisitStore deleteLocationVisitStoreWithCompletion:]
+___57-[FSQPVisitStore deleteLocationVisitStoreWithCompletion:]_block_invoke
+___57-[FSQPVisitStore deleteLocationVisitStoreWithCompletion:]_block_invoke_2
+___57-[FSQPVisitStore deleteLocationVisitStoreWithCompletion:]_block_invoke_3
+___copy_helper_block_e4_20s24b28r
+___destroy_helper_block_e4_20s24s28r
+-[FSQPVisitStore failedVisitQueueArchivePath]
+-[FSQPVisitStore archiveFailedVisits:]
+___38-[FSQPVisitStore archiveFailedVisits:]_block_invoke
+-[FSQPVisitStore unarchiveFailedVisits]
+-[FSQPVisitStore pathForFile:]
+-[FSQPVisitStore queue]
+-[FSQPVisitStore locationVisits]
+-[FSQPVisitStore lastPVisit]
+-[FSQPVisitStore logger]
+-[FSQPVisitStore setLogger:]
+-[FSQPVisitStore .cxx_destruct]
+_sharedStore.once
+_sharedStore.sharedInstance
+_OBJC_IVAR_$_FSQPVisitStore._logger
+_OBJC_IVAR_$_FSQPVisitStore._queue
+_OBJC_IVAR_$_FSQPVisitStore._lastPVisit
+___block_descriptor_20_e33_c16@?0@"FSQPLocationVisit"4I8^c12l
+_OBJC_IVAR_$_FSQPVisitStore._locationVisits
+___block_descriptor_25_e4_20bs_e5_v4@?0l
+___block_descriptor_40_e4_20s24s28bs32s36r_e5_v4@?0l
+___block_descriptor_32_e4_20s24bs28r_e5_v4@?0l
+___block_descriptor_24_e5_v4@?0l
+/tmp/sandbox/workspace/PilgrimSDK/PilgrimSDK/Private/FSQPVisitStore.m
+/tmp/sandbox/workspace/PilgrimSDK/PilgrimSDK/Private/FSQPVisitStore.h
+__38-[FSQPVisitStore archiveFailedVisits:]_block_invoke
+__destroy_helper_block_e4_20s24s28r
+__copy_helper_block_e4_20s24b28r
+__57-[FSQPVisitStore deleteLocationVisitStoreWithCompletion:]_block_invoke_3
+__57-[FSQPVisitStore deleteLocationVisitStoreWithCompletion:]_block_invoke_2
+__57-[FSQPVisitStore deleteLocationVisitStoreWithCompletion:]_block_invoke
+__destroy_helper_block_e4_20s24s28s32s36r
+__copy_helper_block_e4_20s24s28b32s36r
+__59-[FSQPVisitStore saveLocationVisit:onQueue:withCompletion:]_block_invoke_3
+__59-[FSQPVisitStore saveLocationVisit:onQueue:withCompletion:]_block_invoke_2
+__59-[FSQPVisitStore saveLocationVisit:onQueue:withCompletion:]_block_invoke
+__27-[FSQPVisitStore locations]_block_invoke
+__32-[FSQPVisitStore setLastPVisit:]_block_invoke
+__22-[FSQPVisitStore init]_block_invoke_2
+__22-[FSQPVisitStore init]_block_invoke
+__29+[FSQPVisitStore sharedStore]_block_invoke
+-[FSQPGeofenceEventConfirmationResponse initWithGeofenceConfirmed:]
++[FSQPGeofenceEventConfirmationResponse resultWithResponse:]
+-[FSQPGeofenceEventConfirmationResponse geofenceConfirmed]
+_OBJC_IVAR_$_FSQPGeofenceEventConfirmationResponse._geofenceConfirmed
+/tmp/sandbox/workspace/PilgrimSDK/PilgrimSDK/Private/Networking/Models/FSQPGeofenceEventConfirmationResponse.m
+/tmp/sandbox/workspace/PilgrimSDK/PilgrimSDK/Private/Networking/Models/FSQPGeofenceEventConfirmationResponse.h
+-[NSArray(FSQP) fsqp_map:]
+-[NSArray(FSQP) fsqp_filter:]
+___29-[NSArray(FSQP) fsqp_filter:]_block_invoke
+-[NSArray(FSQP) isEmpty]
+-[NSArray(FSQP) isNotEmpty]
+-[NSArray(FSQP) fsqp_last:]
+___block_descriptor_24_e4_20bs_e14_c16@?0@4I8^c12l
+/tmp/sandbox/workspace/PilgrimSDK/PilgrimSDK/Private/Foundation/NSArray+FSQP.m
+__29-[NSArray(FSQP) fsqp_filter:]_block_invoke
+-[FSQPFrame initWithFileName:className:methodName:lineNo:]
++[FSQPFrame supportsSecureCoding]
+-[FSQPFrame encodeWithCoder:]
+-[FSQPFrame initWithCoder:]
+-[FSQPFrame JSONObjectDictionary]
+-[FSQPFrame className]
+-[FSQPFrame setClassName:]
+-[FSQPFrame fileName]
+-[FSQPFrame setFileName:]
+-[FSQPFrame methodName]
+-[FSQPFrame setMethodName:]
+-[FSQPFrame lineNo]
+-[FSQPFrame setLineNo:]
+-[FSQPFrame .cxx_destruct]
+_OBJC_IVAR_$_FSQPFrame._className
+_OBJC_IVAR_$_FSQPFrame._fileName
+_OBJC_IVAR_$_FSQPFrame._methodName
+_OBJC_IVAR_$_FSQPFrame._lineNo
+/tmp/sandbox/workspace/PilgrimSDK/PilgrimSDK/Private/FSQPFrame.m
+/tmp/sandbox/workspace/PilgrimSDK/PilgrimSDK/Private/FSQPFrame.h
++[FSQPVisit(FSQPTest) fakeVisitWithConfidence:locationType:isDeparture:]
+/tmp/sandbox/workspace/PilgrimSDK/PilgrimSDK/FSQPVisit+FSQPTest.m
+-[FSQPNearbyTrigger initWithTriggerType:venueId:]
+-[FSQPNearbyTrigger initWithTriggerType:venueId:radius:]
+-[FSQPNearbyTrigger triggerAsApiParam]
+-[FSQPNearbyTrigger description]
++[FSQPNearbyTrigger displayStringForNearbyTriggerType:]
+-[FSQPNearbyTrigger radius]
+-[FSQPNearbyTrigger triggerType]
+-[FSQPNearbyTrigger venueId]
+-[FSQPNearbyTrigger motionType]
+-[FSQPNearbyTrigger constraintType]
+-[FSQPNearbyTrigger .cxx_destruct]
+_OBJC_IVAR_$_FSQPNearbyTrigger._motionType
+_OBJC_IVAR_$_FSQPNearbyTrigger._constraintType
+_OBJC_IVAR_$_FSQPNearbyTrigger._triggerType
+_OBJC_IVAR_$_FSQPNearbyTrigger._venueId
+_OBJC_IVAR_$_FSQPNearbyTrigger._radius
+/tmp/sandbox/workspace/PilgrimSDK/PilgrimSDK/Public/FSQPNearbyTrigger.m
+/tmp/sandbox/workspace/PilgrimSDK/PilgrimSDK/Private/Internal Headers/FSQPNearbyTrigger_Private.h
+/tmp/sandbox/workspace/PilgrimSDK/PilgrimSDK/Public/FSQPNearbyTrigger.h
+-[FSQPDynamicConfig initWithSuiteName:]
+-[FSQPDynamicConfig processResponse:]
+-[FSQPDynamicConfig setObject:forKey:]
+-[FSQPDynamicConfig getBool:defaultValue:]
+-[FSQPDynamicConfig getDouble:defaultValue:]
+-[FSQPDynamicConfig getInt:defaultValue:]
+-[FSQPDynamicConfig objectForKey:]
+-[FSQPDynamicConfig numberForKey:]
+-[FSQPDynamicConfig userDefaults]
+-[FSQPDynamicConfig .cxx_destruct]
+_OBJC_IVAR_$_FSQPDynamicConfig._userDefaults
+l_OBJC_PROTOCOL_$_PilgrimDynamicConfig
+l_OBJC_LABEL_PROTOCOL_$_PilgrimDynamicConfig
+/tmp/sandbox/workspace/PilgrimSDK/PilgrimSDK/Private/Settings/FSQPDynamicConfig.m
++[FSQPLocationBroker shared]
+___28+[FSQPLocationBroker shared]_block_invoke
++[FSQPLocationBroker isAuthorized]
+-[FSQPLocationBroker init]
+-[FSQPLocationBroker removeAllSubscribers]
+___42-[FSQPLocationBroker removeAllSubscribers]_block_invoke
+-[FSQPLocationBroker currentAccuracy]
+-[FSQPLocationBroker addLocationSubscriber:]
+___44-[FSQPLocationBroker addLocationSubscriber:]_block_invoke
+-[FSQPLocationBroker removeLocationSubscriber:]
+___47-[FSQPLocationBroker removeLocationSubscriber:]_block_invoke
+-[FSQPLocationBroker shouldMonitorSignificantLocationChanges]
+-[FSQPLocationBroker shouldUpdateLocations]
+-[FSQPLocationBroker shouldAllowBackgroundLocationUpdates]
+-[FSQPLocationBroker shouldMonitorVisits]
+-[FSQPLocationBroker finestGrainAccuracy]
+___41-[FSQPLocationBroker finestGrainAccuracy]_block_invoke
+-[FSQPLocationBroker refreshLocationSubscribers]
+___48-[FSQPLocationBroker refreshLocationSubscribers]_block_invoke
+-[FSQPLocationBroker addRegionMonitoringSubscriber:]
+___52-[FSQPLocationBroker addRegionMonitoringSubscriber:]_block_invoke
+-[FSQPLocationBroker removeRegionMonitoringSubscriber:]
+___55-[FSQPLocationBroker removeRegionMonitoringSubscriber:]_block_invoke
+-[FSQPLocationBroker refreshRegionMonitoringSubscribers]
+-[FSQPLocationBroker refreshRegionMonitoringSubscribersRemovingSubscriberWithIdentifer:shouldRemoveAllUnmonitoredRegions:]
+___122-[FSQPLocationBroker refreshRegionMonitoringSubscribersRemovingSubscriberWithIdentifer:shouldRemoveAllUnmonitoredRegions:]_block_invoke
+___122-[FSQPLocationBroker refreshRegionMonitoringSubscribersRemovingSubscriberWithIdentifer:shouldRemoveAllUnmonitoredRegions:]_block_invoke.143
+___122-[FSQPLocationBroker refreshRegionMonitoringSubscribersRemovingSubscriberWithIdentifer:shouldRemoveAllUnmonitoredRegions:]_block_invoke.147
+-[FSQPLocationBroker forceSyncRegionMonitorSubscribersWithSystem]
+-[FSQPLocationBroker verifyMonitoredRegionIdentifiers]
+-[FSQPLocationBroker subscriberMonitoredRegions]
+-[FSQPLocationBroker subscribersByIdentifier]
+-[FSQPLocationBroker subscriberIdentifierFromRegionIdentifier:]
+-[FSQPLocationBroker requestStateForRegion:]
+-[FSQPLocationBroker addVisitSubscriber:]
+___41-[FSQPLocationBroker addVisitSubscriber:]_block_invoke
+-[FSQPLocationBroker removeVisitSubscriber:]
+___44-[FSQPLocationBroker removeVisitSubscriber:]_block_invoke
+-[FSQPLocationBroker refreshVisitSubscribers]
+___45-[FSQPLocationBroker refreshVisitSubscribers]_block_invoke
+-[FSQPLocationBroker locationManager:didUpdateLocations:]
+-[FSQPLocationBroker locationManager:didFailWithError:]
+-[FSQPLocationBroker locationManager:didEnterRegion:]
+-[FSQPLocationBroker locationManager:didExitRegion:]
+-[FSQPLocationBroker locationManager:didDetermineState:forRegion:]
+-[FSQPLocationBroker locationManager:monitoringDidFailForRegion:withError:]
+-[FSQPLocationBroker locationManager:didVisit:]
+-[FSQPLocationBroker applicationDidEnterBackground:]
+-[FSQPLocationBroker applicationDidBecomeActive:]
+-[FSQPLocationBroker requestWhenInUseAuthorization]
+-[FSQPLocationBroker requestAlwaysAuthorization]
+-[FSQPLocationBroker observeValueForKeyPath:ofObject:change:context:]
+-[FSQPLocationBroker currentLocation]
+-[FSQPLocationBroker setCurrentLocation:]
+-[FSQPLocationBroker locationSubscribers]
+-[FSQPLocationBroker setLocationSubscribers:]
+-[FSQPLocationBroker regionSubscribers]
+-[FSQPLocationBroker setRegionSubscribers:]
+-[FSQPLocationBroker visitSubscribers]
+-[FSQPLocationBroker setVisitSubscribers:]
+-[FSQPLocationBroker locationManager]
+-[FSQPLocationBroker setLocationManager:]
+-[FSQPLocationBroker isMonitoringSignificantLocation]
+-[FSQPLocationBroker setIsMonitoringSignificantLocation:]
+-[FSQPLocationBroker isUpdatingLocation]
+-[FSQPLocationBroker setIsUpdatingLocation:]
+-[FSQPLocationBroker isMonitoringVisits]
+-[FSQPLocationBroker setIsMonitoringVisits:]
+-[FSQPLocationBroker serialQueue]
+-[FSQPLocationBroker setSerialQueue:]
+-[FSQPLocationBroker .cxx_destruct]
+_shared.onceToken
+_kLocationBrokerLocationSubscriberKVOContext
+___block_descriptor_21_e45_c12@?0@"NSObject<FSQPLocationSubscriber>"4^c8l
+_kLocationBrokerRegionMonitoringSubscriberKVOContext
+___block_descriptor_24_e4_20s_e21_c12@?0@"CLRegion"4^c8l
+_kLocationBrokerVisitSubscriberKVOContext
+_OBJC_IVAR_$_FSQPLocationBroker._currentLocation
+_OBJC_IVAR_$_FSQPLocationBroker._locationSubscribers
+_OBJC_IVAR_$_FSQPLocationBroker._regionSubscribers
+_OBJC_IVAR_$_FSQPLocationBroker._visitSubscribers
+_OBJC_IVAR_$_FSQPLocationBroker._locationManager
+_OBJC_IVAR_$_FSQPLocationBroker._isMonitoringSignificantLocation
+_OBJC_IVAR_$_FSQPLocationBroker._isUpdatingLocation
+_OBJC_IVAR_$_FSQPLocationBroker._isMonitoringVisits
+_OBJC_IVAR_$_FSQPLocationBroker._serialQueue
+/tmp/sandbox/workspace/PilgrimSDK/PilgrimSDK/FSQPLocationBroker.m
+/tmp/sandbox/workspace/PilgrimSDK/PilgrimSDK/FSQPLocationBroker.h
+subscriberWantsVisitMonitoring
+subscriberShouldReceiveErrors
+subscriberShouldRunInBackground
+subscriberShouldReceiveLocationUpdates
+__45-[FSQPLocationBroker refreshVisitSubscribers]_block_invoke
+__44-[FSQPLocationBroker removeVisitSubscriber:]_block_invoke
+__41-[FSQPLocationBroker addVisitSubscriber:]_block_invoke
+__122-[FSQPLocationBroker refreshRegionMonitoringSubscribersRemovingSubscriberWithIdentifer:shouldRemoveAllUnmonitoredRegions:]_block_invoke.147
+__122-[FSQPLocationBroker refreshRegionMonitoringSubscribersRemovingSubscriberWithIdentifer:shouldRemoveAllUnmonitoredRegions:]_block_invoke.143
+__122-[FSQPLocationBroker refreshRegionMonitoringSubscribersRemovingSubscriberWithIdentifer:shouldRemoveAllUnmonitoredRegions:]_block_invoke
+__55-[FSQPLocationBroker removeRegionMonitoringSubscriber:]_block_invoke
+__52-[FSQPLocationBroker addRegionMonitoringSubscriber:]_block_invoke
+__48-[FSQPLocationBroker refreshLocationSubscribers]_block_invoke
+__41-[FSQPLocationBroker finestGrainAccuracy]_block_invoke
+subscriberWantsContinuousLocation
+subscriberWantsSLCMonitoring
+applicationIsBackgrounded
+__47-[FSQPLocationBroker removeLocationSubscriber:]_block_invoke
+__44-[FSQPLocationBroker addLocationSubscriber:]_block_invoke
+__42-[FSQPLocationBroker removeAllSubscribers]_block_invoke
+__28+[FSQPLocationBroker shared]_block_invoke
+-[FSQPMigrationManager initWithObjects:]
+-[FSQPMigrationManager run]
+-[FSQPMigrationManager migrateFrom:to:]
+-[FSQPMigrationManager userDefaults]
+-[FSQPMigrationManager setUserDefaults:]
+-[FSQPMigrationManager objects]
+-[FSQPMigrationManager setObjects:]
+-[FSQPMigrationManager .cxx_destruct]
+_OBJC_IVAR_$_FSQPMigrationManager._userDefaults
+_OBJC_IVAR_$_FSQPMigrationManager._objects
+/tmp/sandbox/workspace/PilgrimSDK/PilgrimSDK/Private/Settings/FSQPMigrationManager.m
++[FSQPUserStateCache setUserStates:]
++[FSQPUserStateCache setMetadata:]
++[FSQPUserStateCache metadata]
++[FSQPUserStateCache userStates]
++[FSQPUserStateCache fsqp_archivePath:]
++[FSQPUserStateCache setFromApiResponse:]
+___41+[FSQPUserStateCache setFromApiResponse:]_block_invoke
++[FSQPUserStateCache clear]
+___block_descriptor_20_e36_@"FSQPUserState"8@?0@"NSDictionary"4l
+/tmp/sandbox/workspace/PilgrimSDK/PilgrimSDK/FSQPUserStateCache.m
+__41+[FSQPUserStateCache setFromApiResponse:]_block_invoke
+/Users/buddybuild/Library/Developer/Xcode/DerivedData/PilgrimSDK-ecwoqvdcapuzksceogvhadnqcdli/Build/Intermediates.noindex/ArchiveIntermediates/Pilgrim/IntermediateBuildFilesPath/PilgrimSDK.build/Distribution-iphoneos/Pilgrim.build/DerivedSources/Pilgrim_vers.c
+__ZL15__ARCLite__loadv
+__ZL30add_image_hook_autoreleasepoolPK11mach_headerl
+__ZL34__arclite_objc_autoreleasePoolPushv
+__ZL33__arclite_objc_autoreleasePoolPopPv
+__ZL19patch_lazy_pointersPK11mach_headerP7patch_tm
+__ZL42__arclite_NSArray_objectAtIndexedSubscriptP7NSArrayP13objc_selectorj
+__ZL53__arclite_NSMutableArray_setObject_atIndexedSubscriptP14NSMutableArrayP13objc_selectorP11objc_objectj
+__ZL46__arclite_NSDictionary_objectForKeyedSubscriptP12NSDictionaryP13objc_selectorP11objc_object
+__ZL47__arclite_NSOrderedSet_objectAtIndexedSubscriptP12NSOrderedSetP13objc_selectorj
+__ZL58__arclite_NSMutableOrderedSet_setObject_atIndexedSubscriptP19NSMutableOrderedSetP13objc_selectorP11objc_objectj
+__ZL58__arclite_NSMutableDictionary__setObject_forKeyedSubscriptP19NSMutableDictionaryP13objc_selectorP11objc_objectS4_
+__ZL18add_image_hook_ARCPK11mach_headerl
+__ZL36__arclite_object_setInstanceVariableP11objc_objectPKcPv
+__ZL24__arclite_object_setIvarP11objc_objectP9objc_ivarS0_
+__ZL21__arclite_object_copyP11objc_objectm
+__ZL21__arclite_objc_retainP11objc_object
+__ZL26__arclite_objc_retainBlockP11objc_object
+__ZL22__arclite_objc_releaseP11objc_object
+__ZL26__arclite_objc_autoreleaseP11objc_object
+__ZL32__arclite_objc_retainAutoreleaseP11objc_object
+__ZL37__arclite_objc_autoreleaseReturnValueP11objc_object
+__ZL43__arclite_objc_retainAutoreleaseReturnValueP11objc_object
+__ZL44__arclite_objc_retainAutoreleasedReturnValueP11objc_object
+__ZL26__arclite_objc_storeStrongPP11objc_objectS0_
+__ZL22add_image_hook_swiftV1PK11mach_headerl
+__ZL42__arclite_NSUndoManagerProxy_isKindOfClassP11objc_objectP13objc_selectorP10objc_class
+__ZL30__arclite_NSManagedObject_initP11objc_objectP13objc_selector
+__ZL41__arclite_NSManagedObject_allocWithEntityP11objc_objectP13objc_selectorS0_
+__ZL36__arclite_NSManagedObject_allocBatchP11objc_objectP13objc_selectorPS0_S0_j
+__ZL37__arclite_NSKKMS_fastIndexForKnownKeyP11objc_objectP13objc_selectorS0_
+__ZL28__arclite_NSKKMS_indexForKeyP11objc_objectP13objc_selectorS0_
+__ZL29__arclite_NSKKsD_objectForKeyP11objc_objectP13objc_selectorS0_
+__ZL35__arclite_NSKKsD_removeObjectForKeyP11objc_objectP13objc_selectorS0_
+__ZL33__arclite_NSKKsD_setObject_forKeyP11objc_objectP13objc_selectorS0_S0_
+__ZL41__arclite_NSKKsD_addEntriesFromDictionaryP11objc_objectP13objc_selectorP12NSDictionary
+__ZL28__arclite_objc_readClassPairP10objc_classPK15objc_image_info
+__ZL32__arclite_objc_allocateClassPairP10objc_classPKcm
+__ZL32__arclite_object_getIndexedIvarsP11objc_object
+__ZL23__arclite_objc_getClassPKc
+__ZL27__arclite_objc_getMetaClassPKc
+__ZL31__arclite_objc_getRequiredClassPKc
+__ZL26__arclite_objc_lookUpClassPKc
+__ZL26__arclite_objc_getProtocolPKc
+__ZL23__arclite_class_getNameP10objc_class
+__ZL26__arclite_protocol_getNameP8Protocol
+__ZL37__arclite_objc_copyClassNamesForImagePKcPj
+__ZL17transcribeMethodsP10objc_classP15glue_class_ro_t
+__ZL19transcribeProtocolsP10objc_classP15glue_class_ro_t
+__ZL20transcribePropertiesP10objc_classP15glue_class_ro_t
+__ZL14initialize_impP11objc_objectP13objc_selector
+__ZL18allocateMaybeSwiftP18glue_swift_class_tm
+__ZL22copySwiftV1MangledNamePKcb
+__ZL13demangledNamePKcb
+__ZL16scanMangledFieldRPKcS0_S1_Ri
+__ZL30arclite_uninitialized_functionv
+__ZL12cxxConstructP11objc_object
+__ZL20fixStringForCoreDataP11objc_object
+_OBJC_METACLASS_$___ARCLite__
+__ZL24OBJC_CLASS_$___ARCLite__
+__ZL31OBJC_METACLASS_RO_$___ARCLite__
+__non_lazy_classes
+__ZL27OBJC_CLASS_RO_$___ARCLite__
+__ZL11_class_name
+__ZL32OBJC_$_CLASS_METHODS___ARCLite__
+__ZL17_load_method_name
+__ZL17_load_method_type
+__ZL23NSAutoreleasePool_class
+__ZZL30add_image_hook_autoreleasepoolPK11mach_headerlE7patches
+__ZGVZL30add_image_hook_autoreleasepoolPK11mach_headerlE7patches
+l_OBJC_PROTOCOL_$___ARCLiteIndexedSubscripting__
+l_OBJC_LABEL_PROTOCOL_$___ARCLiteIndexedSubscripting__
+l_OBJC_PROTOCOL_REFERENCE_$___ARCLiteIndexedSubscripting__
+l_OBJC_PROTOCOL_$___ARCLiteKeyedSubscripting__
+l_OBJC_LABEL_PROTOCOL_$___ARCLiteKeyedSubscripting__
+l_OBJC_PROTOCOL_REFERENCE_$___ARCLiteKeyedSubscripting__
+__ZZL18add_image_hook_ARCPK11mach_headerlE7patches
+__ZGVZL18add_image_hook_ARCPK11mach_headerlE7patches
+__ZL30NSUndoManagerProxy_targetClass
+__ZL29original_NSManagedObject_init
+__ZL40original_NSManagedObject_allocWithEntity
+__ZL35original_NSManagedObject_allocBatch
+__ZL25NSMutableDictionary_class
+__ZL22NSConstantString_class
+__ZL14NSString_class
+__ZL36original_NSKKMS_fastIndexForKnownKey
+__ZL27original_NSKKMS_indexForKey
+__ZL28original_NSKKsD_objectForKey
+__ZL34original_NSKKsD_removeObjectForKey
+__ZL32original_NSKKsD_setObject_forKey
+__ZL40original_NSKKsD_addEntriesFromDictionary
+__ZZL22add_image_hook_swiftV1PK11mach_headerlE7patches
+__ZGVZL22add_image_hook_swiftV1PK11mach_headerlE7patches
+__ZL31original_objc_allocateClassPair
+__ZL31original_object_getIndexedIvars
+__ZL22original_objc_getClass
+__ZL26original_objc_getMetaClass
+__ZL30original_objc_getRequiredClass
+__ZL25original_objc_lookUpClass
+__ZL25original_objc_getProtocol
+__ZL22original_class_getName
+__ZL25original_protocol_getName
+__ZL36original_objc_copyClassNamesForImage
+__ZL12demangleLock
+__ZL9Demangled
+Apple LLVM version 10.0.1 (clang-1001.0.46.2)
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c++ -arch armv7 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=c++11 -Wno-trigraphs -fno-exceptions -fno-rtti -fno-sanitize=vptr -mpascal-strings -Os -Wno-missing-field-initializers -Wmissing-prototypes -Wno-implicit-atomic-properties -Wno-objc-interface-ivars -Wno-arc-repeated-use-of-weak -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-float-conversion -Wno-non-literal-null-conversion -Wno-objc-literal-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -Wno-c++11-extensions -D NDEBUG=1 -D OBJC_OLD_DISPATCH_PROTOTYPES=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.Internal.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -Winvalid-offsetof -miphoneos-version-min=4.3 -g -fno-threadsafe-statics -Wno-sign-conversion -Wno-infinite-recursion -Wno-move -Wno-comma -Wno-block-capture-autoreleasing -Wno-strict-prototypes -Wno-range-loop-analysis -Wno-semicolon-before-method-body -fembed-bitcode=all -iquote /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/arclite_iphoneos-generated-files.hmap -I /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/arclite_iphoneos-own-target-headers.hmap -I /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/arclite_iphoneos-all-target-headers.hmap -iquote /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/arclite_iphoneos-project-headers.hmap -I /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/Symbols/BuiltProducts/include -I /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/DerivedSources-normal/armv7 -I /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/DerivedSources/armv7 -I /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/DerivedSources -F/Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/Symbols/BuiltProducts -iframework /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.Internal.sdk/System/Library/PrivateFrameworks -Wall -Wextra -Wno-gcc-compat -Wno-error=incomplete-umbrella -Wno-error=invalid-ios-deployment-target -Wno-error=deprecated-declarations -Wno-error=documentation -Wno-error=incomplete-umbrella -Wno-error=invalid-ios-deployment-target -Wno-error=deprecated-declarations -Wno-error=documentation -MMD -MT dependencies -MF /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/Objects-normal/armv7/arclite.d --serialize-diagnostics /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/Objects-normal/armv7/arclite.dia -c /Library/Caches/com.apple.xbs/Sources/arclite_iOS/arclite-72/source/arclite.mm -o /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/Objects-normal/armv7/arclite.o -Wno-atomic-implicit-seq-cst -Wno-framework-include-private-from-public -Wno-atimport-in-framework-header -Wno-quoted-include-in-framework-header -mlinker-version=450.3 -march=armv7a
+/Library/Caches/com.apple.xbs/Sources/arclite_iOS/arclite-72/source/arclite.mm
+/Library/Caches/com.apple.xbs/Sources/arclite_iOS/arclite-72
+fixStringForCoreData
+cxxConstruct
+arclite_uninitialized_function
+scanMangledField
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.Internal.sdk/usr/include/_ctype.h
+__isctype
+demangledName
+copySwiftV1DemangledName
+copySwiftV1MangledName
+allocateMaybeSwift
+word_align
+isSwift
+initialize_imp
+transcribeProperties
+property_list_nth
+transcribeProtocols
+transcribeMethods
+data
+method_list_nth
+__arclite_objc_copyClassNamesForImage
+__arclite_protocol_getName
+__arclite_class_getName
+__arclite_objc_getProtocol
+__arclite_objc_lookUpClass
+__arclite_objc_getRequiredClass
+__arclite_objc_getMetaClass
+__arclite_objc_getClass
+__arclite_object_getIndexedIvars
+__arclite_objc_allocateClassPair
+metaclass
+__arclite_objc_readClassPair
+transcribeIvars
+ivar_list_nth
+max
+alignment
+ro
+fastFlags
+__arclite_NSKKsD_addEntriesFromDictionary
+__arclite_NSKKsD_setObject_forKey
+__arclite_NSKKsD_removeObjectForKey
+__arclite_NSKKsD_objectForKey
+__arclite_NSKKMS_indexForKey
+__arclite_NSKKMS_fastIndexForKnownKey
+__arclite_NSManagedObject_allocBatch
+__arclite_NSManagedObject_allocWithEntity
+__arclite_NSManagedObject_init
+__arclite_NSUndoManagerProxy_isKindOfClass
+add_image_hook_swiftV1
+patch_t<const char **(const char *, unsigned int *)>
+patch_t<const char *(Protocol *)>
+patch_t<const char *(Class)>
+patch_t<Protocol *(const char *)>
+patch_t<Class (const char *)>
+patch_t<void *(id)>
+patch_t<Class (Class, const char *, unsigned long)>
+patch_t<Class (Class, const objc_image_info *)>
+__arclite_objc_storeStrong
+__arclite_objc_release
+__arclite_objc_retain
+__arclite_objc_retainAutoreleasedReturnValue
+__arclite_objc_retainAutoreleaseReturnValue
+__arclite_objc_autoreleaseReturnValue
+__arclite_objc_retainAutorelease
+__arclite_objc_autorelease
+__arclite_objc_retainBlock
+__arclite_object_copy
+fixupCopiedReferences
+_class_getInstanceStart
+alignedInstanceStart
+__arclite_class_usesAutomaticRetainRelease
+classOrSuperClassesUseARR
+__arclite_object_setIvar
+isScannedOffset
+_ivar_getClass
+__arclite_object_setInstanceVariable
+add_image_hook_ARC
+patch_t<void (id *, id)>
+patch_t<id (id)>
+patch_t<void (id)>
+patch_t<id (id, unsigned long)>
+patch_t<void (id, objc_ivar *, id)>
+patch_t<objc_ivar *(id, const char *, void *)>
+__arclite_NSMutableDictionary__setObject_forKeyedSubscript
+__arclite_NSMutableOrderedSet_setObject_atIndexedSubscript
+__arclite_NSOrderedSet_objectAtIndexedSubscript
+__arclite_NSDictionary_objectForKeyedSubscript
+__arclite_NSMutableArray_setObject_atIndexedSubscript
+__arclite_NSArray_objectAtIndexedSubscript
+patch_lazy_pointers
+__arclite_objc_autoreleasePoolPop
+__arclite_objc_autoreleasePoolPush
+add_image_hook_autoreleasepool
+patch_t<void (void *)>
+patch_t<void *()>
+__ARCLite__load
+install_swiftV1
+replaceMethod
+install_ARC
+install_dict_nil_value
+addOrReplaceMethod
+keyedGetter
+install_subscripting
+addMethod
+indexedGetter
+install_autoreleasepool
