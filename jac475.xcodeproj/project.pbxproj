@@ -15,6 +15,8 @@
 		FD26D6A722D07D24000B7FDC /* EventVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD26D6A622D07D24000B7FDC /* EventVC.swift */; };
 		FD26D6AA22D08206000B7FDC /* RadarSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD26D6A922D08206000B7FDC /* RadarSDK.framework */; };
 		FD26D6AC22D082C3000B7FDC /* Pilgrim.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD26D6AB22D082C3000B7FDC /* Pilgrim.framework */; };
+		FD26D6AF22D090E3000B7FDC /* FacebookCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD26D6AE22D090E3000B7FDC /* FacebookCore.framework */; };
+		FD26D6B122D0911C000B7FDC /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD26D6B022D0911C000B7FDC /* FBSDKCoreKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		FD26D6A622D07D24000B7FDC /* EventVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventVC.swift; sourceTree = "<group>"; };
 		FD26D6A922D08206000B7FDC /* RadarSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RadarSDK.framework; path = Carthage/Build/iOS/RadarSDK.framework; sourceTree = "<group>"; };
 		FD26D6AB22D082C3000B7FDC /* Pilgrim.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pilgrim.framework; path = Carthage/Build/iOS/Pilgrim.framework; sourceTree = "<group>"; };
+		FD26D6AE22D090E3000B7FDC /* FacebookCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookCore.framework; path = Carthage/Build/iOS/FacebookCore.framework; sourceTree = "<group>"; };
+		FD26D6B022D0911C000B7FDC /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = Carthage/Build/iOS/FBSDKCoreKit.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +41,8 @@
 			files = (
 				FD26D6AA22D08206000B7FDC /* RadarSDK.framework in Frameworks */,
 				FD26D6AC22D082C3000B7FDC /* Pilgrim.framework in Frameworks */,
+				FD26D6AF22D090E3000B7FDC /* FacebookCore.framework in Frameworks */,
+				FD26D6B122D0911C000B7FDC /* FBSDKCoreKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +83,8 @@
 		FD26D6A822D08206000B7FDC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FD26D6B022D0911C000B7FDC /* FBSDKCoreKit.framework */,
+				FD26D6AE22D090E3000B7FDC /* FacebookCore.framework */,
 				FD26D6AB22D082C3000B7FDC /* Pilgrim.framework */,
 				FD26D6A922D08206000B7FDC /* RadarSDK.framework */,
 			);
@@ -164,6 +172,9 @@
 			);
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/iOS/Pilgrim.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/FacebookCore.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/FBSDKCoreKit.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Bolts.framework",
 			);
 			outputFileListPaths = (
 			);

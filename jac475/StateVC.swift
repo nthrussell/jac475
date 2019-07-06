@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import RadarSDK
 
 class StateVC: UIViewController {
 
