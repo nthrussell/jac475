@@ -9,13 +9,6 @@ import UIKit
 import RadarSDK
 
 class EventVC: UIViewController {
-    
-    @IBOutlet var RDFGStatus: UILabel!
-    @IBOutlet var RDFGLocation: UILabel!
-    @IBOutlet var RDFGEvent: UILabel!
-    @IBOutlet var RDFGIsStopped: UILabel!
-    @IBOutlet var RDFGLastPlace: UILabel!
-    
 
     @IBOutlet var RDBGStatus: UILabel!
     @IBOutlet var RDBGLocation: UILabel!
@@ -27,16 +20,6 @@ class EventVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-        Radar.trackOnce(completionHandler: { (status: RadarStatus, location: CLLocation?, events: [RadarEvent]?, user: RadarUser?) in
-            // do something with status, location, events, user
-            self.RDFGStatus.text = "Status: \(status)"
-            self.RDFGLocation.text = "Loc: \(location)"
-            self.RDFGEvent.text = "Events: \(events)"
-            self.RDFGIsStopped.text = "isStop: \(user?.stopped)"
-            self.RDFGLastPlace.text = "LastPlace: \(user?.place)"
-        })
         
         //Background location
         NotificationCenter.default.addObserver(self,
@@ -57,7 +40,6 @@ class EventVC: UIViewController {
     }
     
     @objc func onDidReceiveLocationData(_ notification: Notification) {
-        
         if let data = notification.userInfo as? [String: Double] {
             self.RDBGLocationUpdate.text = "\(data)"
         }
@@ -68,6 +50,7 @@ class EventVC: UIViewController {
             self.RDBGEvent.text = "\(data)"
         }
     }
+    
     @objc func onDidReceivePlaceData(_ notification: Notification) {
         if let data = notification.userInfo {
             self.RDBGLastPlace.text = "\(data)"

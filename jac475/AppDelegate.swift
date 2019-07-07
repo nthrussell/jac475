@@ -7,6 +7,7 @@
 
 import UIKit
 import CoreLocation
+import UserNotifications
 import RadarSDK
 import Pilgrim
 import FacebookCore
@@ -31,10 +32,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate, CLLocationManagerDelegate
 
         //Mr Jamal Cole //prj_test_pk_81c06ab3fa9fa0d2656ad26a179eff38b2eb5a6c
         initLocationManager()
-        Radar.initialize(publishableKey: "prj_test_pk_81c06ab3fa9fa0d2656ad26a179eff38b2eb5a6c")
+        Radar.initialize(publishableKey: Utils.radarPublishableKey)
         Radar.setDelegate(self)
         Radar.setPlacesProvider(.facebook)
-        Radar.startTracking()
         return true
     }
     
@@ -100,6 +100,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate, CLLocationManagerDelegate
     }
 
     func didReceiveEvents(_ events: [RadarEvent], user: RadarUser) {
+        
+        for event in events {
+            let eventString = Utils.stringForEvent(event)
+            self.showNotification(title: "Event", body: eventString)
+        }
+        
         print("myBackgroundEvents:\(events)")
         print("myUserData: \(user.place)")
         
@@ -116,11 +122,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate, CLLocationManagerDelegate
         print("radarLocationUpdate: \(location.coordinate)")
         let backGroundLocation = ["lat": location.coordinate.latitude, "lon": location.coordinate.longitude]
         NotificationCenter.default.post(name: .RDbackgroundLocationUpdate, object: self, userInfo: backGroundLocation)
+        
+        let state = user.stopped ? "Stopped at" : "Moved to"
+        let locationString = "\(state) location (\(location.coordinate.latitude), \(location.coordinate.longitude)) with accuracy \(location.horizontalAccuracy) meters"
+        self.showNotification(title: "Location", body: locationString)
     }
     
     func didFail(status: RadarStatus) {
         // do something with status
-        print("radar fail status: \(status)")
+        let statusString = Utils.stringForStatus(status)
+        self.showNotification(title: "Error", body: statusString)
     }
 
     func applicationWillResignActive(_ application: UIApplication) {
@@ -131,6 +142,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, CLLocationManagerDelegate
     func applicationDidEnterBackground(_ application: UIApplication) {
         // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
         // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+        Radar.startTracking()
+
     }
 
     func applicationWillEnterForeground(_ application: UIApplication) {
@@ -144,6 +157,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate, CLLocationManagerDelegate
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
+    
+    func showNotification(title: String, body: String) {
+        let center = UNUserNotificationCenter.current()
+        
+        let identifier = body
+        
+        let content = UNMutableNotificationContent()
+        content.title = title
+        content.body = body
+        
+        let request = UNNotificationRequest(identifier: identifier, content: content, trigger: nil)
+        center.add(request, withCompletionHandler: { (error: Error?) in
+            
+        })
+    }
+
 
 
 }
