@@ -29,8 +29,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate, CLLocationManagerDelegate
         
         //FBSDK
         SDKApplicationDelegate.shared.application(application, didFinishLaunchingWithOptions: launchOptions)
+        
+        //Pilgrim
+        PilgrimManager.shared().configure(withConsumerKey: Utils.pilgrimClientID, secret: Utils.pilgrimClientID, delegate: self, completion: nil)
+        PilgrimManager.shared().start()
+        PilgrimManager.shared().isDebugLogsEnabled = true
 
-        //Mr Jamal Cole //prj_test_pk_81c06ab3fa9fa0d2656ad26a179eff38b2eb5a6c
+
+        //Radar
         initLocationManager()
         Radar.initialize(publishableKey: Utils.radarPublishableKey)
         Radar.setDelegate(self)
@@ -53,12 +59,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, CLLocationManagerDelegate
     // If failed
     func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
         locationManager.stopUpdatingLocation()
-        if ((error) != nil) {
-            if (seenError == false) {
-                seenError = true
-                print("error is: \(error)")
-            }
-        }
+        print("location manager error is: \(error)")
     }
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
@@ -107,7 +108,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, CLLocationManagerDelegate
         }
         
         print("myBackgroundEvents:\(events)")
-        print("myUserData: \(user.place)")
+        print("myUserData: \(String(describing: user.place))")
         
         let RDBackgroundEvents = ["events": events]
         NotificationCenter.default.post(name: .RDBackgroundEvents, object: self, userInfo: RDBackgroundEvents)
@@ -177,3 +178,28 @@ class AppDelegate: UIResponder, UIApplicationDelegate, CLLocationManagerDelegate
 
 }
 
+extension AppDelegate : PilgrimManagerDelegate {
+    // Primary visit handler:
+    func pilgrimManager(_ pilgrimManager: PilgrimManager, handle visit: Visit) {
+        // Process the visit however you'd like:
+        print("\(visit.hasDeparted ? "Departure from" : "Arrival at") \(visit.venue != nil ? visit.venue!.name : "Unknown venue."). Added a Pilgrim visit at: \(visit.displayName)")
+        self.showNotification(title: "Pilgrim1", body: "\(visit.hasDeparted ? "Departure from" : "Arrival at") \(visit.venue != nil ? visit.venue!.name : "Unknown venue."). Added a Pilgrim visit at: \(visit.displayName)")
+        
+    }
+    
+    // Optional: If visit occurred without network connectivity
+    func pilgrimManager(_ pilgrimManager: PilgrimManager, handleBackfill visit: Pilgrim.Visit) {
+        // Process the visit however you'd like:
+        print("Backfill \(visit.hasDeparted ? "departure from" : "arrival at") \(visit.venue != nil ? visit.venue!.name : "Unknown venue."). Added a Pilgrim backfill visit at: \(visit.displayName)")
+        self.showNotification(title: "pilgrim2", body: "Backfill \(visit.hasDeparted ? "departure from" : "arrival at") \(visit.venue != nil ? visit.venue!.name : "Unknown venue."). Added a Pilgrim backfill visit at: \(visit.displayName)")
+    }
+    
+    // Optional: If visit occurred by triggering a geofence
+    func pilgrimManager(_ pilgrimManager: PilgrimManager, handle geofenceEvents: [GeofenceEvent]) {
+        // Process the geofence events however you'd like:
+        geofenceEvents.forEach { geofenceEvent in
+            print(geofenceEvent)
+            self.showNotification(title: "Pilgrim3", body: "\(geofenceEvent)")
+        }
+    }
+}

@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Pilgrim
 import RadarSDK
 import SwiftyJSON
 
@@ -24,6 +25,20 @@ class StateVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        pilgrim()
+        radar()
+
+    }
+    
+    func pilgrim() {
+        PilgrimManager.shared().getCurrentLocation { (currentLocation, error) in
+            // Example: currentLocation.currentPlace.venue.name
+            self.FQLocation.text = "\(String(describing: currentLocation))"
+            print("FQLocationError: \(String(describing: error))")
+        }
+    }
+    
+    func radar() {
         Radar.trackOnce(completionHandler: { (status: RadarStatus, location: CLLocation?, events: [RadarEvent]?, user: RadarUser?) in
             DispatchQueue.main.async {
                 
@@ -38,7 +53,7 @@ class StateVC: UIViewController {
                         self.RDLocation.text = "\(String(describing: locationString))"
                         self.RDAccuracy.text = "\(String(describing: location.horizontalAccuracy)) meters"
                     }
-                   
+                    
                     if let user = user {
                         self.RDForeGround.text = "foreground:\(String(describing: user.foreground))"
                         self.RDStopped.text = "stopped:\(String(describing: user.stopped))"
@@ -68,27 +83,6 @@ class StateVC: UIViewController {
                 }
             }
         })
-
-    }
-    
-    override func viewDidAppear(_ animated: Bool) {
-        // Do any additional setup after loading the view.
-//        Radar.trackOnce(completionHandler: { (status: RadarStatus, location: CLLocation?, events: [RadarEvent]?, user: RadarUser?) in
-//            // do something with status, location, events, user
-//            print("radarStatus: \(status)")
-//            print("radarLocation: \(String(describing: location))")
-//            print("radarEvents: \(String(describing: events))")
-//            print("radarUser: \(String(describing: user))")
-//
-//            if let location = location,
-//                let events = events,
-//                 let user = user {
-//                    self.RDLocation.text = "\(String(describing: location))"
-//                    self.RDAccuracy.text = "\(String(describing: events))"
-//                    self.RDForeGround.text = "\(String(describing: user.foreground))"
-//                    self.RDStopped.text = "\(String(describing: user.stopped))"
-//                }
-//        })
 
     }
     
