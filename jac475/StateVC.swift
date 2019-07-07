@@ -10,6 +10,16 @@ import RadarSDK
 
 class StateVC: UIViewController {
 
+    @IBOutlet var FQLocation: UILabel!
+    @IBOutlet var FQAccuracy: UILabel!
+    @IBOutlet var FQForeGround: UILabel!
+    @IBOutlet var FQStopped: UILabel!
+    
+    @IBOutlet var RDLocation: UILabel!
+    @IBOutlet var RDAccuracy: UILabel!
+    @IBOutlet var RDForeGround: UILabel!
+    @IBOutlet var RDStopped: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
