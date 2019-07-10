@@ -25,9 +25,9 @@ class StateVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        PilgrimManager.shared().visitTester?.fireTestVisit(location: CLLocation(latitude: 37.7904311, longitude: -122.4066613))
         pilgrim()
         radar()
-
     }
     
     func pilgrim() {
@@ -89,7 +89,6 @@ class StateVC: UIViewController {
     func showAlert(title: String, message: String?) {
         let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert);
         alertController.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
-        
         self.present(alertController, animated: true, completion: nil)
     }
     

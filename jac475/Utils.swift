@@ -10,8 +10,9 @@ import RadarSDK
 
 class Utils {
     
-    static let pilgrimClientID     = "L3GVFUYYDJ3ODMOQFFJQ2MYHDSQIZWG345OBC3BV1KIUQE0K"
-    static let radarPublishableKey = "prj_test_pk_81c06ab3fa9fa0d2656ad26a179eff38b2eb5a6c"
+    static let pilgrimClientID         = "L3GVFUYYDJ3ODMOQFFJQ2MYHDSQIZWG345OBC3BV1KIUQE0K"
+    static let pilgrimClientSecret     = "NI1XWW31LNWC0PQHCDTOUFPNQ2EUH1GSXY0GKGAZEPYDAZIE"
+    static let radarPublishableKey     = "prj_test_pk_81c06ab3fa9fa0d2656ad26a179eff38b2eb5a6c"
     
     static func getUserId() -> String {
         return UIDevice.current.identifierForVendor!.uuidString

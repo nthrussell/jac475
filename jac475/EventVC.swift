@@ -23,19 +23,19 @@ class EventVC: UIViewController {
         
         //Background location
         NotificationCenter.default.addObserver(self,
-                                               selector: #selector(onDidReceiveLocationData(_:)),
-                                               name:.RDbackgroundLocationUpdate,
-                                               object: nil)
+                                          selector: #selector(onDidReceiveLocationData(_:)),
+                                          name:.RDbackgroundLocationUpdate,
+                                          object: nil)
         //Background events
         NotificationCenter.default.addObserver(self,
-                                               selector: #selector(onDidReceiveEventData(_:)),
-                                               name:.RDBackgroundEvents,
-                                               object: nil)
+                                          selector: #selector(onDidReceiveEventData(_:)),
+                                          name:.RDBackgroundEvents,
+                                          object: nil)
         //Background events
         NotificationCenter.default.addObserver(self,
-                                               selector: #selector(onDidReceivePlaceData(_:)),
-                                               name:.RDBackgroundUserPlace,
-                                               object: nil)
+                                          selector: #selector(onDidReceivePlaceData(_:)),
+                                          name:.RDBackgroundUserPlace,
+                                          object: nil)
         
     }
     

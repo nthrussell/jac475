@@ -31,7 +31,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, CLLocationManagerDelegate
         SDKApplicationDelegate.shared.application(application, didFinishLaunchingWithOptions: launchOptions)
         
         //Pilgrim
-        PilgrimManager.shared().configure(withConsumerKey: Utils.pilgrimClientID, secret: Utils.pilgrimClientID, delegate: self, completion: nil)
+        PilgrimManager.shared().configure(withConsumerKey: Utils.pilgrimClientID, secret: Utils.pilgrimClientSecret, delegate: self, completion: nil)
         PilgrimManager.shared().start()
         PilgrimManager.shared().isDebugLogsEnabled = true
 
@@ -40,6 +40,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, CLLocationManagerDelegate
         initLocationManager()
         Radar.initialize(publishableKey: Utils.radarPublishableKey)
         Radar.setDelegate(self)
+        Radar.startTracking()
         Radar.setPlacesProvider(.facebook)
         return true
     }
@@ -143,8 +144,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate, CLLocationManagerDelegate
     func applicationDidEnterBackground(_ application: UIApplication) {
         // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
         // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
-        Radar.startTracking()
-
     }
 
     func applicationWillEnterForeground(_ application: UIApplication) {
@@ -184,7 +183,6 @@ extension AppDelegate : PilgrimManagerDelegate {
         // Process the visit however you'd like:
         print("\(visit.hasDeparted ? "Departure from" : "Arrival at") \(visit.venue != nil ? visit.venue!.name : "Unknown venue."). Added a Pilgrim visit at: \(visit.displayName)")
         self.showNotification(title: "Pilgrim1", body: "\(visit.hasDeparted ? "Departure from" : "Arrival at") \(visit.venue != nil ? visit.venue!.name : "Unknown venue."). Added a Pilgrim visit at: \(visit.displayName)")
-        
     }
     
     // Optional: If visit occurred without network connectivity
