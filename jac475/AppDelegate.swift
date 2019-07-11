@@ -173,24 +173,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate, CLLocationManagerDelegate
         })
     }
 
-
-
 }
 
 extension AppDelegate : PilgrimManagerDelegate {
     // Primary visit handler:
     func pilgrimManager(_ pilgrimManager: PilgrimManager, handle visit: Visit) {
         // Process the visit however you'd like:
-        print("\(visit.hasDeparted ? "Departure from" : "Arrival at") \(visit.venue != nil ? visit.venue!.name : "Unknown venue."). Added a Pilgrim visit at: \(visit.displayName)")
         self.showNotification(title: "Pilgrim1", body: "\(visit.hasDeparted ? "Departure from" : "Arrival at") \(visit.venue != nil ? visit.venue!.name : "Unknown venue."). Added a Pilgrim visit at: \(visit.displayName)")
-        
-        
     }
     
     // Optional: If visit occurred without network connectivity
     func pilgrimManager(_ pilgrimManager: PilgrimManager, handleBackfill visit: Pilgrim.Visit) {
         // Process the visit however you'd like:
-        print("Backfill \(visit.hasDeparted ? "departure from" : "arrival at") \(visit.venue != nil ? visit.venue!.name : "Unknown venue."). Added a Pilgrim backfill visit at: \(visit.displayName)")
         self.showNotification(title: "pilgrim2", body: "Backfill \(visit.hasDeparted ? "departure from" : "arrival at") \(visit.venue != nil ? visit.venue!.name : "Unknown venue."). Added a Pilgrim backfill visit at: \(visit.displayName)")
     }
     
@@ -198,7 +192,6 @@ extension AppDelegate : PilgrimManagerDelegate {
     func pilgrimManager(_ pilgrimManager: PilgrimManager, handle geofenceEvents: [GeofenceEvent]) {
         // Process the geofence events however you'd like:
         geofenceEvents.forEach { geofenceEvent in
-            print(geofenceEvent)
             self.showNotification(title: "Pilgrim3", body: "\(geofenceEvent)")
         }
     }

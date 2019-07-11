@@ -11,4 +11,6 @@ extension Notification.Name {
     static let RDbackgroundLocationUpdate = Notification.Name("RDbackgroundLocationUpdate")
     static let RDBackgroundEvents         = Notification.Name("RDBackgroundEvents")
     static let RDBackgroundUserPlace      = Notification.Name("RDBackgroundUserPlace")
+    
+    static let pilgrimVenuName = Notification.Name("pilgrimVenuName")
 }

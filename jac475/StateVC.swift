@@ -13,9 +13,8 @@ import SwiftyJSON
 class StateVC: UIViewController {
 
     @IBOutlet var FQLocation: UILabel!
-    @IBOutlet var FQAccuracy: UILabel!
-    @IBOutlet var FQForeGround: UILabel!
-    @IBOutlet var FQStopped: UILabel!
+    @IBOutlet var FQStatus: UITextView!
+    
     
     @IBOutlet var RDLocation: UILabel!
     @IBOutlet var RDAccuracy: UILabel!
@@ -25,7 +24,6 @@ class StateVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        PilgrimManager.shared().visitTester?.fireTestVisit(location: CLLocation(latitude: 37.7904311, longitude: -122.4066613))
         pilgrim()
         radar()
     }
@@ -33,7 +31,9 @@ class StateVC: UIViewController {
     func pilgrim() {
         PilgrimManager.shared().getCurrentLocation { (currentLocation, error) in
             // Example: currentLocation.currentPlace.venue.name
-            self.FQLocation.text = "\(String(describing: currentLocation))"
+            if let location = currentLocation {
+                self.FQStatus.text = "\(String(describing: location))"
+            }
             print("FQLocationError: \(String(describing: error))")
         }
     }
