@@ -40,9 +40,9 @@ class pilgrimVC: UIViewController {
     }
     
     @objc func pilgrimVenuName(_ notification: Notification) {
-        if let data = notification.userInfo as? [String: Double] {
-            
-        }
+//        if let data = notification.userInfo as? [String: Double] {
+//
+//        }
     }
     
 }
