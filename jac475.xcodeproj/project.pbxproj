@@ -17,6 +17,7 @@
 		FD26D6AC22D082C3000B7FDC /* Pilgrim.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD26D6AB22D082C3000B7FDC /* Pilgrim.framework */; };
 		FD26D6AF22D090E3000B7FDC /* FacebookCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD26D6AE22D090E3000B7FDC /* FacebookCore.framework */; };
 		FD26D6B122D0911C000B7FDC /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD26D6B022D0911C000B7FDC /* FBSDKCoreKit.framework */; };
+		FD41721322D796D0005377D3 /* pilgrimVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD41721222D796D0005377D3 /* pilgrimVC.swift */; };
 		FDB80E0922D1D4B900DF12CC /* extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB80E0822D1D4B900DF12CC /* extensions.swift */; };
 		FDB80E0B22D1F14200DF12CC /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDB80E0A22D1F14200DF12CC /* SwiftyJSON.framework */; };
 		FDB80E0D22D23BB200DF12CC /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB80E0C22D23BB200DF12CC /* Utils.swift */; };
@@ -35,6 +36,7 @@
 		FD26D6AB22D082C3000B7FDC /* Pilgrim.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pilgrim.framework; path = Carthage/Build/iOS/Pilgrim.framework; sourceTree = "<group>"; };
 		FD26D6AE22D090E3000B7FDC /* FacebookCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookCore.framework; path = Carthage/Build/iOS/FacebookCore.framework; sourceTree = "<group>"; };
 		FD26D6B022D0911C000B7FDC /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = Carthage/Build/iOS/FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		FD41721222D796D0005377D3 /* pilgrimVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pilgrimVC.swift; sourceTree = "<group>"; };
 		FDB80E0822D1D4B900DF12CC /* extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extensions.swift; sourceTree = "<group>"; };
 		FDB80E0A22D1F14200DF12CC /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
 		FDB80E0C22D23BB200DF12CC /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
@@ -81,6 +83,7 @@
 				FD26D69022D07CAB000B7FDC /* AppDelegate.swift */,
 				FD26D6A422D07D12000B7FDC /* StateVC.swift */,
 				FD26D6A622D07D24000B7FDC /* EventVC.swift */,
+				FD41721222D796D0005377D3 /* pilgrimVC.swift */,
 				FD26D69622D07CAB000B7FDC /* Main.storyboard */,
 				FD26D69922D07CAC000B7FDC /* Assets.xcassets */,
 				FD26D69B22D07CAC000B7FDC /* LaunchScreen.storyboard */,
@@ -203,6 +206,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FDB80E0D22D23BB200DF12CC /* Utils.swift in Sources */,
+				FD41721322D796D0005377D3 /* pilgrimVC.swift in Sources */,
 				FD26D6A722D07D24000B7FDC /* EventVC.swift in Sources */,
 				FD26D6A522D07D12000B7FDC /* StateVC.swift in Sources */,
 				FD26D69122D07CAB000B7FDC /* AppDelegate.swift in Sources */,
