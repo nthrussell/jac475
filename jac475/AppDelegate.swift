@@ -183,6 +183,8 @@ extension AppDelegate : PilgrimManagerDelegate {
         // Process the visit however you'd like:
         print("\(visit.hasDeparted ? "Departure from" : "Arrival at") \(visit.venue != nil ? visit.venue!.name : "Unknown venue."). Added a Pilgrim visit at: \(visit.displayName)")
         self.showNotification(title: "Pilgrim1", body: "\(visit.hasDeparted ? "Departure from" : "Arrival at") \(visit.venue != nil ? visit.venue!.name : "Unknown venue."). Added a Pilgrim visit at: \(visit.displayName)")
+        
+        
     }
     
     // Optional: If visit occurred without network connectivity

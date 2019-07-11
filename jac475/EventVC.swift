@@ -7,6 +7,7 @@
 
 import UIKit
 import RadarSDK
+import Pilgrim
 
 class EventVC: UIViewController {
 
@@ -37,6 +38,21 @@ class EventVC: UIViewController {
                                           name:.RDBackgroundUserPlace,
                                           object: nil)
         
+    }
+    
+    func pilgrimManager(_ pilgrimManager: PilgrimManager, didVisit visit: Visit) {
+        
+         print("\(visit.hasDeparted ? "Departure from" : "Arrival at") \(visit.venue != nil ? visit.venue!.name : "Unknown venue."). Added a Pilgrim visit at: \(visit.displayName)")
+        
+        if pilgrimManager.hasHomeOrWork() {
+            // Home and work are set. Lets print them out
+            print(pilgrimManager.homeLocations)
+            print(pilgrimManager.workLocations)
+            
+        } else if visit.confidence != .high {
+            // Home and work aren't set and visit confidence isn't High
+            // Depending on my application I might not want to trust this visit
+        }
     }
     
     @objc func onDidReceiveLocationData(_ notification: Notification) {
