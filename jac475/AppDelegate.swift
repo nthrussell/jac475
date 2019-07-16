@@ -113,9 +113,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate, CLLocationManagerDelegate
         
         let RDBackgroundEvents = ["events": events]
         NotificationCenter.default.post(name: .RDBackgroundEvents, object: self, userInfo: RDBackgroundEvents)
+        self.showNotification(title: "Radar Event", body: "\(events)")
         
         let RDBackgroundPlace = ["place": user.place as Any]
         NotificationCenter.default.post(name: .RDBackgroundUserPlace, object: self, userInfo: RDBackgroundPlace)
+        self.showNotification(title: "Radar Place", body: "\(String(describing: user.place))")
 
     }
     

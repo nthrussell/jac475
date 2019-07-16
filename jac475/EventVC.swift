@@ -16,7 +16,6 @@ class EventVC: UIViewController {
     @IBOutlet var RDBGEvent: UILabel!
     @IBOutlet var RDBGIsStopped: UILabel!
     @IBOutlet var RDBGLastPlace: UILabel!
-    
     @IBOutlet var RDBGLocationUpdate: UILabel!
     
     override func viewDidLoad() {
