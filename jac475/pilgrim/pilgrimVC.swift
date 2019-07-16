@@ -11,6 +11,7 @@ import Pilgrim
 class pilgrimVC: UIViewController {
     
     @IBOutlet var pilgrimDescription: UITextView!
+    @IBOutlet var tableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()

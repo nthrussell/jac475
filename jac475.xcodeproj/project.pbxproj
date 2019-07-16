@@ -18,6 +18,8 @@
 		FD26D6AF22D090E3000B7FDC /* FacebookCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD26D6AE22D090E3000B7FDC /* FacebookCore.framework */; };
 		FD26D6B122D0911C000B7FDC /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD26D6B022D0911C000B7FDC /* FBSDKCoreKit.framework */; };
 		FD41721322D796D0005377D3 /* pilgrimVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD41721222D796D0005377D3 /* pilgrimVC.swift */; };
+		FD6A1E7D22DE2E2A0023D678 /* radarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6A1E7C22DE2E2A0023D678 /* radarVC.swift */; };
+		FD6A1E8122DE347A0023D678 /* radarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6A1E8022DE347A0023D678 /* radarCell.swift */; };
 		FD863C8722DD74B800766F64 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD863C8622DD74B800766F64 /* CoreLocation.framework */; };
 		FDB80E0922D1D4B900DF12CC /* extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB80E0822D1D4B900DF12CC /* extensions.swift */; };
 		FDB80E0B22D1F14200DF12CC /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDB80E0A22D1F14200DF12CC /* SwiftyJSON.framework */; };
@@ -38,6 +40,8 @@
 		FD26D6AE22D090E3000B7FDC /* FacebookCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookCore.framework; path = Carthage/Build/iOS/FacebookCore.framework; sourceTree = "<group>"; };
 		FD26D6B022D0911C000B7FDC /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = Carthage/Build/iOS/FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		FD41721222D796D0005377D3 /* pilgrimVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pilgrimVC.swift; sourceTree = "<group>"; };
+		FD6A1E7C22DE2E2A0023D678 /* radarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = radarVC.swift; sourceTree = "<group>"; };
+		FD6A1E8022DE347A0023D678 /* radarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = radarCell.swift; sourceTree = "<group>"; };
 		FD863C8622DD74B800766F64 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		FDB80E0822D1D4B900DF12CC /* extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extensions.swift; sourceTree = "<group>"; };
 		FDB80E0A22D1F14200DF12CC /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
@@ -86,7 +90,8 @@
 				FD26D69022D07CAB000B7FDC /* AppDelegate.swift */,
 				FD26D6A422D07D12000B7FDC /* StateVC.swift */,
 				FD26D6A622D07D24000B7FDC /* EventVC.swift */,
-				FD41721222D796D0005377D3 /* pilgrimVC.swift */,
+				FD6A1E7E22DE34370023D678 /* radar */,
+				FD6A1E7F22DE344E0023D678 /* pilgrim */,
 				FD26D69622D07CAB000B7FDC /* Main.storyboard */,
 				FD26D69922D07CAC000B7FDC /* Assets.xcassets */,
 				FD26D69B22D07CAC000B7FDC /* LaunchScreen.storyboard */,
@@ -106,6 +111,23 @@
 				FD26D6A922D08206000B7FDC /* RadarSDK.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FD6A1E7E22DE34370023D678 /* radar */ = {
+			isa = PBXGroup;
+			children = (
+				FD6A1E7C22DE2E2A0023D678 /* radarVC.swift */,
+				FD6A1E8022DE347A0023D678 /* radarCell.swift */,
+			);
+			path = radar;
+			sourceTree = "<group>";
+		};
+		FD6A1E7F22DE344E0023D678 /* pilgrim */ = {
+			isa = PBXGroup;
+			children = (
+				FD41721222D796D0005377D3 /* pilgrimVC.swift */,
+			);
+			path = pilgrim;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -213,7 +235,9 @@
 				FD41721322D796D0005377D3 /* pilgrimVC.swift in Sources */,
 				FD26D6A722D07D24000B7FDC /* EventVC.swift in Sources */,
 				FD26D6A522D07D12000B7FDC /* StateVC.swift in Sources */,
+				FD6A1E8122DE347A0023D678 /* radarCell.swift in Sources */,
 				FD26D69122D07CAB000B7FDC /* AppDelegate.swift in Sources */,
+				FD6A1E7D22DE2E2A0023D678 /* radarVC.swift in Sources */,
 				FDB80E0922D1D4B900DF12CC /* extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

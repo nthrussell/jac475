@@ -7,6 +7,8 @@
 
 import Foundation
 import RadarSDK
+import UserNotifications
+
 
 class Utils {
     
@@ -66,6 +68,21 @@ class Utils {
         default:
             return "Unknown Error"
         }
+    }
+    
+    static func showNotification(title: String, body: String) {
+        let center = UNUserNotificationCenter.current()
+        
+        let identifier = body
+        
+        let content = UNMutableNotificationContent()
+        content.title = title
+        content.body = body
+        
+        let request = UNNotificationRequest(identifier: identifier, content: content, trigger: nil)
+        center.add(request, withCompletionHandler: { (error: Error?) in
+            
+        })
     }
     
 }

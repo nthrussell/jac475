@@ -105,7 +105,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, CLLocationManagerDelegate
         
         for event in events {
             let eventString = Utils.stringForEvent(event)
-            self.showNotification(title: "Event", body: eventString)
+            Utils.showNotification(title: "Event", body: eventString)
         }
         
         print("myBackgroundEvents:\(events)")
@@ -113,11 +113,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate, CLLocationManagerDelegate
         
         let RDBackgroundEvents = ["events": events]
         NotificationCenter.default.post(name: .RDBackgroundEvents, object: self, userInfo: RDBackgroundEvents)
-        self.showNotification(title: "Radar Event", body: "\(events)")
+        Utils.showNotification(title: "Radar Event", body: "\(events)")
         
         let RDBackgroundPlace = ["place": user.place as Any]
         NotificationCenter.default.post(name: .RDBackgroundUserPlace, object: self, userInfo: RDBackgroundPlace)
-        self.showNotification(title: "Radar Place", body: "\(String(describing: user.place))")
+        Utils.showNotification(title: "Radar Place", body: "\(String(describing: user.place))")
 
     }
     
@@ -129,13 +129,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate, CLLocationManagerDelegate
         
         let state = user.stopped ? "Stopped at" : "Moved to"
         let locationString = "\(state) location (\(location.coordinate.latitude), \(location.coordinate.longitude)) with accuracy \(location.horizontalAccuracy) meters"
-        self.showNotification(title: "Radar Location", body: locationString)
+        Utils.showNotification(title: "Radar Location", body: locationString)
     }
     
     func didFail(status: RadarStatus) {
         // do something with status
         let statusString = Utils.stringForStatus(status)
-        self.showNotification(title: "Radar Error", body: statusString)
+        Utils.showNotification(title: "Radar Error", body: statusString)
     }
 
     func applicationWillResignActive(_ application: UIApplication) {
@@ -159,21 +159,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate, CLLocationManagerDelegate
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
-    
-    func showNotification(title: String, body: String) {
-        let center = UNUserNotificationCenter.current()
-        
-        let identifier = body
-        
-        let content = UNMutableNotificationContent()
-        content.title = title
-        content.body = body
-        
-        let request = UNNotificationRequest(identifier: identifier, content: content, trigger: nil)
-        center.add(request, withCompletionHandler: { (error: Error?) in
-            
-        })
-    }
 
 }
 
@@ -181,20 +166,20 @@ extension AppDelegate : PilgrimManagerDelegate {
     // Primary visit handler:
     func pilgrimManager(_ pilgrimManager: PilgrimManager, handle visit: Visit) {
         // Process the visit however you'd like:
-        self.showNotification(title: "Pilgrim", body: "\(visit.hasDeparted ? "Departure from" : "Arrival at") \(visit.venue != nil ? visit.venue!.name : "Unknown venue."). Added a Pilgrim visit at: \(visit.displayName)")
+        Utils.showNotification(title: "Pilgrim", body: "\(visit.hasDeparted ? "Departure from" : "Arrival at") \(visit.venue != nil ? visit.venue!.name : "Unknown venue."). Added a Pilgrim visit at: \(visit.displayName)")
     }
     
     // Optional: If visit occurred without network connectivity
     func pilgrimManager(_ pilgrimManager: PilgrimManager, handleBackfill visit: Pilgrim.Visit) {
         // Process the visit however you'd like:
-        self.showNotification(title: "pilgrim without network activity", body: "Backfill \(visit.hasDeparted ? "departure from" : "arrival at") \(visit.venue != nil ? visit.venue!.name : "Unknown venue."). Added a Pilgrim backfill visit at: \(visit.displayName)")
+        Utils.showNotification(title: "pilgrim without network activity", body: "Backfill \(visit.hasDeparted ? "departure from" : "arrival at") \(visit.venue != nil ? visit.venue!.name : "Unknown venue."). Added a Pilgrim backfill visit at: \(visit.displayName)")
     }
     
     // Optional: If visit occurred by triggering a geofence
     func pilgrimManager(_ pilgrimManager: PilgrimManager, handle geofenceEvents: [GeofenceEvent]) {
         // Process the geofence events however you'd like:
         geofenceEvents.forEach { geofenceEvent in
-            self.showNotification(title: "Pilgrim geofence", body: "\(geofenceEvent)")
+            Utils.showNotification(title: "Pilgrim geofence", body: "\(geofenceEvent)")
         }
     }
 }
