@@ -248,20 +248,20 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Pilgrim current location" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Hgq-iB-KBW">
-                                <rect key="frame" x="16" y="69" width="343" height="35"/>
+                                <rect key="frame" x="16" y="69" width="343" height="55"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="343" id="Gmz-Lr-Sjb"/>
-                                    <constraint firstAttribute="height" constant="35" id="tfb-vM-mav"/>
+                                    <constraint firstAttribute="height" constant="55" id="tfb-vM-mav"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="aub-FH-ose">
-                                <rect key="frame" x="16" y="112" width="343" height="506"/>
+                                <rect key="frame" x="16" y="132" width="343" height="486"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="66" id="8Gb-QB-JiW">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="pilgrimCell" rowHeight="66" id="8Gb-QB-JiW" customClass="pilgrimCell" customModule="jac475" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="343" height="66"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="8Gb-QB-JiW" id="yZL-Cq-2KE">
