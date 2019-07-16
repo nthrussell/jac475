@@ -73,6 +73,11 @@ class Utils {
     static func showNotification(title: String, body: String) {
         let center = UNUserNotificationCenter.current()
         
+        center.requestAuthorization(options: [.alert, .sound])
+        { (granted, error) in
+            // Enable or disable features based on authorization.
+        }
+        
         let identifier = body
         
         let content = UNMutableNotificationContent()

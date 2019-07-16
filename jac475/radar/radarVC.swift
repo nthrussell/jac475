@@ -46,7 +46,6 @@ class radarVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
                 
                 let statusString = Utils.stringForStatus(status)
                 print("statusString:\(statusString)")
-                self.showAlert(title: statusString, message: nil)
                 
                 if status == .success {
                     
