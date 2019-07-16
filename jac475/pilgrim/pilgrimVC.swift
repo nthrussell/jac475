@@ -8,7 +8,7 @@
 import UIKit
 import Pilgrim
 
-class pilgrimVC: UIViewController, UITableViewDataSource, UITableViewDelegate, PilgrimManagerDelegate {
+class pilgrimVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     @IBOutlet var pilgrimDescription: UITextView!
     @IBOutlet var tableView: UITableView!
@@ -35,19 +35,15 @@ class pilgrimVC: UIViewController, UITableViewDataSource, UITableViewDelegate, P
         PilgrimManager.shared().getCurrentLocation { (currentLocation, error) in
             // Example: currentLocation.currentPlace.venue.name
             if let currentLocation = currentLocation {
-                self.pilgrimDescription.text = "\(String(describing: currentLocation))"
+                if let place = currentLocation.currentPlace.venue {
+                    self.pilgrimDescription.text = "\(String(describing: place.name))"
+                    self.pilgrimPlaces.append(place.name)
+                }
             }
+            self.tableView.reloadData()
             print("FQLocationError: \(String(describing: error))")
-            
         }
-        
-    }
-    
-    func pilgrimManager(_ pilgrimManager: PilgrimManager, handle visit: Visit) {
-       let placeVisited =  "\(visit.hasDeparted ? "Departure from" : "Arrival at") \(visit.venue != nil ? visit.venue!.name : "Unknown venue."). Added a Pilgrim visit at: \(visit.displayName)"
-        self.pilgrimPlaces.append(placeVisited)
         self.tableView.reloadData()
-        print("pilgrimPlaces \(pilgrimPlaces)")
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
