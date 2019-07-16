@@ -20,6 +20,7 @@ class StateVC: UIViewController {
     @IBOutlet var RDAccuracy: UILabel!
     @IBOutlet var RDForeGround: UILabel!
     @IBOutlet var RDStopped: UILabel!
+    @IBOutlet weak var RDPlaceName: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -70,6 +71,7 @@ class StateVC: UIViewController {
                     if let user = user, let place = user.place {
                         let placeString = place.name
                         print("placeString:\(placeString)")
+                        self.RDPlaceName.text = placeString
                         self.showAlert(title: "placeString", message: placeString)
                     }
                     

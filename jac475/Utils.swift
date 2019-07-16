@@ -12,7 +12,9 @@ class Utils {
     
     static let pilgrimClientID         = "L3GVFUYYDJ3ODMOQFFJQ2MYHDSQIZWG345OBC3BV1KIUQE0K"
     static let pilgrimClientSecret     = "NI1XWW31LNWC0PQHCDTOUFPNQ2EUH1GSXY0GKGAZEPYDAZIE"
-    static let radarPublishableKey     = "prj_test_pk_81c06ab3fa9fa0d2656ad26a179eff38b2eb5a6c"
+    static let radarPublishableKey     = "prj_test_pk_5b7660a52c40272d29bb86ffd756fb1c36112921"
+   //prj_test_pk_81c06ab3fa9fa0d2656ad26a179eff38b2eb5a6c
+    //prj_test_pk_5b7660a52c40272d29bb86ffd756fb1c36112921 - russell
     
     static func getUserId() -> String {
         return UIDevice.current.identifierForVendor!.uuidString
