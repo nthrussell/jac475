@@ -20,6 +20,7 @@
 		FD41721322D796D0005377D3 /* pilgrimVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD41721222D796D0005377D3 /* pilgrimVC.swift */; };
 		FD6A1E7D22DE2E2A0023D678 /* radarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6A1E7C22DE2E2A0023D678 /* radarVC.swift */; };
 		FD6A1E8122DE347A0023D678 /* radarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6A1E8022DE347A0023D678 /* radarCell.swift */; };
+		FD6A1E8322DE3C7D0023D678 /* pilgrimCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6A1E8222DE3C7D0023D678 /* pilgrimCell.swift */; };
 		FD863C8722DD74B800766F64 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD863C8622DD74B800766F64 /* CoreLocation.framework */; };
 		FDB80E0922D1D4B900DF12CC /* extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB80E0822D1D4B900DF12CC /* extensions.swift */; };
 		FDB80E0B22D1F14200DF12CC /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDB80E0A22D1F14200DF12CC /* SwiftyJSON.framework */; };
@@ -42,6 +43,7 @@
 		FD41721222D796D0005377D3 /* pilgrimVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pilgrimVC.swift; sourceTree = "<group>"; };
 		FD6A1E7C22DE2E2A0023D678 /* radarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = radarVC.swift; sourceTree = "<group>"; };
 		FD6A1E8022DE347A0023D678 /* radarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = radarCell.swift; sourceTree = "<group>"; };
+		FD6A1E8222DE3C7D0023D678 /* pilgrimCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pilgrimCell.swift; sourceTree = "<group>"; };
 		FD863C8622DD74B800766F64 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		FDB80E0822D1D4B900DF12CC /* extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extensions.swift; sourceTree = "<group>"; };
 		FDB80E0A22D1F14200DF12CC /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
@@ -126,6 +128,7 @@
 			isa = PBXGroup;
 			children = (
 				FD41721222D796D0005377D3 /* pilgrimVC.swift */,
+				FD6A1E8222DE3C7D0023D678 /* pilgrimCell.swift */,
 			);
 			path = pilgrim;
 			sourceTree = "<group>";
@@ -237,6 +240,7 @@
 				FD26D6A522D07D12000B7FDC /* StateVC.swift in Sources */,
 				FD6A1E8122DE347A0023D678 /* radarCell.swift in Sources */,
 				FD26D69122D07CAB000B7FDC /* AppDelegate.swift in Sources */,
+				FD6A1E8322DE3C7D0023D678 /* pilgrimCell.swift in Sources */,
 				FD6A1E7D22DE2E2A0023D678 /* radarVC.swift in Sources */,
 				FDB80E0922D1D4B900DF12CC /* extensions.swift in Sources */,
 			);
