@@ -53,7 +53,8 @@ class pilgrimVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "pilgrimCell") as! pilgrimCell
         
-        let data = self.pilgrimPlaces[indexPath.row]
+        var reversedNames : [String] = Array(pilgrimPlaces.reversed())
+        let data = reversedNames[indexPath.row]
         print("pilgrimPlaces: \(data)")
         cell.textLabel?.text = data
         //cell.detailTextLabel?.text = data.descriptionOfPlace

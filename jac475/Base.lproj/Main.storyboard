@@ -156,7 +156,7 @@
             </objects>
             <point key="canvasLocation" x="-487" y="771"/>
         </scene>
-        <!--Event-->
+        <!--Radar-->
         <scene sceneID="wg7-f3-ORb">
             <objects>
                 <viewController storyboardIdentifier="radarVC" id="8rJ-Kc-sve" customClass="radarVC" customModule="jac475" customModuleProvider="target" sceneMemberID="viewController">
@@ -218,7 +218,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="O1u-W8-tvY"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Event" image="second" id="cPa-gy-q4n"/>
+                    <tabBarItem key="tabBarItem" title="Radar" image="second" id="cPa-gy-q4n"/>
                     <connections>
                         <outlet property="radarCurrentPlaceName" destination="Fwx-SQ-4cS" id="XGm-xY-3fB"/>
                         <outlet property="tableView" destination="rZj-5w-nPH" id="jmL-Tw-GPR"/>

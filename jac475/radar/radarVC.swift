@@ -94,7 +94,8 @@ class radarVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
         //radarCell
         let cell = tableView.dequeueReusableCell(withIdentifier: "radarCell") as! radarCell
         
-        let data = self.radarplaces[indexPath.row]
+        var reversedNames : [String] = Array(radarplaces.reversed())
+        let data = reversedNames[indexPath.row]
         print("radarData: \(data)")
         cell.textLabel?.text = data
         //cell.detailTextLabel?.text = data.descriptionOfPlace
