@@ -261,13 +261,30 @@
                                 <rect key="frame" x="16" y="132" width="343" height="486"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="pilgrimCell" rowHeight="66" id="8Gb-QB-JiW" customClass="pilgrimCell" customModule="jac475" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="343" height="66"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="pilgrimCell" rowHeight="100" id="8Gb-QB-JiW" customClass="pilgrimCell" customModule="jac475" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="343" height="100"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="8Gb-QB-JiW" id="yZL-Cq-2KE">
-                                            <rect key="frame" x="0.0" y="0.0" width="343" height="65.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="343" height="99.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="p0x-TZ-oEY">
+                                                    <rect key="frame" x="0.0" y="0.0" width="343" height="99.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="p0x-TZ-oEY" secondAttribute="trailing" id="Psj-Lq-yR6"/>
+                                                <constraint firstItem="p0x-TZ-oEY" firstAttribute="top" secondItem="yZL-Cq-2KE" secondAttribute="top" id="SEl-tj-sIK"/>
+                                                <constraint firstItem="p0x-TZ-oEY" firstAttribute="leading" secondItem="yZL-Cq-2KE" secondAttribute="leading" id="iA6-oO-ELZ"/>
+                                                <constraint firstAttribute="bottom" secondItem="p0x-TZ-oEY" secondAttribute="bottom" id="yzS-1B-p5w"/>
+                                            </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="pilgrimTxt" destination="p0x-TZ-oEY" id="cAb-fP-nPA"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>

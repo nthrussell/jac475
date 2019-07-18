@@ -9,6 +9,8 @@ import UIKit
 
 class pilgrimCell: UITableViewCell {
 
+    @IBOutlet weak var pilgrimTxt: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

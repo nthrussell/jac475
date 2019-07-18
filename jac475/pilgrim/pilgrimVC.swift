@@ -36,8 +36,9 @@ class pilgrimVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
             // Example: currentLocation.currentPlace.venue.name
             if let currentLocation = currentLocation {
                 if let place = currentLocation.currentPlace.venue {
-                    self.pilgrimDescription.text = "\(String(describing: place.name))"
-                    self.pilgrimPlaces.append(place.name)
+                    let description = "\(currentLocation.currentPlace.hasDeparted ? "\(currentLocation.currentPlace.departureDate!)" : "\(currentLocation.currentPlace.arrivalDate!)") : \(currentLocation.currentPlace.hasDeparted ? "Departure from" : "Arrival at"):  - \(String(describing: place.name))"
+                    self.pilgrimDescription.text = description
+                    self.pilgrimPlaces.append(description)
                 }
             }
             self.tableView.reloadData()
@@ -56,9 +57,7 @@ class pilgrimVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
         var reversedNames : [String] = Array(pilgrimPlaces.reversed())
         let data = reversedNames[indexPath.row]
         print("pilgrimPlaces: \(data)")
-        cell.textLabel?.text = data
-        //cell.detailTextLabel?.text = data.descriptionOfPlace
-        
+        cell.pilgrimTxt.text = data
         return cell
     }
     
