@@ -116,12 +116,28 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="miQ-ny-6iN">
+                                <rect key="frame" x="307" y="70" width="51" height="30"/>
+                                <color key="backgroundColor" red="0.33606468039293658" green="1" blue="0.35861047895359643" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="GgL-aa-CEG"/>
+                                    <constraint firstAttribute="width" constant="51" id="jcn-GF-YMg"/>
+                                </constraints>
+                                <state key="normal" title="reload">
+                                    <color key="titleColor" red="0.78039215689999997" green="0.14901960780000001" blue="0.1647058824" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="reload:" destination="9pv-A4-QxB" eventType="touchUpInside" id="na6-v2-jac"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="miQ-ny-6iN" firstAttribute="top" secondItem="PQr-Ze-W5v" secondAttribute="top" constant="50" id="3KB-cI-vyv"/>
                             <constraint firstItem="cse-id-pEF" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="8ar-Na-rjI"/>
                             <constraint firstItem="IzS-z6-kxN" firstAttribute="top" secondItem="IbD-lJ-XMn" secondAttribute="bottom" constant="8" id="D5p-nF-0q6"/>
                             <constraint firstItem="PQr-Ze-W5v" firstAttribute="bottom" secondItem="KQZ-1w-vlD" secondAttribute="bottom" constant="223" id="Hz8-WN-Bcc"/>
+                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="trailing" secondItem="miQ-ny-6iN" secondAttribute="trailing" constant="17" id="K5I-ER-dEu"/>
                             <constraint firstItem="IbD-lJ-XMn" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="OrI-WQ-b5n"/>
                             <constraint firstItem="Wb1-OO-UQR" firstAttribute="top" secondItem="Boy-mh-isj" secondAttribute="bottom" constant="26" id="Q8s-5i-AIV"/>
                             <constraint firstItem="4TU-Sj-a7M" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="RHz-n9-pwC"/>
@@ -154,7 +170,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-487" y="771"/>
+            <point key="canvasLocation" x="-487.19999999999999" y="770.46476761619192"/>
         </scene>
         <!--Radar-->
         <scene sceneID="wg7-f3-ORb">

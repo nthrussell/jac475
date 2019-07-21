@@ -100,4 +100,10 @@ class StateVC: UIViewController {
         self.present(alertController, animated: true, completion: nil)
     }
     
+    
+    @IBAction func reload(_ sender: Any) {
+        pilgrim()
+        radar()
+    }
+    
 }
