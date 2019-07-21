@@ -190,13 +190,30 @@
                                 <rect key="frame" x="16" y="114" width="343" height="489"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="radarCell" rowHeight="66" id="DhX-XP-ghN" customClass="radarCell" customModule="jac475" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="343" height="66"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="radarCell" rowHeight="100" id="DhX-XP-ghN" customClass="radarCell" customModule="jac475" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="343" height="100"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="DhX-XP-ghN" id="s2f-1K-gmK">
-                                            <rect key="frame" x="0.0" y="0.0" width="343" height="65.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="343" height="99.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="R5Y-eH-Euf">
+                                                    <rect key="frame" x="0.0" y="0.0" width="343" height="99.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="R5Y-eH-Euf" secondAttribute="bottom" id="SoU-AG-bHT"/>
+                                                <constraint firstItem="R5Y-eH-Euf" firstAttribute="top" secondItem="s2f-1K-gmK" secondAttribute="top" id="gKc-er-InL"/>
+                                                <constraint firstAttribute="trailing" secondItem="R5Y-eH-Euf" secondAttribute="trailing" id="j7I-KV-ywo"/>
+                                                <constraint firstItem="R5Y-eH-Euf" firstAttribute="leading" secondItem="s2f-1K-gmK" secondAttribute="leading" id="rpQ-9u-ZxN"/>
+                                            </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="radarText" destination="R5Y-eH-Euf" id="XHw-GA-1N1"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>

@@ -32,9 +32,16 @@ class StateVC: UIViewController {
     func pilgrim() {
         PilgrimManager.shared().getCurrentLocation { (currentLocation, error) in
             // Example: currentLocation.currentPlace.venue.name
-            if let location = currentLocation {
-                self.FQStatus.text = "\(String(describing: location))"
+            if let currentLocation = currentLocation {
+                if let place = currentLocation.currentPlace.venue {
+                    let description = "\(currentLocation.currentPlace.hasDeparted ? "\(currentLocation.currentPlace.departureDate!)" : "\(currentLocation.currentPlace.arrivalDate!)") : \(currentLocation.currentPlace.hasDeparted ? "Departure from" : "Arrival at"):  - \(String(describing: place.name))"
+                    self.FQStatus.text = "\(String(describing: currentLocation))"
+                    var pilgrimPlaces = [String]()
+                    pilgrimPlaces.append(description)
+                    UserDefaults.standard.set(pilgrimPlaces, forKey: "pilgrimPlaces")
+                }
             }
+
             print("FQLocationError: \(String(describing: error))")
         }
     }
@@ -44,7 +51,7 @@ class StateVC: UIViewController {
             DispatchQueue.main.async {
                 
                 let statusString = Utils.stringForStatus(status)
-                print("statusString:\(statusString)")
+                self.showAlert(title: "Radar Status", message: statusString)
                 
                 if status == .success {
                     
@@ -63,23 +70,23 @@ class StateVC: UIViewController {
                         for geofence in geofences {
                             let geofenceString = geofence._description
                             print("geofenceString:\(geofenceString)")
-                            self.showAlert(title: "geofenceString", message: geofenceString)
                         }
                     }
                     
                     if let user = user, let place = user.place {
                         let placeString = place.name
-                        print("placeString:\(placeString)")
                         self.RDPlaceName.text = placeString
-                        self.showAlert(title: "placeString", message: placeString)
-                    }
-                    
-                    if let events = events {
-                        for event in events {
-                            let eventString = Utils.stringForEvent(event)
-                            print("eventString:\(eventString)")
-                            self.showAlert(title: "eventString", message: eventString)
+                        
+                        var radarplaces = [String]()
+
+                        if let timeStamp = location?.timestamp {
+                            radarplaces.append("\(timeStamp):\(placeString)")
+                            UserDefaults.standard.set(radarplaces, forKey: "radarPlaces")
+                        } else {
+                            radarplaces.append("\(placeString)")
+                            UserDefaults.standard.set(radarplaces, forKey: "radarPlaces")
                         }
+                        
                     }
                 }
             }

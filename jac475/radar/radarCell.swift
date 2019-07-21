@@ -9,6 +9,8 @@ import UIKit
 
 class radarCell: UITableViewCell {
 
+    @IBOutlet var radarText: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

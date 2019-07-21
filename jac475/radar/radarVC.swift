@@ -17,6 +17,9 @@ class radarVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.radarplaces = UserDefaults.standard.stringArray(forKey: "radarPlaces") ?? [String]()
+        print("radarPlaces**:\(radarplaces)")
+        
         tableView.dataSource = self
         tableView.delegate = self
 
@@ -28,16 +31,8 @@ class radarVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
                                                selector: #selector(onDidReceiveLocationData(_:)),
                                                name:.RDbackgroundLocationUpdate,
                                                object: nil)
-        //Background events
-        NotificationCenter.default.addObserver(self,
-                                               selector: #selector(onDidReceiveEventData(_:)),
-                                               name:.RDBackgroundEvents,
-                                               object: nil)
-        //Background events
-        NotificationCenter.default.addObserver(self,
-                                               selector: #selector(onDidReceivePlaceData(_:)),
-                                               name:.RDBackgroundUserPlace,
-                                               object: nil)
+  
+        tableView.reloadData()
     }
     
     func radar() {
@@ -49,39 +44,27 @@ class radarVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
                 
                 if status == .success {
                     
-                    if let location = location {
-                        let locationString = "lat:\(location.coordinate.latitude), lon:\(location.coordinate.longitude)"
-                        //self.RDBGLocation.text = "\(String(describing: locationString))"
-                    }
-                    
                     if let user = user, let geofences = user.geofences {
                         for geofence in geofences {
                             let geofenceString = geofence._description
-                            print("geofenceString:\(geofenceString)")
                         }
                     }
                     
                     if let user = user, let place = user.place {
                         let placeString = place.name
-                        print("placeString:\(placeString)")
                         self.radarCurrentPlaceName.text = "\(placeString)"
-                        self.radarplaces.append(placeString)
-                        self.tableView.reloadData()
-                        print("radarPlaces: \(self.radarplaces)")
-                        //self.RDBGStatus.text = "Place:\(placeString)"
                     }
                     
                     if let events = events {
                         for event in events {
                             let eventString = Utils.stringForEvent(event)
                             print("eventString:\(eventString)")
-                            //self.RDBGEvent.text = "Event:\(eventString)"
                         }
                     }
-                    
-                    self.tableView.reloadData()
                 }
+                
             }
+            
         })
         
     }
@@ -93,33 +76,20 @@ class radarVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         //radarCell
         let cell = tableView.dequeueReusableCell(withIdentifier: "radarCell") as! radarCell
-        
+
         var reversedNames : [String] = Array(radarplaces.reversed())
         let data = reversedNames[indexPath.row]
-        print("radarData: \(data)")
-        cell.textLabel?.text = data
-        //cell.detailTextLabel?.text = data.descriptionOfPlace
+        cell.radarText.text = data
         
         return cell
     }
 
     @objc func onDidReceiveLocationData(_ notification: Notification) {
-        if let data = notification.userInfo as? [String: Double] {
-            //self.RDBGLocationUpdate.text = "\(data)"
-        }
+//        if let data = notification.userInfo as? [String: Double] {
+//            //self.RDBGLocationUpdate.text = "\(data)"
+//        }
     }
-    
-    @objc func onDidReceiveEventData(_ notification: Notification) {
-        if let data = notification.userInfo {
-            //self.RDBGEvent.text = "\(data)"
-        }
-    }
-    
-    @objc func onDidReceivePlaceData(_ notification: Notification) {
-        if let data = notification.userInfo {
-            //self.RDBGLastPlace.text = "\(data)"
-        }
-    }
+
     
     func showAlert(title: String, message: String?) {
         let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert);

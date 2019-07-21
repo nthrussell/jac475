@@ -106,19 +106,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate, CLLocationManagerDelegate
         for event in events {
             let eventString = Utils.stringForEvent(event)
             Utils.showNotification(title: "Event", body: eventString)
+            
+            let timeStamp = user.location.timestamp
+            var radarplaces = [String]()
+            radarplaces.append("\(timeStamp): \(eventString)")
+            UserDefaults.standard.set(radarplaces, forKey: "radarPlaces")
         }
         
-        print("myBackgroundEvents:\(events)")
-        print("myUserData: \(String(describing: user.place))")
-        
-        let RDBackgroundEvents = ["events": events]
-        NotificationCenter.default.post(name: .RDBackgroundEvents, object: self, userInfo: RDBackgroundEvents)
-        Utils.showNotification(title: "Radar Event", body: "\(events)")
-        
-        let RDBackgroundPlace = ["place": user.place as Any]
-        NotificationCenter.default.post(name: .RDBackgroundUserPlace, object: self, userInfo: RDBackgroundPlace)
-        Utils.showNotification(title: "Radar Place", body: "\(String(describing: user.place))")
-
     }
     
     func didUpdateLocation(_ location: CLLocation, user: RadarUser) {
@@ -166,7 +160,12 @@ extension AppDelegate : PilgrimManagerDelegate {
     // Primary visit handler:
     func pilgrimManager(_ pilgrimManager: PilgrimManager, handle visit: Visit) {
         // Process the visit however you'd like:
-        Utils.showNotification(title: "Pilgrim", body: "\(visit.hasDeparted ? "Departure from" : "Arrival at") \(visit.venue != nil ? visit.venue!.name : "Unknown venue."). Added a Pilgrim visit at: \(visit.displayName)")
+        let myString = "\(visit.hasDeparted ? "Departure from" : "Arrival at") \(visit.venue != nil ? visit.venue!.name : "Unknown venue."). Added a Pilgrim visit at: \(visit.displayName)"
+        let myString2 = "\(visit.hasDeparted ? "Departure from" : "Arrival at") \(visit.venue != nil ? visit.venue!.name : "Unknown venue.")"
+        Utils.showNotification(title: "Pilgrim", body: myString)
+        var pilgrimPlaces = [String]()
+        pilgrimPlaces.append(myString2)
+        UserDefaults.standard.set(pilgrimPlaces, forKey: "pilgrimPlaces")
     }
     
     // Optional: If visit occurred without network connectivity

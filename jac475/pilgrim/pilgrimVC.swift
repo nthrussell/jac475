@@ -18,6 +18,8 @@ class pilgrimVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.pilgrimPlaces = UserDefaults.standard.stringArray(forKey: "pilgrimPlaces") ?? [String]()
+        
         tableView.dataSource = self
         tableView.delegate = self
         
@@ -28,6 +30,7 @@ class pilgrimVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
                                                selector: #selector(pilgrimVenuName(_:)),
                                                name:.pilgrimVenuName,
                                                object: nil)
+        self.tableView.reloadData()
         
     }
     
@@ -38,13 +41,11 @@ class pilgrimVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
                 if let place = currentLocation.currentPlace.venue {
                     let description = "\(currentLocation.currentPlace.hasDeparted ? "\(currentLocation.currentPlace.departureDate!)" : "\(currentLocation.currentPlace.arrivalDate!)") : \(currentLocation.currentPlace.hasDeparted ? "Departure from" : "Arrival at"):  - \(String(describing: place.name))"
                     self.pilgrimDescription.text = description
-                    self.pilgrimPlaces.append(description)
+                    //self.pilgrimPlaces.append(description)
                 }
             }
-            self.tableView.reloadData()
             print("FQLocationError: \(String(describing: error))")
         }
-        self.tableView.reloadData()
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
