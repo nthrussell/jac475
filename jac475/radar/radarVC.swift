@@ -13,6 +13,7 @@ class radarVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
     @IBOutlet var tableView: UITableView!
     @IBOutlet var radarCurrentPlaceName: UILabel!
     var radarplaces = [String]()
+    var refreshControl = UIRefreshControl()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,7 +34,12 @@ class radarVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
                                                object: nil)
   
         tableView.reloadData()
+        
+        refreshControl.attributedTitle = NSAttributedString(string: "radar refresh")
+        refreshControl.addTarget(self, action: #selector(refreshRD(sender:)), for: .valueChanged)
+        tableView.addSubview(refreshControl)
     }
+    
     
     func radar() {
         Radar.trackOnce(completionHandler: { (status: RadarStatus, location: CLLocation?, events: [RadarEvent]?, user: RadarUser?) in
@@ -82,6 +88,12 @@ class radarVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
         cell.radarText.text = data
         
         return cell
+    }
+    
+    @objc func refreshRD(sender:AnyObject) {
+        // Code to refresh table view
+        self.tableView.reloadData()
+        refreshControl.endRefreshing()
     }
 
     @objc func onDidReceiveLocationData(_ notification: Notification) {

@@ -13,7 +13,7 @@ class pilgrimVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
     @IBOutlet var pilgrimDescription: UITextView!
     @IBOutlet var tableView: UITableView!
     var pilgrimPlaces = [String]()
-
+    var refreshControl = UIRefreshControl()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,6 +31,10 @@ class pilgrimVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
                                                name:.pilgrimVenuName,
                                                object: nil)
         self.tableView.reloadData()
+        
+        refreshControl.attributedTitle = NSAttributedString(string: "pilgrim refresh")
+        refreshControl.addTarget(self, action: #selector(refreshPG(sender:)), for: .valueChanged)
+        tableView.addSubview(refreshControl)
         
     }
     
@@ -60,6 +64,12 @@ class pilgrimVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
         print("pilgrimPlaces: \(data)")
         cell.pilgrimTxt.text = data
         return cell
+    }
+    
+    @objc func refreshPG(sender:AnyObject) {
+        // Code to refresh table view
+        self.tableView.reloadData()
+        refreshControl.endRefreshing()
     }
     
     @objc func pilgrimVenuName(_ notification: Notification) {
