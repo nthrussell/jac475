@@ -18,7 +18,7 @@ class radarVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.radarplaces = UserDefaults.standard.stringArray(forKey: "radarPlaces") ?? [String]()
+        self.radarplaces = UserDefaults.standard.radarArray
         print("radarPlaces**:\(radarplaces)")
         
         tableView.dataSource = self
@@ -41,7 +41,7 @@ class radarVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        self.radarplaces = UserDefaults.standard.stringArray(forKey: "radarPlaces") ?? [String]()
+        self.radarplaces = UserDefaults.standard.radarArray
         self.tableView.reloadData()
     }
     
@@ -97,7 +97,7 @@ class radarVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     @objc func refreshRD(sender:AnyObject) {
         // Code to refresh table view
-        self.radarplaces = UserDefaults.standard.stringArray(forKey: "radarPlaces") ?? [String]()
+        self.radarplaces = UserDefaults.standard.radarArray
         self.tableView.reloadData()
         refreshControl.endRefreshing()
     }

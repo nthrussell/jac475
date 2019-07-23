@@ -14,3 +14,35 @@ extension Notification.Name {
     
     static let pilgrimVenuName = Notification.Name("pilgrimVenuName")
 }
+
+extension UserDefaults {
+    var radarArray: [String] {
+        get {
+            if let radarArray = UserDefaults.standard.object(forKey: "radarArray") as? [String] {
+                return radarArray
+            } else {
+                return []
+            }
+        }
+        set {
+            UserDefaults.standard.set(newValue, forKey: "radarArray")
+        }
+    }
+}
+
+extension UserDefaults {
+    var pilgrimArray: [String] {
+        get {
+            if let pilgrimArray = UserDefaults.standard.object(forKey: "pilgrimArray") as? [String] {
+                return pilgrimArray
+            } else {
+                return []
+            }
+        }
+        set {
+            UserDefaults.standard.set(newValue, forKey: "pilgrimArray")
+        }
+    }
+}
+
+

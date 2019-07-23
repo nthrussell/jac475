@@ -18,7 +18,8 @@ class pilgrimVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.pilgrimPlaces = UserDefaults.standard.stringArray(forKey: "pilgrimPlaces") ?? [String]()
+        self.pilgrimPlaces = UserDefaults.standard.pilgrimArray
+        print("pilgrimPlaces are did load: \(pilgrimPlaces)")
         
         tableView.dataSource = self
         tableView.delegate = self
@@ -39,7 +40,8 @@ class pilgrimVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        self.pilgrimPlaces = UserDefaults.standard.stringArray(forKey: "pilgrimPlaces") ?? [String]()
+        self.pilgrimPlaces = UserDefaults.standard.pilgrimArray
+        print("pilgrimPlaces are did apper: \(pilgrimPlaces)")
         self.tableView.reloadData()
     }
     
@@ -73,7 +75,8 @@ class pilgrimVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     @objc func refreshPG(sender:AnyObject) {
         // Code to refresh table view
-        self.pilgrimPlaces = UserDefaults.standard.stringArray(forKey: "pilgrimPlaces") ?? [String]()
+        self.pilgrimPlaces = UserDefaults.standard.pilgrimArray
+        print("pilgrimPlaces refresh: \(pilgrimPlaces)")
         self.tableView.reloadData()
         refreshControl.endRefreshing()
     }

@@ -36,9 +36,11 @@ class StateVC: UIViewController {
                 if let place = currentLocation.currentPlace.venue {
                     let description = "\(currentLocation.currentPlace.hasDeparted ? "\(currentLocation.currentPlace.departureDate!)" : "\(currentLocation.currentPlace.arrivalDate!)") : \(currentLocation.currentPlace.hasDeparted ? "Departure from" : "Arrival at"):  - \(String(describing: place.name))"
                     self.FQStatus.text = "\(String(describing: currentLocation))"
-                    var pilgrimPlaces = [String]()
-                    pilgrimPlaces.append(description)
-                    UserDefaults.standard.set(pilgrimPlaces, forKey: "pilgrimPlaces")
+//                    var pilgrimPlaces = [String]()
+//                    pilgrimPlaces.append(description)
+//                    UserDefaults.standard.set(pilgrimPlaces, forKey: "pilgrimPlaces")
+//                    UserDefaults.standard.synchronize()
+                    UserDefaults.standard.pilgrimArray.append(description)
                 }
             }
 
@@ -77,14 +79,16 @@ class StateVC: UIViewController {
                         let placeString = place.name
                         self.RDPlaceName.text = placeString
                         
-                        var radarplaces = [String]()
+//                        var radarplaces = [String]()
 
                         if let timeStamp = location?.timestamp {
-                            radarplaces.append("\(timeStamp):\(placeString)")
-                            UserDefaults.standard.set(radarplaces, forKey: "radarPlaces")
+//                            radarplaces.append("\(timeStamp):\(placeString)")
+//                            UserDefaults.standard.set(radarplaces, forKey: "radarPlaces")
+                            UserDefaults.standard.radarArray.append("\(timeStamp):\(placeString)")
                         } else {
-                            radarplaces.append("\(placeString)")
-                            UserDefaults.standard.set(radarplaces, forKey: "radarPlaces")
+//                            radarplaces.append("\(placeString)")
+//                            UserDefaults.standard.set(radarplaces, forKey: "radarPlaces")
+                            UserDefaults.standard.radarArray.append("\(placeString)")
                         }
                         
                     }
