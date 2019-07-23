@@ -40,6 +40,11 @@ class radarVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
         tableView.addSubview(refreshControl)
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        self.radarplaces = UserDefaults.standard.stringArray(forKey: "radarPlaces") ?? [String]()
+        self.tableView.reloadData()
+    }
+    
     
     func radar() {
         Radar.trackOnce(completionHandler: { (status: RadarStatus, location: CLLocation?, events: [RadarEvent]?, user: RadarUser?) in
@@ -92,6 +97,7 @@ class radarVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     @objc func refreshRD(sender:AnyObject) {
         // Code to refresh table view
+        self.radarplaces = UserDefaults.standard.stringArray(forKey: "radarPlaces") ?? [String]()
         self.tableView.reloadData()
         refreshControl.endRefreshing()
     }

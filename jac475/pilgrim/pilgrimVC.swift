@@ -38,6 +38,11 @@ class pilgrimVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
         
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        self.pilgrimPlaces = UserDefaults.standard.stringArray(forKey: "pilgrimPlaces") ?? [String]()
+        self.tableView.reloadData()
+    }
+    
     func pilgrim() {
         PilgrimManager.shared().getCurrentLocation { (currentLocation, error) in
             // Example: currentLocation.currentPlace.venue.name
@@ -68,6 +73,7 @@ class pilgrimVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     @objc func refreshPG(sender:AnyObject) {
         // Code to refresh table view
+        self.pilgrimPlaces = UserDefaults.standard.stringArray(forKey: "pilgrimPlaces") ?? [String]()
         self.tableView.reloadData()
         refreshControl.endRefreshing()
     }
