@@ -237,10 +237,13 @@
                                     <outlet property="delegate" destination="8rJ-Kc-sve" id="6d4-2T-dJi"/>
                                 </connections>
                             </tableView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wad-Xs-xe9">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wad-Xs-xe9">
                                 <rect key="frame" x="317" y="27" width="38" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.78823529410000004" green="0.13725490200000001" blue="0.13725490200000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="cZr-C0-e5d"/>
+                                    <constraint firstAttribute="width" constant="38" id="g1F-Wj-HPh"/>
+                                </constraints>
                                 <state key="normal" title="clear ">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -252,10 +255,12 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="zEq-FU-wV5" firstAttribute="top" secondItem="O1u-W8-tvY" secondAttribute="top" id="2rk-9v-ZbI"/>
+                            <constraint firstItem="Wad-Xs-xe9" firstAttribute="top" secondItem="O1u-W8-tvY" secondAttribute="top" constant="7" id="4lJ-uP-x96"/>
                             <constraint firstItem="zEq-FU-wV5" firstAttribute="centerX" secondItem="QS5-Rx-YEW" secondAttribute="centerX" id="9ox-wT-OJ5"/>
                             <constraint firstItem="rZj-5w-nPH" firstAttribute="top" secondItem="Fwx-SQ-4cS" secondAttribute="bottom" constant="8" id="Jir-Z6-bZK"/>
                             <constraint firstItem="Fwx-SQ-4cS" firstAttribute="centerX" secondItem="QS5-Rx-YEW" secondAttribute="centerX" id="O9u-ZN-YQE"/>
                             <constraint firstItem="O1u-W8-tvY" firstAttribute="bottom" secondItem="rZj-5w-nPH" secondAttribute="bottom" constant="15" id="S23-KI-d12"/>
+                            <constraint firstItem="O1u-W8-tvY" firstAttribute="trailing" secondItem="Wad-Xs-xe9" secondAttribute="trailing" constant="20" id="diu-4K-lwp"/>
                             <constraint firstItem="Fwx-SQ-4cS" firstAttribute="top" secondItem="zEq-FU-wV5" secondAttribute="bottom" constant="8" id="g1k-Fn-7i8"/>
                             <constraint firstItem="rZj-5w-nPH" firstAttribute="leading" secondItem="O1u-W8-tvY" secondAttribute="leading" constant="16" id="jL3-dX-UUs"/>
                             <constraint firstItem="O1u-W8-tvY" firstAttribute="trailing" secondItem="rZj-5w-nPH" secondAttribute="trailing" constant="16" id="pZS-xj-f1x"/>
@@ -336,10 +341,13 @@
                                     <outlet property="delegate" destination="ho4-rQ-csl" id="KLN-9t-xw3"/>
                                 </connections>
                             </tableView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hLQ-du-ggx">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hLQ-du-ggx">
                                 <rect key="frame" x="319" y="25" width="34" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.78823529410000004" green="0.13725490200000001" blue="0.13725490200000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="7Z7-D5-e6t"/>
+                                    <constraint firstAttribute="width" constant="34" id="JsE-Uo-rSO"/>
+                                </constraints>
                                 <state key="normal" title="clear">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -356,6 +364,8 @@
                             <constraint firstItem="aub-FH-ose" firstAttribute="leading" secondItem="ExP-BP-uQY" secondAttribute="leading" constant="16" id="Mmg-rq-0Pa"/>
                             <constraint firstItem="ExP-BP-uQY" firstAttribute="trailing" secondItem="aub-FH-ose" secondAttribute="trailing" constant="16" id="PqA-JJ-8Qr"/>
                             <constraint firstItem="aub-FH-ose" firstAttribute="bottom" secondItem="ExP-BP-uQY" secondAttribute="bottom" id="SCm-ye-F81"/>
+                            <constraint firstItem="ExP-BP-uQY" firstAttribute="trailing" secondItem="hLQ-du-ggx" secondAttribute="trailing" constant="22" id="dcL-Sk-bgc"/>
+                            <constraint firstItem="hLQ-du-ggx" firstAttribute="top" secondItem="ExP-BP-uQY" secondAttribute="top" constant="5" id="lGa-3O-05z"/>
                             <constraint firstItem="aub-FH-ose" firstAttribute="top" secondItem="Hgq-iB-KBW" secondAttribute="bottom" constant="8" id="mBN-LT-Gx2"/>
                             <constraint firstItem="ayT-26-Spl" firstAttribute="centerX" secondItem="FLl-hZ-q0K" secondAttribute="centerX" id="rqk-IV-A9t"/>
                         </constraints>
