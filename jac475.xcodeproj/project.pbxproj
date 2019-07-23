@@ -20,6 +20,7 @@
 		FD6A1E7D22DE2E2A0023D678 /* radarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6A1E7C22DE2E2A0023D678 /* radarVC.swift */; };
 		FD6A1E8122DE347A0023D678 /* radarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6A1E8022DE347A0023D678 /* radarCell.swift */; };
 		FD6A1E8322DE3C7D0023D678 /* pilgrimCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6A1E8222DE3C7D0023D678 /* pilgrimCell.swift */; };
+		FD84F50022E77E8900C38523 /* File.rtf in Resources */ = {isa = PBXBuildFile; fileRef = FD84F4FF22E77E8900C38523 /* File.rtf */; };
 		FD863C8722DD74B800766F64 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD863C8622DD74B800766F64 /* CoreLocation.framework */; };
 		FDB80E0922D1D4B900DF12CC /* extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB80E0822D1D4B900DF12CC /* extensions.swift */; };
 		FDB80E0B22D1F14200DF12CC /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDB80E0A22D1F14200DF12CC /* SwiftyJSON.framework */; };
@@ -42,6 +43,7 @@
 		FD6A1E7C22DE2E2A0023D678 /* radarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = radarVC.swift; sourceTree = "<group>"; };
 		FD6A1E8022DE347A0023D678 /* radarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = radarCell.swift; sourceTree = "<group>"; };
 		FD6A1E8222DE3C7D0023D678 /* pilgrimCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pilgrimCell.swift; sourceTree = "<group>"; };
+		FD84F4FF22E77E8900C38523 /* File.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = File.rtf; sourceTree = "<group>"; };
 		FD863C8622DD74B800766F64 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		FDB80E0822D1D4B900DF12CC /* extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extensions.swift; sourceTree = "<group>"; };
 		FDB80E0A22D1F14200DF12CC /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
@@ -85,6 +87,7 @@
 		FD26D68F22D07CAB000B7FDC /* jac475 */ = {
 			isa = PBXGroup;
 			children = (
+				FD84F4FE22E77E5D00C38523 /* RADAR implementation */,
 				FDB80E0C22D23BB200DF12CC /* Utils.swift */,
 				FDB80E0822D1D4B900DF12CC /* extensions.swift */,
 				FD26D69022D07CAB000B7FDC /* AppDelegate.swift */,
@@ -128,6 +131,14 @@
 				FD6A1E8222DE3C7D0023D678 /* pilgrimCell.swift */,
 			);
 			path = pilgrim;
+			sourceTree = "<group>";
+		};
+		FD84F4FE22E77E5D00C38523 /* RADAR implementation */ = {
+			isa = PBXGroup;
+			children = (
+				FD84F4FF22E77E8900C38523 /* File.rtf */,
+			);
+			path = "RADAR implementation";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -195,6 +206,7 @@
 			files = (
 				FD26D69D22D07CAC000B7FDC /* LaunchScreen.storyboard in Resources */,
 				FD26D69A22D07CAC000B7FDC /* Assets.xcassets in Resources */,
+				FD84F50022E77E8900C38523 /* File.rtf in Resources */,
 				FD26D69822D07CAB000B7FDC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
