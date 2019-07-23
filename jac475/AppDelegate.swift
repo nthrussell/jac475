@@ -164,12 +164,8 @@ extension AppDelegate : PilgrimManagerDelegate {
         let myString = "\(visit.hasDeparted ? "Departure from" : "Arrival at") \(visit.venue != nil ? visit.venue!.name : "Unknown venue."). Added a Pilgrim visit at: \(visit.displayName)"
         let myString2 = "\(visit.hasDeparted ? "Departure from" : "Arrival at") \(visit.venue != nil ? visit.venue!.name : "Unknown venue.")"
         Utils.showNotification(title: "Pilgrim", body: myString)
-//        var pilgrimPlaces = [String]()
-//        pilgrimPlaces.append(myString2)
-//        UserDefaults.standard.set(pilgrimPlaces, forKey: "pilgrimPlaces")
-//        UserDefaults.standard.synchronize()
-        UserDefaults.standard.pilgrimArray.append(myString2)
 
+        UserDefaults.standard.pilgrimArray.append(myString2)
     }
     
     // Optional: If visit occurred without network connectivity

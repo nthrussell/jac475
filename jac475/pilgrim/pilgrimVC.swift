@@ -26,11 +26,6 @@ class pilgrimVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
         
         pilgrim()
         
-        //Background events
-        NotificationCenter.default.addObserver(self,
-                                               selector: #selector(pilgrimVenuName(_:)),
-                                               name:.pilgrimVenuName,
-                                               object: nil)
         self.tableView.reloadData()
         
         refreshControl.attributedTitle = NSAttributedString(string: "pilgrim refresh")
@@ -81,10 +76,10 @@ class pilgrimVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
         refreshControl.endRefreshing()
     }
     
-    @objc func pilgrimVenuName(_ notification: Notification) {
-//        if let data = notification.userInfo as? [String: Double] {
-//
-//        }
+    @IBAction func clearBtnTapped(_ sender: Any) {
+        UserDefaults.standard.removeObject(forKey: "pilgrimArray")
+        self.pilgrimPlaces = []
+        self.tableView.reloadData()
     }
     
 }

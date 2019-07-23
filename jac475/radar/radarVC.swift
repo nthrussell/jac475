@@ -26,12 +26,6 @@ class radarVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
         // Do any additional setup after loading the view.
         radar()
-        
-        //Background location
-        NotificationCenter.default.addObserver(self,
-                                               selector: #selector(onDidReceiveLocationData(_:)),
-                                               name:.RDbackgroundLocationUpdate,
-                                               object: nil)
   
         tableView.reloadData()
         
@@ -58,6 +52,7 @@ class radarVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
                     if let user = user, let geofences = user.geofences {
                         for geofence in geofences {
                             let geofenceString = geofence._description
+                            
                         }
                     }
                     
@@ -101,13 +96,6 @@ class radarVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
         self.tableView.reloadData()
         refreshControl.endRefreshing()
     }
-
-    @objc func onDidReceiveLocationData(_ notification: Notification) {
-//        if let data = notification.userInfo as? [String: Double] {
-//            //self.RDBGLocationUpdate.text = "\(data)"
-//        }
-    }
-
     
     func showAlert(title: String, message: String?) {
         let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert);
@@ -115,5 +103,10 @@ class radarVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
         self.present(alertController, animated: true, completion: nil)
     }
     
+    @IBAction func clearBtnTapped(_ sender: Any) {
+        UserDefaults.standard.removeObject(forKey: "radarArray")
+        self.radarplaces = []
+        self.tableView.reloadData()
+    }
 
 }
