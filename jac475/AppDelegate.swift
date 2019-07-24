@@ -162,15 +162,19 @@ extension AppDelegate : PilgrimManagerDelegate {
     func pilgrimManager(_ pilgrimManager: PilgrimManager, handle visit: Visit) {
         // Process the visit however you'd like:
         let myString = "\(visit.hasDeparted ? "Departure from" : "Arrival at") \(visit.venue != nil ? visit.venue!.name : "Unknown venue."). Added a Pilgrim visit at: \(visit.displayName)"
-        let myString2 = "\(visit.hasDeparted ? "Departure from" : "Arrival at") \(visit.venue != nil ? visit.venue!.name : "Unknown venue.")"
+        let myString2 = "\(visit.hasDeparted ? "\(visit.departureDate!):Departure from" : "\(visit.arrivalDate!):Arrival at") \(visit.venue != nil ? visit.venue!.name : "Unknown venue.")"
+        
+        UserDefaults.standard.pilgrimArray.append(myString2)
         Utils.showNotification(title: "Pilgrim", body: myString)
 
-        UserDefaults.standard.pilgrimArray.append(myString2)
     }
     
     // Optional: If visit occurred without network connectivity
     func pilgrimManager(_ pilgrimManager: PilgrimManager, handleBackfill visit: Pilgrim.Visit) {
         // Process the visit however you'd like:
+        let myString = "pilgrim without network activity: Backfill \(visit.hasDeparted ? "departure from" : "arrival at") \(visit.venue != nil ? visit.venue!.name : "Unknown venue.")"
+        UserDefaults.standard.pilgrimArray.append(myString)
+        
         Utils.showNotification(title: "pilgrim without network activity", body: "Backfill \(visit.hasDeparted ? "departure from" : "arrival at") \(visit.venue != nil ? visit.venue!.name : "Unknown venue."). Added a Pilgrim backfill visit at: \(visit.displayName)")
     }
     
