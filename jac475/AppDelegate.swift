@@ -182,6 +182,7 @@ extension AppDelegate : PilgrimManagerDelegate {
     func pilgrimManager(_ pilgrimManager: PilgrimManager, handle geofenceEvents: [GeofenceEvent]) {
         // Process the geofence events however you'd like:
         geofenceEvents.forEach { geofenceEvent in
+            UserDefaults.standard.pilgrimArray.append("geofenceEvent:\(geofenceEvent)")
             Utils.showNotification(title: "Pilgrim geofence", body: "\(geofenceEvent)")
         }
     }
