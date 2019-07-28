@@ -34,7 +34,7 @@ class StateVC: UIViewController {
             // Example: currentLocation.currentPlace.venue.name
             if let currentLocation = currentLocation {
                 if let place = currentLocation.currentPlace.venue {
-                    let description = "\(currentLocation.currentPlace.hasDeparted ? "\(currentLocation.currentPlace.departureDate!)" : "\(currentLocation.currentPlace.arrivalDate!)") : \(currentLocation.currentPlace.hasDeparted ? "Departure from" : "Arrival at"):  - \(String(describing: place.name))"
+                    let description = "\(currentLocation.currentPlace.hasDeparted ? "\(currentLocation.currentPlace.departureDate!)" : "\(currentLocation.currentPlace.arrivalDate!)") : \(currentLocation.currentPlace.hasDeparted ? "Departure from" : "Arrival at"):  - \(String(describing: place.name)) \nCategory:\(place.primaryCategory!.name)"
                     
                     self.FQStatus.text = "\(String(describing: currentLocation))"
                     UserDefaults.standard.pilgrimArray.append(description)
@@ -75,12 +75,13 @@ class StateVC: UIViewController {
                     
                     if let user = user, let place = user.place {
                         let placeString = place.name
+                        let myCategory = place.categories
                         self.RDPlaceName.text = placeString
                         
                         if let timeStamp = location?.timestamp {
-                            UserDefaults.standard.radarArray.append("\(timeStamp):\(placeString)")
+                            UserDefaults.standard.radarArray.append("\(timeStamp):\(placeString) \nCategories: \(myCategory)")
                         } else {
-                            UserDefaults.standard.radarArray.append("\(placeString)")
+                            UserDefaults.standard.radarArray.append("\(placeString) \nCategories: \(myCategory)")
                         }
                         
                     }

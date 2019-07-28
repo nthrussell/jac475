@@ -104,14 +104,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate, CLLocationManagerDelegate
     func didReceiveEvents(_ events: [RadarEvent], user: RadarUser) {
         
         for event in events {
+            
+            let myCategories = event.place?.categories
             let eventString = Utils.stringForEvent(event)
             Utils.showNotification(title: "Event", body: eventString)
             
             let timeStamp = user.location.timestamp
-//            var radarplaces = [String]()
-//            radarplaces.append("\(timeStamp): \(eventString)")
-//            UserDefaults.standard.set(radarplaces, forKey: "radarPlaces")
-            UserDefaults.standard.radarArray.append("\(timeStamp): \(eventString)")
+            UserDefaults.standard.radarArray.append("\(timeStamp): \(eventString) \nCategories: \(myCategories!)")
         }
         
     }
@@ -161,8 +160,9 @@ extension AppDelegate : PilgrimManagerDelegate {
     // Primary visit handler:
     func pilgrimManager(_ pilgrimManager: PilgrimManager, handle visit: Visit) {
         // Process the visit however you'd like:
+
         let myString = "\(visit.hasDeparted ? "Departure from" : "Arrival at") \(visit.venue != nil ? visit.venue!.name : "Unknown venue."). Added a Pilgrim visit at: \(visit.displayName)"
-        let myString2 = "\(visit.hasDeparted ? "\(visit.departureDate!):Departure from" : "\(visit.arrivalDate!):Arrival at") \(visit.venue != nil ? visit.venue!.name : "Unknown venue.")"
+        let myString2 = "\(visit.hasDeparted ? "\(visit.departureDate!):Departure from" : "\(visit.arrivalDate!):Arrival at") \(visit.venue != nil ? visit.venue!.name : "Unknown venue."). Category:\(visit.venue!.primaryCategory!.name) "
         
         UserDefaults.standard.pilgrimArray.append(myString2)
         Utils.showNotification(title: "Pilgrim", body: myString)
@@ -173,17 +173,18 @@ extension AppDelegate : PilgrimManagerDelegate {
     func pilgrimManager(_ pilgrimManager: PilgrimManager, handleBackfill visit: Pilgrim.Visit) {
         // Process the visit however you'd like:
         let myString = "pilgrim without network activity: Backfill \(visit.hasDeparted ? "departure from" : "arrival at") \(visit.venue != nil ? visit.venue!.name : "Unknown venue.")"
-        UserDefaults.standard.pilgrimArray.append(myString)
         
         Utils.showNotification(title: "pilgrim without network activity", body: "Backfill \(visit.hasDeparted ? "departure from" : "arrival at") \(visit.venue != nil ? visit.venue!.name : "Unknown venue."). Added a Pilgrim backfill visit at: \(visit.displayName)")
+        UserDefaults.standard.pilgrimArray.append(myString)
+
     }
     
     // Optional: If visit occurred by triggering a geofence
     func pilgrimManager(_ pilgrimManager: PilgrimManager, handle geofenceEvents: [GeofenceEvent]) {
         // Process the geofence events however you'd like:
         geofenceEvents.forEach { geofenceEvent in
-            UserDefaults.standard.pilgrimArray.append("geofenceEvent:\(geofenceEvent)")
             Utils.showNotification(title: "Pilgrim geofence", body: "\(geofenceEvent)")
+            UserDefaults.standard.pilgrimArray.append("geofenceEvent:\(geofenceEvent)")
         }
     }
 }

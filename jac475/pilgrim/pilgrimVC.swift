@@ -32,6 +32,7 @@ class pilgrimVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
         refreshControl.addTarget(self, action: #selector(refreshPG(sender:)), for: .valueChanged)
         tableView.addSubview(refreshControl)
         
+        PilgrimManager.shared().hasHomeOrWork()
     }
     
     override func viewDidAppear(_ animated: Bool) {
